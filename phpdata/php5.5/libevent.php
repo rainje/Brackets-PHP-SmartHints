@@ -21,7 +21,7 @@ function event_base_reinit ($base) {}
  * @param event_base resource <p>
  * Valid event base resource.
  * </p>
- * @return void
+ * @return void 
  */
 function event_base_free ($event_base) {}
 
@@ -32,8 +32,8 @@ function event_base_free ($event_base) {}
  * Valid event base resource.
  * </p>
  * @param flags int[optional] <p>
- * Optional parameter, which can take any combination of
- * EVLOOP_ONCE and EVLOOP_NONBLOCK.
+ * Optional parameter, which can take any combination of 
+ * EVLOOP_ONCE and EVLOOP_NONBLOCK. 
  * </p>
  * @return int event_base_loop returns 0 on success, -1 on error and
  * 1 if no events were registered.
@@ -102,7 +102,7 @@ function event_new () {}
  * @param event resource <p>
  * Valid event resource.
  * </p>
- * @return void
+ * @return void 
  */
 function event_free ($event) {}
 
@@ -135,7 +135,7 @@ function event_add ($event, $timeout = null) {}
  * EV_READ and/or EV_WRITE.
  * The additional flag EV_PERSIST makes the event
  * to persist until event_del is called, otherwise
- * the callback is invoked only once.
+ * the callback is invoked only once. 
  * </p>
  * @param callback mixed <p>
  * Callback function to be called when the matching event occurs.
@@ -174,7 +174,7 @@ function event_priority_set ($event, $priority) {}
  * no callback is desired.
  * </p>
  * @param writecb mixed <p>
- * Callback to invoke where the descriptor is ready for writing,
+ * Callback to invoke where the descriptor is ready for writing, 
  * or NULL if no callback is desired.
  * </p>
  * @param errorcb mixed <p>
@@ -195,7 +195,7 @@ function event_buffer_new ($stream, $readcb, $writecb, $errorcb, $arg = null) {}
  * @param bevent resource <p>
  * Valid buffered event resource.
  * </p>
- * @return void
+ * @return void 
  */
 function event_buffer_free ($bevent) {}
 
@@ -220,7 +220,7 @@ function event_buffer_base_set ($bevent, $event_base) {}
  * </p>
  * @param priority int <p>
  * Priority level. Cannot be less than zero and cannot exceed maximum
- * priority level of the event base (see event_base_priority_init).
+ * priority level of the event base (see event_base_priority_init). 
  * </p>
  * @return bool event_buffer_priority_set returns true on success or false on error.
  */
@@ -252,7 +252,7 @@ function event_buffer_write ($bevent, $data, $data_size = null) {}
  * @param data_size int <p>
  * Data size in bytes.
  * </p>
- * @return string
+ * @return string 
  */
 function event_buffer_read ($bevent, $data_size) {}
 
@@ -296,7 +296,7 @@ function event_buffer_disable ($bevent, $events) {}
  * @param write_timeout int <p>
  * Write timeout (in seconds).
  * </p>
- * @return void
+ * @return void 
  */
 function event_buffer_timeout_set ($bevent, $read_timeout, $write_timeout) {}
 
@@ -316,7 +316,7 @@ function event_buffer_timeout_set ($bevent, $read_timeout, $write_timeout) {}
  * @param highmark int <p>
  * High watermark.
  * </p>
- * @return void
+ * @return void 
  */
 function event_buffer_watermark_set ($bevent, $events, $lowmark, $highmark) {}
 
@@ -329,7 +329,7 @@ function event_buffer_watermark_set ($bevent, $events, $lowmark, $highmark) {}
  * @param fd resource <p>
  * Valid PHP stream, must be castable to file descriptor.
  * </p>
- * @return void
+ * @return void 
  */
 function event_buffer_fd_set ($bevent, $fd) {}
 
@@ -344,7 +344,7 @@ function event_buffer_fd_set ($bevent, $fd) {}
  * no callback is desired.
  * </p>
  * @param writecb mixed <p>
- * Callback to invoke where the descriptor is ready for writing,
+ * Callback to invoke where the descriptor is ready for writing, 
  * or NULL if no callback is desired.
  * </p>
  * @param errorcb mixed <p>

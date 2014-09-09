@@ -12,7 +12,7 @@ class LibXMLError  {
  * The stream context resource (created with
  * stream_context_create)
  * </p>
- * @return void
+ * @return void 
  */
 function libxml_set_streams_context ($streams_context) {}
 
@@ -38,7 +38,7 @@ function libxml_get_last_error () {}
 /**
  * Clear libxml error buffer
  * @link http://www.php.net/manual/en/function.libxml-clear-errors.php
- * @return void
+ * @return void 
  */
 function libxml_clear_errors () {}
 
@@ -55,7 +55,7 @@ function libxml_get_errors () {}
  * @link http://www.php.net/manual/en/function.libxml-disable-entity-loader.php
  * @param disable bool[optional] <p>
  * Disable (true) or enable (false) libxml extensions (such as
- * ,
+ * , 
  * and ) to load external entities.
  * </p>
  * @return bool the previous value.
@@ -71,7 +71,7 @@ function libxml_disable_entity_loader ($disable = null) {}
  * This callback should return a resource, a string from which a resource can be
  * opened, or &null;.
  * </p>
- * @return void
+ * @return void 
  */
 function libxml_set_external_entity_loader ($resolver_function) {}
 
@@ -176,8 +176,8 @@ define ('LIBXML_COMPACT', 65536);
 define ('LIBXML_NOXMLDECL', 2);
 
 /**
- * Sets XML_PARSE_HUGE flag, which relaxes any hardcoded limit from the parser. This affects
- * limits like maximum depth of a document or the entity recursion, as well as limits of the
+ * Sets XML_PARSE_HUGE flag, which relaxes any hardcoded limit from the parser. This affects 
+ * limits like maximum depth of a document or the entity recursion, as well as limits of the 
  * size of text nodes.
  * <p>
  * Only available in Libxml &gt;= 2.7.0 (as of PHP &gt;= 5.3.2 and PHP &gt;= 5.2.12)

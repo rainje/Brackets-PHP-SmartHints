@@ -504,7 +504,7 @@ function zip_open ($filename) {}
  * @param zip resource <p>
  * A ZIP file previously opened with zip_open.
  * </p>
- * @return void
+ * @return void 
  */
 function zip_close ($zip) {}
 

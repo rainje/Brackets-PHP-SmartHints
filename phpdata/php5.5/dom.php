@@ -97,7 +97,7 @@ class DOMImplementation  {
 	 * The feature to test.
 	 * </p>
 	 * @param version string <p>
-	 * The version number of the feature to test. In
+	 * The version number of the feature to test. In 
 	 * level 2, this can be either 2.0 or
 	 * 1.0.
 	 * </p>
@@ -117,7 +117,7 @@ class DOMImplementation  {
 	 * @param systemId string[optional] <p>
 	 * The external subset system identifier.
 	 * </p>
-	 * @return DOMDocumentType A new DOMDocumentType node with its
+	 * @return DOMDocumentType A new DOMDocumentType node with its 
 	 * ownerDocument set to &null;.
 	 */
 	public function createDocumentType ($qualifiedName = null, $publicId = null, $systemId = null) {}
@@ -134,9 +134,9 @@ class DOMImplementation  {
 	 * @param doctype DOMDocumentType[optional] <p>
 	 * The type of document to create or &null;.
 	 * </p>
-	 * @return DOMDocument A new DOMDocument object. If
-	 * namespaceURI, qualifiedName,
-	 * and doctype are null, the returned
+	 * @return DOMDocument A new DOMDocument object. If 
+	 * namespaceURI, qualifiedName, 
+	 * and doctype are null, the returned 
 	 * DOMDocument is empty with no document element
 	 */
 	public function createDocument ($namespaceURI = null, $qualifiedName = null, DOMDocumentType $doctype = null) {}
@@ -205,7 +205,7 @@ class DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -215,7 +215,7 @@ class DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -223,7 +223,7 @@ class DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -446,7 +446,7 @@ class DOMDocumentFragment extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -456,7 +456,7 @@ class DOMDocumentFragment extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -464,7 +464,7 @@ class DOMDocumentFragment extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -705,9 +705,9 @@ class DOMDocument extends DOMNode  {
 	 * @link http://www.php.net/manual/en/domdocument.getelementsbytagname.php
 	 * @param name string <p>
 	 * The local name (without namespace) of the tag to match on. The special value *
-	 * matches all tags.
+	 * matches all tags. 
 	 * </p>
-	 * @return DOMNodeList A new DOMNodeList object containing all the matched
+	 * @return DOMNodeList A new DOMNodeList object containing all the matched 
 	 * elements.
 	 */
 	public function getElementsByTagName ($name) {}
@@ -763,14 +763,14 @@ class DOMDocument extends DOMNode  {
 	 * Searches for all elements with given tag name in specified namespace
 	 * @link http://www.php.net/manual/en/domdocument.getelementsbytagnamens.php
 	 * @param namespaceURI string <p>
-	 * The namespace URI of the elements to match on.
+	 * The namespace URI of the elements to match on. 
 	 * The special value * matches all namespaces.
 	 * </p>
 	 * @param localName string <p>
-	 * The local name of the elements to match on.
+	 * The local name of the elements to match on. 
 	 * The special value * matches all local names.
 	 * </p>
-	 * @return DOMNodeList A new DOMNodeList object containing all the matched
+	 * @return DOMNodeList A new DOMNodeList object containing all the matched 
 	 * elements.
 	 */
 	public function getElementsByTagNameNS ($namespaceURI, $localName) {}
@@ -794,7 +794,7 @@ class DOMDocument extends DOMNode  {
 	/**
 	 * Normalizes the document
 	 * @link http://www.php.net/manual/en/domdocument.normalizedocument.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalizeDocument () {}
 
@@ -990,11 +990,11 @@ class DOMDocument extends DOMNode  {
 	 * Register extended class used to create base node type
 	 * @link http://www.php.net/manual/en/domdocument.registernodeclass.php
 	 * @param baseclass string <p>
-	 * The DOM class that you want to extend. You can find a list of these
+	 * The DOM class that you want to extend. You can find a list of these 
 	 * classes in the chapter introduction.
 	 * </p>
 	 * @param extendedclass string <p>
-	 * Your extended class name. If &null; is provided, any previously
+	 * Your extended class name. If &null; is provided, any previously 
 	 * registered class extending baseclass will
 	 * be removed.
 	 * </p>
@@ -1062,7 +1062,7 @@ class DOMDocument extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -1072,7 +1072,7 @@ class DOMDocument extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -1080,7 +1080,7 @@ class DOMDocument extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -1234,7 +1234,7 @@ class DOMNodeList implements Traversable {
 	 * @param index int <p>
 	 * Index of the node into the collection.
 	 * </p>
-	 * @return DOMNode The node at the indexth position in the
+	 * @return DOMNode The node at the indexth position in the 
 	 * DOMNodeList, or &null; if that is not a valid
 	 * index.
 	 */
@@ -1250,7 +1250,7 @@ class DOMNamedNodeMap implements Traversable {
 	 * @param name string <p>
 	 * The nodeName of the node to retrieve.
 	 * </p>
-	 * @return DOMNode A node (of any type) with the specified nodeName, or
+	 * @return DOMNode A node (of any type) with the specified nodeName, or 
 	 * &null; if no node is found.
 	 */
 	public function getNamedItem ($name) {}
@@ -1272,7 +1272,7 @@ class DOMNamedNodeMap implements Traversable {
 	 * Index into this map.
 	 * </p>
 	 * @return DOMNode The node at the indexth position in the map, or &null;
-	 * if that is not a valid index (greater than or equal to the number of nodes
+	 * if that is not a valid index (greater than or equal to the number of nodes 
 	 * in this map).
 	 */
 	public function item ($index) {}
@@ -1286,7 +1286,7 @@ class DOMNamedNodeMap implements Traversable {
 	 * @param localName string <p>
 	 * The local name of the node to retrieve.
 	 * </p>
-	 * @return DOMNode A node (of any type) with the specified local name and namespace URI, or
+	 * @return DOMNode A node (of any type) with the specified local name and namespace URI, or 
 	 * &null; if no node is found.
 	 */
 	public function getNamedItemNS ($namespaceURI, $localName) {}
@@ -1315,8 +1315,8 @@ class DOMCharacterData extends DOMNode  {
 	 * @param count int <p>
 	 * The number of characters to extract.
 	 * </p>
-	 * @return string The specified substring. If the sum of offset
-	 * and count exceeds the length, then all 16-bit units
+	 * @return string The specified substring. If the sum of offset 
+	 * and count exceeds the length, then all 16-bit units 
 	 * to the end of the data are returned.
 	 */
 	public function substringData ($offset, $count) {}
@@ -1327,7 +1327,7 @@ class DOMCharacterData extends DOMNode  {
 	 * @param data string <p>
 	 * The string to append.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function appendData ($data) {}
 
@@ -1340,7 +1340,7 @@ class DOMCharacterData extends DOMNode  {
 	 * @param data string <p>
 	 * The string to insert.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function insertData ($offset, $data) {}
 
@@ -1351,11 +1351,11 @@ class DOMCharacterData extends DOMNode  {
 	 * The offset from which to start removing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to delete. If the sum of
+	 * The number of characters to delete. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are deleted.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function deleteData ($offset, $count) {}
 
@@ -1366,14 +1366,14 @@ class DOMCharacterData extends DOMNode  {
 	 * The offset from which to start replacing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to replace. If the sum of
+	 * The number of characters to replace. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are replaced.
 	 * </p>
 	 * @param data string <p>
 	 * The string with which the range must be replaced.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function replaceData ($offset, $count, $data) {}
 
@@ -1437,7 +1437,7 @@ class DOMCharacterData extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -1447,7 +1447,7 @@ class DOMCharacterData extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -1455,7 +1455,7 @@ class DOMCharacterData extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -1678,7 +1678,7 @@ class DOMAttr extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -1688,7 +1688,7 @@ class DOMAttr extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -1696,7 +1696,7 @@ class DOMAttr extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -1912,7 +1912,7 @@ class DOMElement extends DOMNode  {
 	 * Gets elements by tagname
 	 * @link http://www.php.net/manual/en/domelement.getelementsbytagname.php
 	 * @param name string <p>
-	 * The tag name. Use * to return all elements within
+	 * The tag name. Use * to return all elements within 
 	 * the element tree.
 	 * </p>
 	 * @return DOMNodeList This function returns a new instance of the class
@@ -1930,7 +1930,7 @@ class DOMElement extends DOMNode  {
 	 * The local name.
 	 * </p>
 	 * @return string The value of the attribute, or an empty string if no attribute with the
-	 * given localName and namespaceURI
+	 * given localName and namespaceURI 
 	 * is found.
 	 */
 	public function getAttributeNS ($namespaceURI, $localName) {}
@@ -1947,7 +1947,7 @@ class DOMElement extends DOMNode  {
 	 * @param value string <p>
 	 * The value of the attribute.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setAttributeNS ($namespaceURI, $qualifiedName, $value) {}
 
@@ -1994,7 +1994,7 @@ class DOMElement extends DOMNode  {
 	 * The namespace URI.
 	 * </p>
 	 * @param localName string <p>
-	 * The local name. Use * to return all elements within
+	 * The local name. Use * to return all elements within 
 	 * the element tree.
 	 * </p>
 	 * @return DOMNodeList This function returns a new instance of the class
@@ -2036,7 +2036,7 @@ class DOMElement extends DOMNode  {
 	 * Set it to true if you want name to be of type
 	 * ID, false otherwise.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setIdAttribute ($name, $isId) {}
 
@@ -2053,7 +2053,7 @@ class DOMElement extends DOMNode  {
 	 * Set it to true if you want name to be of type
 	 * ID, false otherwise.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setIdAttributeNS ($namespaceURI, $localName, $isId) {}
 
@@ -2067,7 +2067,7 @@ class DOMElement extends DOMNode  {
 	 * Set it to true if you want name to be of type
 	 * ID, false otherwise.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setIdAttributeNode (DOMAttr $attr, $isId) {}
 
@@ -2140,7 +2140,7 @@ class DOMElement extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -2150,7 +2150,7 @@ class DOMElement extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -2158,7 +2158,7 @@ class DOMElement extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -2312,7 +2312,7 @@ class DOMText extends DOMCharacterData  {
 	 * @param offset int <p>
 	 * The offset at which to split, starting from 0.
 	 * </p>
-	 * @return DOMText The new node of the same type, which contains all the content at and after the
+	 * @return DOMText The new node of the same type, which contains all the content at and after the 
 	 * offset.
 	 */
 	public function splitText ($offset) {}
@@ -2348,8 +2348,8 @@ class DOMText extends DOMCharacterData  {
 	 * @param count int <p>
 	 * The number of characters to extract.
 	 * </p>
-	 * @return string The specified substring. If the sum of offset
-	 * and count exceeds the length, then all 16-bit units
+	 * @return string The specified substring. If the sum of offset 
+	 * and count exceeds the length, then all 16-bit units 
 	 * to the end of the data are returned.
 	 */
 	public function substringData ($offset, $count) {}
@@ -2360,7 +2360,7 @@ class DOMText extends DOMCharacterData  {
 	 * @param data string <p>
 	 * The string to append.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function appendData ($data) {}
 
@@ -2373,7 +2373,7 @@ class DOMText extends DOMCharacterData  {
 	 * @param data string <p>
 	 * The string to insert.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function insertData ($offset, $data) {}
 
@@ -2384,11 +2384,11 @@ class DOMText extends DOMCharacterData  {
 	 * The offset from which to start removing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to delete. If the sum of
+	 * The number of characters to delete. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are deleted.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function deleteData ($offset, $count) {}
 
@@ -2399,14 +2399,14 @@ class DOMText extends DOMCharacterData  {
 	 * The offset from which to start replacing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to replace. If the sum of
+	 * The number of characters to replace. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are replaced.
 	 * </p>
 	 * @param data string <p>
 	 * The string with which the range must be replaced.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function replaceData ($offset, $count, $data) {}
 
@@ -2470,7 +2470,7 @@ class DOMText extends DOMCharacterData  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -2480,7 +2480,7 @@ class DOMText extends DOMCharacterData  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -2488,7 +2488,7 @@ class DOMText extends DOMCharacterData  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -2652,8 +2652,8 @@ class DOMComment extends DOMCharacterData  {
 	 * @param count int <p>
 	 * The number of characters to extract.
 	 * </p>
-	 * @return string The specified substring. If the sum of offset
-	 * and count exceeds the length, then all 16-bit units
+	 * @return string The specified substring. If the sum of offset 
+	 * and count exceeds the length, then all 16-bit units 
 	 * to the end of the data are returned.
 	 */
 	public function substringData ($offset, $count) {}
@@ -2664,7 +2664,7 @@ class DOMComment extends DOMCharacterData  {
 	 * @param data string <p>
 	 * The string to append.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function appendData ($data) {}
 
@@ -2677,7 +2677,7 @@ class DOMComment extends DOMCharacterData  {
 	 * @param data string <p>
 	 * The string to insert.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function insertData ($offset, $data) {}
 
@@ -2688,11 +2688,11 @@ class DOMComment extends DOMCharacterData  {
 	 * The offset from which to start removing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to delete. If the sum of
+	 * The number of characters to delete. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are deleted.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function deleteData ($offset, $count) {}
 
@@ -2703,14 +2703,14 @@ class DOMComment extends DOMCharacterData  {
 	 * The offset from which to start replacing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to replace. If the sum of
+	 * The number of characters to replace. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are replaced.
 	 * </p>
 	 * @param data string <p>
 	 * The string with which the range must be replaced.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function replaceData ($offset, $count, $data) {}
 
@@ -2774,7 +2774,7 @@ class DOMComment extends DOMCharacterData  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -2784,7 +2784,7 @@ class DOMComment extends DOMCharacterData  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -2792,7 +2792,7 @@ class DOMComment extends DOMCharacterData  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -2998,7 +2998,7 @@ class DOMCdataSection extends DOMText  {
 	 * @param offset int <p>
 	 * The offset at which to split, starting from 0.
 	 * </p>
-	 * @return DOMText The new node of the same type, which contains all the content at and after the
+	 * @return DOMText The new node of the same type, which contains all the content at and after the 
 	 * offset.
 	 */
 	public function splitText ($offset) {}
@@ -3027,8 +3027,8 @@ class DOMCdataSection extends DOMText  {
 	 * @param count int <p>
 	 * The number of characters to extract.
 	 * </p>
-	 * @return string The specified substring. If the sum of offset
-	 * and count exceeds the length, then all 16-bit units
+	 * @return string The specified substring. If the sum of offset 
+	 * and count exceeds the length, then all 16-bit units 
 	 * to the end of the data are returned.
 	 */
 	public function substringData ($offset, $count) {}
@@ -3039,7 +3039,7 @@ class DOMCdataSection extends DOMText  {
 	 * @param data string <p>
 	 * The string to append.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function appendData ($data) {}
 
@@ -3052,7 +3052,7 @@ class DOMCdataSection extends DOMText  {
 	 * @param data string <p>
 	 * The string to insert.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function insertData ($offset, $data) {}
 
@@ -3063,11 +3063,11 @@ class DOMCdataSection extends DOMText  {
 	 * The offset from which to start removing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to delete. If the sum of
+	 * The number of characters to delete. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are deleted.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function deleteData ($offset, $count) {}
 
@@ -3078,14 +3078,14 @@ class DOMCdataSection extends DOMText  {
 	 * The offset from which to start replacing.
 	 * </p>
 	 * @param count int <p>
-	 * The number of characters to replace. If the sum of
+	 * The number of characters to replace. If the sum of 
 	 * offset and count exceeds
 	 * the length, then all characters to the end of the data are replaced.
 	 * </p>
 	 * @param data string <p>
 	 * The string with which the range must be replaced.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function replaceData ($offset, $count, $data) {}
 
@@ -3149,7 +3149,7 @@ class DOMCdataSection extends DOMText  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -3159,7 +3159,7 @@ class DOMCdataSection extends DOMText  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -3167,7 +3167,7 @@ class DOMCdataSection extends DOMText  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -3375,7 +3375,7 @@ class DOMDocumentType extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -3385,7 +3385,7 @@ class DOMDocumentType extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -3393,7 +3393,7 @@ class DOMDocumentType extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -3601,7 +3601,7 @@ class DOMNotation extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -3611,7 +3611,7 @@ class DOMNotation extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -3619,7 +3619,7 @@ class DOMNotation extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -3827,7 +3827,7 @@ class DOMEntity extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -3837,7 +3837,7 @@ class DOMEntity extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -3845,7 +3845,7 @@ class DOMEntity extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -4060,7 +4060,7 @@ class DOMEntityReference extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -4070,7 +4070,7 @@ class DOMEntityReference extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -4078,7 +4078,7 @@ class DOMEntityReference extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -4294,7 +4294,7 @@ class DOMProcessingInstruction extends DOMNode  {
 	 * Clones a node
 	 * @link http://www.php.net/manual/en/domnode.clonenode.php
 	 * @param deep bool[optional] <p>
-	 * Indicates whether to copy all descendant nodes. This parameter is
+	 * Indicates whether to copy all descendant nodes. This parameter is 
 	 * defaulted to false.
 	 * </p>
 	 * @return DOMNode The cloned node.
@@ -4304,7 +4304,7 @@ class DOMProcessingInstruction extends DOMNode  {
 	/**
 	 * Normalizes the node
 	 * @link http://www.php.net/manual/en/domnode.normalize.php
-	 * @return void
+	 * @return void 
 	 */
 	public function normalize () {}
 
@@ -4312,7 +4312,7 @@ class DOMProcessingInstruction extends DOMNode  {
 	 * Checks if feature is supported for specified version
 	 * @link http://www.php.net/manual/en/domnode.issupported.php
 	 * @param feature string <p>
-	 * The feature to test. See the example of
+	 * The feature to test. See the example of 
 	 * DOMImplementation::hasFeature for a
 	 * list of features.
 	 * </p>
@@ -4502,11 +4502,11 @@ class DOMXPath  {
 	 * </p>
 	 * @param contextnode DOMNode[optional] <p>
 	 * The optional contextnode can be specified for
-	 * doing relative XPath queries. By default, the queries are relative to
+	 * doing relative XPath queries. By default, the queries are relative to 
 	 * the root element.
 	 * </p>
 	 * @param registerNodeNS bool[optional] <p>
-	 * The optional registerNodeNS can be specified to
+	 * The optional registerNodeNS can be specified to 
 	 * disable automatic registration of the context node.
 	 * </p>
 	 * @return DOMNodeList a DOMNodeList containing all nodes matching
@@ -4529,15 +4529,15 @@ class DOMXPath  {
 	 * </p>
 	 * @param contextnode DOMNode[optional] <p>
 	 * The optional contextnode can be specified for
-	 * doing relative XPath queries. By default, the queries are relative to
+	 * doing relative XPath queries. By default, the queries are relative to 
 	 * the root element.
 	 * </p>
 	 * @param registerNodeNS bool[optional] <p>
-	 * The optional registerNodeNS can be specified to
+	 * The optional registerNodeNS can be specified to 
 	 * disable automatic registration of the context node.
 	 * </p>
-	 * @return mixed a typed result if possible or a DOMNodeList
-	 * containing all nodes matching the given XPath expression.
+	 * @return mixed a typed result if possible or a DOMNodeList 
+	 * containing all nodes matching the given XPath expression. 
 	 * </p>
 	 * <p>
 	 * If the expression is malformed or the
@@ -4553,10 +4553,10 @@ class DOMXPath  {
 	 * Use this parameter to only allow certain functions to be called from XPath.
 	 * </p>
 	 * <p>
-	 * This parameter can be either a string (a function name) or
+	 * This parameter can be either a string (a function name) or 
 	 * an array of function names.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function registerPhpFunctions ($restrict = null) {}
 
@@ -4650,7 +4650,7 @@ define ('DOM_PHP_ERR', 0);
 define ('DOM_INDEX_SIZE_ERR', 1);
 
 /**
- * If the specified range of text does not fit into a
+ * If the specified range of text does not fit into a 
  * DOMString.
  * @link http://www.php.net/manual/en/dom.constants.php
  */
@@ -4723,7 +4723,7 @@ define ('DOM_SYNTAX_ERR', 12);
 define ('DOM_INVALID_MODIFICATION_ERR', 13);
 
 /**
- * If an attempt is made to create or change an object in a way which is
+ * If an attempt is made to create or change an object in a way which is 
  * incorrect with regard to namespaces.
  * @link http://www.php.net/manual/en/dom.constants.php
  */
@@ -4737,7 +4737,7 @@ define ('DOM_INVALID_ACCESS_ERR', 15);
 
 /**
  * If a call to a method such as insertBefore or removeChild would make the Node
- * invalid with respect to "partial validity", this exception would be raised and
+ * invalid with respect to "partial validity", this exception would be raised and 
  * the operation would not be done.
  * @link http://www.php.net/manual/en/dom.constants.php
  */

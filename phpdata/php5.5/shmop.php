@@ -23,7 +23,7 @@
  * The size of the shared memory block you wish to create in bytes
  * </p>
  * @return int On success shmop_open will return an id that you can
- * use to access the shared memory segment you've created. false is
+ * use to access the shared memory segment you've created. false is 
  * returned on failure.
  */
 function shmop_open ($key, $flags, $mode, $size) {}
@@ -32,7 +32,7 @@ function shmop_open ($key, $flags, $mode, $size) {}
  * Read data from shared memory block
  * @link http://www.php.net/manual/en/function.shmop-read.php
  * @param shmid int <p>
- * The shared memory block identifier created by
+ * The shared memory block identifier created by 
  * shmop_open
  * </p>
  * @param start int <p>
@@ -49,10 +49,10 @@ function shmop_read ($shmid, $start, $count) {}
  * Close shared memory block
  * @link http://www.php.net/manual/en/function.shmop-close.php
  * @param shmid int <p>
- * The shared memory block identifier created by
+ * The shared memory block identifier created by 
  * shmop_open
  * </p>
- * @return void
+ * @return void 
  */
 function shmop_close ($shmid) {}
 
@@ -60,7 +60,7 @@ function shmop_close ($shmid) {}
  * Get size of shared memory block
  * @link http://www.php.net/manual/en/function.shmop-size.php
  * @param shmid int <p>
- * The shared memory block identifier created by
+ * The shared memory block identifier created by 
  * shmop_open
  * </p>
  * @return int an int, which represents the number of bytes the shared memory
@@ -72,17 +72,17 @@ function shmop_size ($shmid) {}
  * Write data into shared memory block
  * @link http://www.php.net/manual/en/function.shmop-write.php
  * @param shmid int <p>
- * The shared memory block identifier created by
+ * The shared memory block identifier created by 
  * shmop_open
  * </p>
  * @param data string <p>
- * A string to write into shared memory block
+ * A string to write into shared memory block 
  * </p>
  * @param offset int <p>
  * Specifies where to start writing data inside the shared memory
  * segment.
  * </p>
- * @return int The size of the written data, or false on
+ * @return int The size of the written data, or false on 
  * failure.
  */
 function shmop_write ($shmid, $data, $offset) {}
@@ -91,7 +91,7 @@ function shmop_write ($shmid, $data, $offset) {}
  * Delete shared memory block
  * @link http://www.php.net/manual/en/function.shmop-delete.php
  * @param shmid int <p>
- * The shared memory block identifier created by
+ * The shared memory block identifier created by 
  * shmop_open
  * </p>
  * @return bool Returns true on success or false on failure.

@@ -183,7 +183,7 @@ function ssh2_connect ($host, $port = null, array $methods = null, array $callba
  * An SSH connection link identifier, obtained from a call to
  * ssh2_connect.
  * </p>
- * @return array
+ * @return array 
  */
 function ssh2_methods_negotiated ($session) {}
 
@@ -319,7 +319,7 @@ function ssh2_forward_accept () {}
  * SSH2_TERM_UNIT_CHARS or
  * SSH2_TERM_UNIT_PIXELS.
  * </p>
- * @return resource
+ * @return resource 
  */
 function ssh2_shell ($session, $term_type = null, array $env = null, $width = null, $height = null, $width_height_type = null) {}
 
@@ -364,7 +364,7 @@ function ssh2_exec ($session, $command, $pty = null, array $env = null, $width =
  * </p>
  * @param port int <p>
  * </p>
- * @return resource
+ * @return resource 
  */
 function ssh2_tunnel ($session, $host, $port) {}
 

@@ -157,7 +157,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * Phar::BZ2 to add compression, or Phar::NONE
 	 * to remove compression.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function compressFiles ($compression) {}
 
@@ -461,7 +461,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * A shorthand string that this archive can be referred to in phar
 	 * stream wrapper access.
 	 * </p>
-	 * @return bool
+	 * @return bool 
 	 */
 	public function setAlias ($alias) {}
 
@@ -484,8 +484,8 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * @param metadata mixed <p>
 	 * Any PHP variable containing information to store that describes the phar archive
 	 * </p>
-	 * @param metadata mixed
-	 * @return void
+	 * @param metadata mixed 
+	 * @return void 
 	 */
 	public function setMetadata ($metadata, $metadata) {}
 
@@ -506,8 +506,8 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * See phar introduction for instructions on
 	 * naming and placement of the public key file.
 	 * </p>
-	 * @param sigtype int
-	 * @return void
+	 * @param sigtype int 
+	 * @return void 
 	 */
 	public function setSignatureAlgorithm ($sigtype, $privatekey = null, $sigtype) {}
 
@@ -527,14 +527,14 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	/**
 	 * Start buffering Phar write operations, do not modify the Phar object on disk
 	 * @link http://www.php.net/manual/en/phar.startbuffering.php
-	 * @return void
+	 * @return void 
 	 */
 	public function startBuffering () {}
 
 	/**
 	 * Stop buffering write requests to the Phar archive, and save changes to disk
 	 * @link http://www.php.net/manual/en/phar.stopbuffering.php
-	 * @return void
+	 * @return void 
 	 */
 	public function stopBuffering () {}
 
@@ -567,8 +567,8 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	/**
 	 * Create a phar-file format specific stub
 	 * @link http://www.php.net/manual/en/phar.createdefaultstub.php
-	 * @param indexfile string[optional]
-	 * @param webindexfile string[optional]
+	 * @param indexfile string[optional] 
+	 * @param webindexfile string[optional] 
 	 * @return string a string containing the contents of a customized bootstrap loader (stub)
 	 * that allows the created Phar archive to work with or without the Phar extension
 	 * enabled.
@@ -596,7 +596,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	/**
 	 * instructs phar to intercept fopen, file_get_contents, opendir, and all of the stat-related functions
 	 * @link http://www.php.net/manual/en/phar.interceptfilefuncs.php
-	 * @return void
+	 * @return void 
 	 */
 	final public static function interceptFileFuncs () {}
 
@@ -759,7 +759,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * The rewrites function is passed a string as its only parameter and must return a string or false.
 	 * </p>
 	 * <p>
-	 * If you are using fast-cgi or cgi then the parameter passed to the function is the value of the
+	 * If you are using fast-cgi or cgi then the parameter passed to the function is the value of the 
 	 * $_SERVER['PATH_INFO'] variable. Otherwise, the parameter passed to the function is the value
 	 * of the $_SERVER['REQUEST_URI'] variable.
 	 * </p>
@@ -767,7 +767,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * If a string is returned it is used as the internal file path. If false is returned then webPhar() will
 	 * send a HTTP 403 Denied Code.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	final public static function webPhar ($alias = null, $index = null, $f404 = null, array $mimetypes = null, $rewrites = null) {}
 
@@ -806,14 +806,14 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	/**
 	 * Rewinds back to the beginning
 	 * @link http://www.php.net/manual/en/filesystemiterator.rewind.php
-	 * @return void
+	 * @return void 
 	 */
 	public function rewind () {}
 
 	/**
 	 * Move to the next file
 	 * @link http://www.php.net/manual/en/filesystemiterator.next.php
-	 * @return void
+	 * @return void 
 	 */
 	public function next () {}
 
@@ -847,7 +847,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * The handling flags to set.
 	 * See the FilesystemIterator constants.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setFlags ($flags = null) {}
 
@@ -870,7 +870,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * Get base name of current DirectoryIterator item.
 	 * @link http://www.php.net/manual/en/directoryiterator.getbasename.php
 	 * @param suffix string[optional] <p>
-	 * If the base name ends in suffix,
+	 * If the base name ends in suffix, 
 	 * this will be cut.
 	 * </p>
 	 * @return string The base name of the current DirectoryIterator item.
@@ -898,7 +898,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * @param position int <p>
 	 * The zero-based numeric position to seek to.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function seek ($position) {}
 
@@ -1034,7 +1034,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * Gets an SplFileInfo object for the file
 	 * @link http://www.php.net/manual/en/splfileinfo.getfileinfo.php
 	 * @param class_name string[optional] <p>
-	 * Name of an SplFileInfo derived class to use.
+	 * Name of an SplFileInfo derived class to use. 
 	 * </p>
 	 * @return SplFileInfo An SplFileInfo object created for the file.
 	 */
@@ -1055,7 +1055,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * @link http://www.php.net/manual/en/splfileinfo.openfile.php
 	 * @param open_mode string[optional] <p>
 	 * The mode for opening the file. See the fopen
-	 * documentation for descriptions of possible modes. The default
+	 * documentation for descriptions of possible modes. The default 
 	 * is read only.
 	 * </p>
 	 * @param use_include_path bool[optional] <p>
@@ -1072,9 +1072,9 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * Sets the class name used with <methodname>SplFileInfo::openFile</methodname>
 	 * @link http://www.php.net/manual/en/splfileinfo.setfileclass.php
 	 * @param class_name string[optional] <p>
-	 * The class name to use when openFile() is called.
+	 * The class name to use when openFile() is called. 
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setFileClass ($class_name = null) {}
 
@@ -1084,7 +1084,7 @@ class Phar extends RecursiveDirectoryIterator implements RecursiveIterator, Seek
 	 * @param class_name string[optional] <p>
 	 * The class name to use.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setInfoClass ($class_name = null) {}
 
@@ -1424,7 +1424,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * A shorthand string that this archive can be referred to in phar
 	 * stream wrapper access. This parameter is ignored.
 	 * </p>
-	 * @return bool
+	 * @return bool 
 	 */
 	public function setAlias ($alias) {}
 
@@ -1573,14 +1573,14 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	/**
 	 * Rewinds back to the beginning
 	 * @link http://www.php.net/manual/en/filesystemiterator.rewind.php
-	 * @return void
+	 * @return void 
 	 */
 	public function rewind () {}
 
 	/**
 	 * Move to the next file
 	 * @link http://www.php.net/manual/en/filesystemiterator.next.php
-	 * @return void
+	 * @return void 
 	 */
 	public function next () {}
 
@@ -1614,7 +1614,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * The handling flags to set.
 	 * See the FilesystemIterator constants.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setFlags ($flags = null) {}
 
@@ -1637,7 +1637,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * Get base name of current DirectoryIterator item.
 	 * @link http://www.php.net/manual/en/directoryiterator.getbasename.php
 	 * @param suffix string[optional] <p>
-	 * If the base name ends in suffix,
+	 * If the base name ends in suffix, 
 	 * this will be cut.
 	 * </p>
 	 * @return string The base name of the current DirectoryIterator item.
@@ -1665,7 +1665,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * @param position int <p>
 	 * The zero-based numeric position to seek to.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function seek ($position) {}
 
@@ -1801,7 +1801,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * Gets an SplFileInfo object for the file
 	 * @link http://www.php.net/manual/en/splfileinfo.getfileinfo.php
 	 * @param class_name string[optional] <p>
-	 * Name of an SplFileInfo derived class to use.
+	 * Name of an SplFileInfo derived class to use. 
 	 * </p>
 	 * @return SplFileInfo An SplFileInfo object created for the file.
 	 */
@@ -1822,7 +1822,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * @link http://www.php.net/manual/en/splfileinfo.openfile.php
 	 * @param open_mode string[optional] <p>
 	 * The mode for opening the file. See the fopen
-	 * documentation for descriptions of possible modes. The default
+	 * documentation for descriptions of possible modes. The default 
 	 * is read only.
 	 * </p>
 	 * @param use_include_path bool[optional] <p>
@@ -1839,9 +1839,9 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * Sets the class name used with <methodname>SplFileInfo::openFile</methodname>
 	 * @link http://www.php.net/manual/en/splfileinfo.setfileclass.php
 	 * @param class_name string[optional] <p>
-	 * The class name to use when openFile() is called.
+	 * The class name to use when openFile() is called. 
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setFileClass ($class_name = null) {}
 
@@ -1851,7 +1851,7 @@ class PharData extends RecursiveDirectoryIterator implements RecursiveIterator, 
 	 * @param class_name string[optional] <p>
 	 * The class name to use.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setInfoClass ($class_name = null) {}
 
@@ -1876,14 +1876,14 @@ class PharFileInfo extends SplFileInfo  {
 	 * @param permissions int <p>
 	 * permissions (see chmod)
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function chmod ($permissions) {}
 
 	/**
 	 * Compresses the current Phar entry with either zlib or bzip2 compression
 	 * @link http://www.php.net/manual/en/pharfileinfo.compress.php
-	 * @param compression int
+	 * @param compression int 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function compress ($compression) {}
@@ -1969,7 +1969,7 @@ class PharFileInfo extends SplFileInfo  {
 	 * @param metadata mixed <p>
 	 * Any PHP variable containing information to store alongside a file
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setMetadata ($metadata) {}
 
@@ -2137,7 +2137,7 @@ class PharFileInfo extends SplFileInfo  {
 	 * Gets an SplFileInfo object for the file
 	 * @link http://www.php.net/manual/en/splfileinfo.getfileinfo.php
 	 * @param class_name string[optional] <p>
-	 * Name of an SplFileInfo derived class to use.
+	 * Name of an SplFileInfo derived class to use. 
 	 * </p>
 	 * @return SplFileInfo An SplFileInfo object created for the file.
 	 */
@@ -2158,7 +2158,7 @@ class PharFileInfo extends SplFileInfo  {
 	 * @link http://www.php.net/manual/en/splfileinfo.openfile.php
 	 * @param open_mode string[optional] <p>
 	 * The mode for opening the file. See the fopen
-	 * documentation for descriptions of possible modes. The default
+	 * documentation for descriptions of possible modes. The default 
 	 * is read only.
 	 * </p>
 	 * @param use_include_path bool[optional] <p>
@@ -2175,9 +2175,9 @@ class PharFileInfo extends SplFileInfo  {
 	 * Sets the class name used with <methodname>SplFileInfo::openFile</methodname>
 	 * @link http://www.php.net/manual/en/splfileinfo.setfileclass.php
 	 * @param class_name string[optional] <p>
-	 * The class name to use when openFile() is called.
+	 * The class name to use when openFile() is called. 
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setFileClass ($class_name = null) {}
 
@@ -2187,7 +2187,7 @@ class PharFileInfo extends SplFileInfo  {
 	 * @param class_name string[optional] <p>
 	 * The class name to use.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setInfoClass ($class_name = null) {}
 

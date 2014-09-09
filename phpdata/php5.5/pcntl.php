@@ -149,7 +149,7 @@ function pcntl_wait (&$status, $options = null) {}
  * will be invoked to handle the signal, or either of the two global
  * constants SIG_IGN or SIG_DFL,
  * which will ignore the signal or restore the default signal handler
- * respectively.
+ * respectively. 
  * </p>
  * <p>
  * If a callable is given, it must implement the following
@@ -327,7 +327,7 @@ function pcntl_setpriority ($priority, $pid = null, $process_identifier = null) 
  * @link http://www.php.net/manual/en/function.pcntl-sigprocmask.php
  * @param how int <p>
  * Sets the behavior of pcntl_sigprocmask. Possible
- * values:
+ * values: 
  * SIG_BLOCK: Add the signals to the
  * currently blocked signals.
  * SIG_UNBLOCK: Remove the signals from the

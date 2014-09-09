@@ -9,14 +9,14 @@
  * If cache_type is "user",
  * information about the user cache will be returned.
  * </p>
- * <p>
+ * <p> 
  * If cache_type is "filehits",
- * information about which files have been served from the bytecode cache
+ * information about which files have been served from the bytecode cache 
  * for the current request will be returned. This feature must be enabled at
  * compile time using --enable-filehits.
  * </p>
  * <p>
- * If an invalid or no cache_type is specified, information about
+ * If an invalid or no cache_type is specified, information about 
  * the system cache (cached files) will be returned.
  * </p>
  * @param limited bool[optional] <p>

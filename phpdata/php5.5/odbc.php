@@ -46,14 +46,14 @@ function odbc_binmode ($result_id, $mode) {}
  * Close an ODBC connection
  * @link http://www.php.net/manual/en/function.odbc-close.php
  * @param connection_id resource &odbc.connection.id;
- * @return void
+ * @return void 
  */
 function odbc_close ($connection_id) {}
 
 /**
  * Close all ODBC connections
  * @link http://www.php.net/manual/en/function.odbc-close-all.php
- * @return void
+ * @return void 
  */
 function odbc_close_all () {}
 
@@ -233,7 +233,7 @@ function odbc_exec ($connection_id, $query_string, $flags = null) {}
  * @param rownumber int[optional] <p>
  * Optionally choose which row number to retrieve.
  * </p>
- * @return array an array that corresponds to the fetched row, or false if there
+ * @return array an array that corresponds to the fetched row, or false if there 
  * are no more rows.
  */
 function odbc_fetch_array ($result, $rownumber = null) {}
@@ -247,7 +247,7 @@ function odbc_fetch_array ($result, $rownumber = null) {}
  * @param rownumber int[optional] <p>
  * Optionally choose which row number to retrieve.
  * </p>
- * @return object an object that corresponds to the fetched row, or false if there
+ * @return object an object that corresponds to the fetched row, or false if there 
  * are no more rows.
  */
 function odbc_fetch_object ($result, $rownumber = null) {}
@@ -456,10 +456,10 @@ function odbc_num_rows ($result_id) {}
 /**
  * Open a persistent database connection
  * @link http://www.php.net/manual/en/function.odbc-pconnect.php
- * @param dsn string
- * @param user string
- * @param password string
- * @param cursor_type int[optional]
+ * @param dsn string 
+ * @param user string 
+ * @param password string 
+ * @param cursor_type int[optional] 
  * @return resource an ODBC connection id or 0 (false) on
  * error.
  */
@@ -642,7 +642,7 @@ function odbc_statistics ($connection_id, $qualifier, $owner, $table_name, $uniq
  * odbc_tables does not return any results for
  * that type.
  * </p>
- * @return resource an ODBC result identifier containing the information
+ * @return resource an ODBC result identifier containing the information 
  *  or false on failure.
  * </p>
  * <p>
@@ -827,7 +827,7 @@ function odbc_procedures ($connection_id) {}
  * @link http://www.php.net/manual/en/function.odbc-procedurecolumns.php
  * @param connection_id resource &odbc.connection.id;
  * @return resource the list of input and output parameters, as well as the
- * columns that make up the result set for the specified procedures.
+ * columns that make up the result set for the specified procedures. 
  * Returns an ODBC result identifier or false on failure.
  * </p>
  * <p>

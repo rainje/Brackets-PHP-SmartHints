@@ -46,11 +46,11 @@ class OCI_Lob  {
 	 * Flushes/writes buffer of the LOB to the server
 	 * @link http://www.php.net/manual/en/oci-lob.flush.php
 	 * @param flag int[optional] <p>
-	 * By default, resources are not freed, but using flag
+	 * By default, resources are not freed, but using flag 
 	 * OCI_LOB_BUFFER_FREE you can do it explicitly.
 	 * Be sure you know what you're doing - next read/write operation to the
 	 * same part of LOB will involve a round-trip to the server and initialize
-	 * new buffer resources. It is recommended to use
+	 * new buffer resources. It is recommended to use 
 	 * OCI_LOB_BUFFER_FREE flag only when you are not
 	 * going to work with the LOB anymore.
 	 * </p>
@@ -114,10 +114,10 @@ class OCI_Lob  {
 	 * </p>
 	 * @param whence int[optional] <p>
 	 * May be one of:
-	 * OCI_SEEK_SET - sets the position equal to
+	 * OCI_SEEK_SET - sets the position equal to 
 	 * offset
-	 * OCI_SEEK_CUR - adds offset
-	 * bytes to the current position
+	 * OCI_SEEK_CUR - adds offset 
+	 * bytes to the current position 
 	 * OCI_SEEK_END - adds offset
 	 * bytes to the end of large object (use negative value to move to a position
 	 * before the end of large object)
@@ -133,7 +133,7 @@ class OCI_Lob  {
 	 * The data to write in the LOB.
 	 * </p>
 	 * @param length int[optional] <p>
-	 * If this parameter is given, writing will stop after
+	 * If this parameter is given, writing will stop after 
 	 * length bytes have been written or the end of
 	 * data is reached, whichever comes first.
 	 * </p>
@@ -178,7 +178,7 @@ class OCI_Lob  {
 	 * Indicates from where to start exporting.
 	 * </p>
 	 * @param length int[optional] <p>
-	 * Indicates the length of data to be exported.
+	 * Indicates the length of data to be exported. 
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
 	 */
@@ -202,7 +202,7 @@ class OCI_Lob  {
 	 * </p>
 	 * @param lob_type int[optional] <p>
 	 * Can be one of the following:
-	 * OCI_TEMP_BLOB is used to create temporary BLOBs
+	 * OCI_TEMP_BLOB is used to create temporary BLOBs 
 	 * OCI_TEMP_CLOB is used to create
 	 * temporary CLOBs
 	 * </p>
@@ -587,7 +587,7 @@ function oci_field_type_raw ($statement, $field) {}
  * </p>
  * <p>
  * If OCI_NO_AUTO_COMMIT mode is used for any
- * statement including queries, and
+ * statement including queries, and 
  * oci_commit
  * or oci_rollback is not subsequently
  * called, then OCI8 will perform a rollback at the end of the
@@ -746,10 +746,10 @@ function oci_fetch_array ($statement, $mode = null) {}
 /**
  * Fetches the next row into an array (deprecated)
  * @link http://www.php.net/manual/en/function.ocifetchinto.php
- * @param statement resource
- * @param result array
- * @param mode int[optional]
- * @return int
+ * @param statement resource 
+ * @param result array 
+ * @param mode int[optional] 
+ * @return int 
  */
 function ocifetchinto ($statement, array &$result, $mode = null) {}
 
@@ -855,7 +855,7 @@ function oci_free_statement ($statement) {}
  * @param onoff bool <p>
  * Set this to false to turn debug output off or true to turn it on.
  * </p>
- * @return void
+ * @return void 
  */
 function oci_internal_debug ($onoff) {}
 
@@ -873,7 +873,7 @@ function oci_num_fields ($statement) {}
  * Prepares an Oracle statement for execution
  * @link http://www.php.net/manual/en/function.oci-parse.php
  * @param connection resource <p>
- * An Oracle connection identifier, returned by
+ * An Oracle connection identifier, returned by 
  * oci_connect, oci_pconnect, or oci_new_connect.
  * </p>
  * @param sql_text string <p>
@@ -893,7 +893,7 @@ function oci_parse ($connection, $sql_text) {}
  * Allocates and returns a new cursor (statement handle)
  * @link http://www.php.net/manual/en/function.oci-new-cursor.php
  * @param connection resource <p>
- * An Oracle connection identifier, returned by
+ * An Oracle connection identifier, returned by 
  * oci_connect or oci_pconnect.
  * </p>
  * @return resource a new statement handle, or false on error.
@@ -1009,7 +1009,7 @@ function oci_num_rows ($statement) {}
  * Closes an Oracle connection
  * @link http://www.php.net/manual/en/function.oci-close.php
  * @param connection resource <p>
- * An Oracle connection identifier returned by
+ * An Oracle connection identifier returned by 
  * oci_connect, oci_pconnect,
  * or oci_new_connect.
  * </p>
@@ -1072,7 +1072,7 @@ function oci_pconnect ($username, $password, $connection_string = null, $charact
  * For most errors, resource is the
  * resource handle that was passed to the failing function call.
  * For connection errors with oci_connect,
- * oci_new_connect or
+ * oci_new_connect or 
  * oci_pconnect do not pass resource.
  * </p>
  * @return array If no error is found, oci_error returns
@@ -1284,11 +1284,11 @@ function oci_rollback ($connection) {}
  * Initializes a new empty LOB or FILE descriptor
  * @link http://www.php.net/manual/en/function.oci-new-descriptor.php
  * @param connection resource <p>
- * An Oracle connection identifier, returned by
+ * An Oracle connection identifier, returned by 
  * oci_connect or oci_pconnect.
  * </p>
  * @param type int[optional] <p>
- * Valid values for type are:
+ * Valid values for type are: 
  * OCI_DTYPE_FILE, OCI_DTYPE_LOB and
  * OCI_DTYPE_ROWID.
  * </p>
@@ -1354,8 +1354,8 @@ function oci_set_action ($connection, $action_name) {}
 /**
  * Sets the client information
  * @link http://www.php.net/manual/en/function.oci-set-client-info.php
- * @param connection resource
- * @param client_info string
+ * @param connection resource 
+ * @param client_info string 
  * @return bool Returns true on success or false on failure.
  */
 function oci_set_client_info ($connection, $client_info) {}
@@ -1364,7 +1364,7 @@ function oci_set_client_info ($connection, $client_info) {}
  * Changes password of Oracle's user
  * @link http://www.php.net/manual/en/function.oci-password-change.php
  * @param connection resource <p>
- * An Oracle connection identifier, returned by
+ * An Oracle connection identifier, returned by 
  * oci_connect or oci_pconnect.
  * </p>
  * @param username string <p>
@@ -1430,7 +1430,7 @@ function oci_collection_trim ($collection, $number) {}
  * Allocates new collection object
  * @link http://www.php.net/manual/en/function.oci-new-collection.php
  * @param connection resource <p>
- * An Oracle connection identifier, returned by
+ * An Oracle connection identifier, returned by 
  * oci_connect or oci_pconnect.
  * </p>
  * @param tdo string <p>
@@ -2237,14 +2237,14 @@ define ('OCI_D_LOB', 50);
 define ('OCI_D_ROWID', 54);
 
 /**
- * Used with
+ * Used with 
  * to indicate that a temporary CLOB should be created.
  * @link http://www.php.net/manual/en/oci8.constants.php
  */
 define ('OCI_TEMP_CLOB', 2);
 
 /**
- * Used with
+ * Used with 
  * to indicate that a temporary BLOB should be created.
  * @link http://www.php.net/manual/en/oci8.constants.php
  */

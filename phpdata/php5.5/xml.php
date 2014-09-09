@@ -71,7 +71,7 @@ function xml_set_object ($parser, &$object) {}
  * resourceparser
  * stringname
  * arrayattribs
- * parser
+ * parser 
  * The first parameter, parser, is a
  * reference to the XML parser calling the handler.
  * @param end_element_handler callable <p>
@@ -80,7 +80,7 @@ function xml_set_object ($parser, &$object) {}
  * end_element_handler
  * resourceparser
  * stringname
- * parser
+ * parser 
  * The first parameter, parser, is a
  * reference to the XML parser calling the handler.
  * @return bool Returns true on success or false on failure.
@@ -456,7 +456,7 @@ function xml_parser_free ($parser) {}
  * </tr>
  * <tr valign="top">
  * <td>XML_OPTION_SKIP_TAGSTART</td>
- * <td>integer</td>
+ * <td>integer</td> 
  * <td>
  * Specify how many characters should be skipped in the beginning of a
  * tag name.
@@ -464,14 +464,14 @@ function xml_parser_free ($parser) {}
  * </tr>
  * <tr valign="top">
  * <td>XML_OPTION_SKIP_WHITE</td>
- * <td>integer</td>
+ * <td>integer</td> 
  * <td>
  * Whether to skip values consisting of whitespace characters.
  * </td>
  * </tr>
  * <tr valign="top">
  * <td>XML_OPTION_TARGET_ENCODING</td>
- * <td>string</td>
+ * <td>string</td> 
  * <td>
  * Sets which target encoding to
  * use in this XML parser.By default, it is set to the same as the

@@ -137,29 +137,29 @@ class Memcache extends MemcachePool  {
 	 * </p>
 	 * @param retry_interval int[optional] <p>
 	 * Controls how often a failed server will be retried, the default value
-	 * is 15 seconds. Setting this parameter to -1 disables automatic retry.
-	 * Neither this nor the persistent parameter has any
+	 * is 15 seconds. Setting this parameter to -1 disables automatic retry. 
+	 * Neither this nor the persistent parameter has any 
 	 * effect when the extension is loaded dynamically via dl.
 	 * </p>
 	 * <p>
-	 * Each failed connection struct has its own timeout and before it has expired
-	 * the struct will be skipped when selecting backends to serve a request. Once
-	 * expired the connection will be successfully reconnected or marked as failed
-	 * for another retry_interval seconds. The typical
+	 * Each failed connection struct has its own timeout and before it has expired 
+	 * the struct will be skipped when selecting backends to serve a request. Once 
+	 * expired the connection will be successfully reconnected or marked as failed 
+	 * for another retry_interval seconds. The typical 
 	 * effect is that each web server child will retry the connection about every
 	 * retry_interval seconds when serving a page.
 	 * </p>
 	 * @param status bool[optional] <p>
 	 * Controls if the server should be flagged as online. Setting this parameter
-	 * to false and retry_interval to -1 allows a failed
-	 * server to be kept in the pool so as not to affect the key distribution
-	 * algorithm. Requests for this server will then failover or fail immediately
+	 * to false and retry_interval to -1 allows a failed 
+	 * server to be kept in the pool so as not to affect the key distribution 
+	 * algorithm. Requests for this server will then failover or fail immediately 
 	 * depending on the memcache.allow_failover setting.
 	 * Default to true, meaning the server should be considered online.
 	 * </p>
 	 * @param failure_callback callable[optional] <p>
-	 * Allows the user to specify a callback function to run upon encountering an
-	 * error. The callback is run before failover is attempted. The function takes
+	 * Allows the user to specify a callback function to run upon encountering an 
+	 * error. The callback is run before failover is attempted. The function takes 
 	 * two parameters, the hostname and port of the failed server.
 	 * </p>
 	 * @param timeoutms int[optional] <p>
@@ -184,21 +184,21 @@ class Memcache extends MemcachePool  {
 	 * </p>
 	 * @param retry_interval int[optional] <p>
 	 * Controls how often a failed server will be retried, the default value
-	 * is 15 seconds. Setting this parameter to -1 disables automatic retry.
-	 * Neither this nor the persistent parameter has any
+	 * is 15 seconds. Setting this parameter to -1 disables automatic retry. 
+	 * Neither this nor the persistent parameter has any 
 	 * effect when the extension is loaded dynamically via dl.
 	 * </p>
 	 * @param status bool[optional] <p>
 	 * Controls if the server should be flagged as online. Setting this parameter
-	 * to false and retry_interval to -1 allows a failed
-	 * server to be kept in the pool so as not to affect the key distribution
-	 * algoritm. Requests for this server will then failover or fail immediately
+	 * to false and retry_interval to -1 allows a failed 
+	 * server to be kept in the pool so as not to affect the key distribution 
+	 * algoritm. Requests for this server will then failover or fail immediately 
 	 * depending on the memcache.allow_failover setting.
 	 * Default to true, meaning the server should be considered online.
 	 * </p>
 	 * @param failure_callback callable[optional] <p>
-	 * Allows the user to specify a callback function to run upon encountering an
-	 * error. The callback is run before failover is attempted. The function takes
+	 * Allows the user to specify a callback function to run upon encountering an 
+	 * error. The callback is run before failover is attempted. The function takes 
 	 * two parameters, the hostname and port of the failed server.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -337,19 +337,19 @@ class Memcache extends MemcachePool  {
 	 * Get statistics of the server
 	 * @link http://www.php.net/manual/en/memcache.getstats.php
 	 * @param type string[optional] <p>
-	 * The type of statistics to fetch. Valid values are {reset,
+	 * The type of statistics to fetch. Valid values are {reset, 
 	 * malloc, maps, cachedump, slabs, items, sizes}. According to
-	 * the memcached protocol spec these additional arguments "are
+	 * the memcached protocol spec these additional arguments "are 
 	 * subject to change for the convenience of memcache developers".
 	 * </p>
 	 * @param slabid int[optional] <p>
-	 * Used in conjunction with type set to
+	 * Used in conjunction with type set to 
 	 * cachedump to identify the slab to dump from. The cachedump
-	 * command ties up the server and is strictly to be used for
+	 * command ties up the server and is strictly to be used for 
 	 * debugging purposes.
 	 * </p>
 	 * @param limit int[optional] <p>
-	 * Used in conjunction with type set to
+	 * Used in conjunction with type set to 
 	 * cachedump to limit the number of entries to dump.
 	 * </p>
 	 * @return array an associative array of server statistics or false on failure.
@@ -360,19 +360,19 @@ class Memcache extends MemcachePool  {
 	 * Get statistics from all servers in pool
 	 * @link http://www.php.net/manual/en/memcache.getextendedstats.php
 	 * @param type string[optional] <p>
-	 * The type of statistics to fetch. Valid values are {reset,
+	 * The type of statistics to fetch. Valid values are {reset, 
 	 * malloc, maps, cachedump, slabs, items, sizes}. According to
-	 * the memcached protocol spec these additional arguments "are
+	 * the memcached protocol spec these additional arguments "are 
 	 * subject to change for the convenience of memcache developers".
 	 * </p>
 	 * @param slabid int[optional] <p>
-	 * Used in conjunction with type set to
+	 * Used in conjunction with type set to 
 	 * cachedump to identify the slab to dump from. The cachedump
-	 * command ties up the server and is strictly to be used for
+	 * command ties up the server and is strictly to be used for 
 	 * debugging purposes.
 	 * </p>
 	 * @param limit int[optional] <p>
-	 * Used in conjunction with type set to
+	 * Used in conjunction with type set to 
 	 * cachedump to limit the number of entries to dump.
 	 * </p>
 	 * @return array a two-dimensional associative array of server statistics or false
@@ -384,9 +384,9 @@ class Memcache extends MemcachePool  {
 	 * Enable automatic compression of large values
 	 * @link http://www.php.net/manual/en/memcache.setcompressthreshold.php
 	 * @param threshold int <p>
-	 * Controls the minimum value length before attempting to compress automatically.
+	 * Controls the minimum value length before attempting to compress automatically. 
 	 * </p>
-	 * @param min_savings float[optional]
+	 * @param min_savings float[optional] 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function setcompressthreshold ($threshold, $min_savings = null) {}

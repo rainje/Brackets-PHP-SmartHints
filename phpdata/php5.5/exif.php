@@ -10,8 +10,8 @@
  * URL.
  * </p>
  * @param sections string[optional] <p>
- * Is a comma separated list of sections that need to be present in file
- * to produce a result array. If none of the requested
+ * Is a comma separated list of sections that need to be present in file 
+ * to produce a result array. If none of the requested 
  * sections could be found the return value is false.
  * <tr valign="top">
  * <td>FILE</td>
@@ -20,10 +20,10 @@
  * <tr valign="top">
  * <td>COMPUTED</td>
  * <td>
- * html, Width, Height, IsColor, and more if available. Height and
+ * html, Width, Height, IsColor, and more if available. Height and 
  * Width are computed the same way getimagesize
- * does so their values must not be part of any header returned.
- * Also, html is a height/width text string to be used inside normal
+ * does so their values must not be part of any header returned. 
+ * Also, html is a height/width text string to be used inside normal 
  * HTML.
  * </td>
  * </tr>
@@ -42,7 +42,7 @@
  * <td>THUMBNAIL</td>
  * <td>
  * A file is supposed to contain a thumbnail if it has a second IFD.
- * All tagged information about the embedded thumbnail is stored in
+ * All tagged information about the embedded thumbnail is stored in 
  * this section.
  * </td>
  * </tr>
@@ -60,9 +60,9 @@
  * </tr>
  * </p>
  * @param arrays bool[optional] <p>
- * Specifies whether or not each section becomes an array. The
+ * Specifies whether or not each section becomes an array. The 
  * sections COMPUTED,
- * THUMBNAIL, and COMMENT
+ * THUMBNAIL, and COMMENT 
  * always become arrays as they may contain values whose names conflict
  * with other sections.
  * </p>
@@ -70,9 +70,9 @@
  * When set to true the thumbnail itself is read. Otherwise, only the
  * tagged data is read.
  * </p>
- * @return array It returns an associative array where the array indexes are
- * the header names and the array values are the values associated with
- * those headers. If no data can be returned,
+ * @return array It returns an associative array where the array indexes are 
+ * the header names and the array values are the values associated with 
+ * those headers. If no data can be returned, 
  * exif_read_data will return false.
  */
 function exif_read_data ($filename, $sections = null, $arrays = null, $thumbnail = null) {}
@@ -115,7 +115,7 @@ function exif_tagname ($index) {}
  * The returned image type of the returned thumbnail. This is either
  * TIFF or JPEG.
  * </p>
- * @return string the embedded thumbnail, or false if the image contains no
+ * @return string the embedded thumbnail, or false if the image contains no 
  * thumbnail.
  */
 function exif_thumbnail ($filename, &$width = null, &$height = null, &$imagetype = null) {}

@@ -11,7 +11,7 @@ class XSLTProcessor  {
 	 * The imported style sheet as a DOMDocument or
 	 * SimpleXMLElement object.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function importStylesheet ($stylesheet) {}
 
@@ -101,14 +101,14 @@ class XSLTProcessor  {
 	 * Enables the ability to use PHP functions as XSLT functions
 	 * @link http://www.php.net/manual/en/xsltprocessor.registerphpfunctions.php
 	 * @param restrict mixed[optional] <p>
-	 * Use this parameter to only allow certain functions to be called from
+	 * Use this parameter to only allow certain functions to be called from 
 	 * XSLT.
 	 * </p>
 	 * <p>
 	 * This parameter can be either a string (a function name) or an array of
 	 * functions.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function registerPHPFunctions ($restrict = null) {}
 
@@ -125,15 +125,15 @@ class XSLTProcessor  {
 	/**
 	 * Set security preferences
 	 * @link http://www.php.net/manual/en/xsltprocessor.setsecurityprefs.php
-	 * @param securityPrefs int
-	 * @return int
+	 * @param securityPrefs int 
+	 * @return int 
 	 */
 	public function setSecurityPrefs ($securityPrefs) {}
 
 	/**
 	 * Get security preferences
 	 * @link http://www.php.net/manual/en/xsltprocessor.getsecurityprefs.php
-	 * @return int
+	 * @return int 
 	 */
 	public function getSecurityPrefs () {}
 

@@ -78,7 +78,7 @@ function bbcode_add_smiley ($bbcode_container, $smiley, $replace_by) {}
  * BBCode_Container resource, returned by bbcode_create.
  * </p>
  * @param flags int <p>
- * The flag set that must be applied to the bbcode_container options
+ * The flag set that must be applied to the bbcode_container options 
  * </p>
  * @param mode int[optional] <p>
  * One of the BBCODE_SET_FLAGS_* constant to set, unset
@@ -205,7 +205,7 @@ define ('BBCODE_ARG_HTML_QUOTE', 4);
  * escaped this permit the quote delimiter to be found in
  * the string escaping character is \ it can escape any
  * quoting character or itself, if found in front of a non
- * escapable character, it will be dropped.
+ * escapable character, it will be dropped. 
  * Default behaviour is not to use escaping.
  * @link http://www.php.net/manual/en/bbcode.constants.php
  */
@@ -251,7 +251,7 @@ define ('BBCODE_DEFAULT_SMILEYS_ON', 1024);
 define ('BBCODE_DEFAULT_SMILEYS_OFF', 2048);
 
 /**
- * This is a parser option disabling completely the
+ * This is a parser option disabling completely the 
  * smileys parsing.
  * @link http://www.php.net/manual/en/bbcode.constants.php
  */

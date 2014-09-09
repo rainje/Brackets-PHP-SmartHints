@@ -80,7 +80,7 @@ function finfo_buffer ($finfo, $string, $options, $context) {}
  * @param filename string <p>
  * Path to the tested file.
  * </p>
- * @return string the content type in MIME format, like
+ * @return string the content type in MIME format, like 
  * text/plain or application/octet-stream.
  */
 function mime_content_type ($filename) {}

@@ -226,7 +226,7 @@ function func_get_args () {}
  * @param string string <p>
  * The string being measured for length.
  * </p>
- * @return int The length of the string on success,
+ * @return int The length of the string on success, 
  * and 0 if the string is empty.
  */
 function strlen ($string) {}
@@ -326,9 +326,9 @@ function each (array &$array) {}
  * @link http://www.php.net/manual/en/function.error-reporting.php
  * @param level int[optional] <p>
  * The new error_reporting
- * level. It takes on either a bitmask, or named constants. Using named
- * constants is strongly encouraged to ensure compatibility for future
- * versions. As error levels are added, the range of integers increases,
+ * level. It takes on either a bitmask, or named constants. Using named 
+ * constants is strongly encouraged to ensure compatibility for future 
+ * versions. As error levels are added, the range of integers increases, 
  * so older integer-based error levels will not always behave as expected.
  * </p>
  * <p>
@@ -349,15 +349,15 @@ function error_reporting ($level = null) {}
  * The name of the constant.
  * </p>
  * @param value mixed <p>
- * The value of the constant; only scalar and null values are allowed.
- * Scalar values are integer,
- * float, string or boolean values. It is
- * possible to define resource constants, however it is not recommended
+ * The value of the constant; only scalar and null values are allowed. 
+ * Scalar values are integer, 
+ * float, string or boolean values. It is 
+ * possible to define resource constants, however it is not recommended 
  * and may cause unpredictable behavior.
  * </p>
  * @param case_insensitive bool[optional] <p>
- * If set to true, the constant will be defined case-insensitive.
- * The default behavior is case-sensitive; i.e.
+ * If set to true, the constant will be defined case-insensitive. 
+ * The default behavior is case-sensitive; i.e. 
  * CONSTANT and Constant represent
  * different values.
  * </p>
@@ -386,7 +386,7 @@ function defined ($name) {}
  * The tested object. This parameter may be omitted when inside a class.
  * </p>
  * @return string the name of the class of which object is an
- * instance. Returns false if object is not an
+ * instance. Returns false if object is not an 
  * object.
  * </p>
  * <p>
@@ -429,7 +429,7 @@ function get_parent_class ($object = null) {}
  * The method name
  * </p>
  * @return bool true if the method given by method_name
- * has been defined for the given object, false
+ * has been defined for the given object, false 
  * otherwise.
  */
 function method_exists ($object, $method_name) {}
@@ -471,7 +471,7 @@ function class_exists ($class_name, $autoload = null) {}
  * @param autoload bool[optional] <p>
  * Whether to call &link.autoload; or not by default.
  * </p>
- * @return bool true if the interface given by
+ * @return bool true if the interface given by 
  * interface_name has been defined, false otherwise.
  */
 function interface_exists ($interface_name, $autoload = null) {}
@@ -499,7 +499,7 @@ function trait_exists ($traitname, $autoload = null) {}
  * function, false otherwise.
  * </p>
  * <p>
- * This function will return false for constructs, such as
+ * This function will return false for constructs, such as 
  * include_once and echo.
  */
 function function_exists ($function_name) {}
@@ -527,7 +527,7 @@ function class_alias ($original, $alias, $autoload = null) {}
  * </p>
  * <p>
  * The script originally called is considered an "included file," so it will
- * be listed together with the files referenced by
+ * be listed together with the files referenced by 
  * include and family.
  * </p>
  * <p>
@@ -556,7 +556,7 @@ function get_required_files () {}
  * is not allowed. This also prevents from calling autoloader if the class doesn't exist.
  * </p>
  * @return bool This function returns true if the object object,
- * belongs to a class which is a subclass of
+ * belongs to a class which is a subclass of 
  * class_name, false otherwise.
  */
 function is_subclass_of ($object, $class_name, $allow_string = null) {}
@@ -587,7 +587,7 @@ function is_a ($object, $class_name, $allow_string = null) {}
  * </p>
  * @return array an associative array of declared properties visible from the
  * current scope, with their default value.
- * The resulting array elements are in the form of
+ * The resulting array elements are in the form of 
  * varname => value.
  * In case of an error, it returns false.
  */
@@ -599,7 +599,7 @@ function get_class_vars ($class_name) {}
  * @param object object <p>
  * An object instance.
  * </p>
- * @return array an associative array of defined object accessible non-static properties
+ * @return array an associative array of defined object accessible non-static properties 
  * for the specified object in scope. If a property has
  * not been assigned a value, it will be returned with a &null; value.
  */
@@ -620,8 +620,8 @@ function get_class_methods ($class_name) {}
  * Generates a user-level error/warning/notice message
  * @link http://www.php.net/manual/en/function.trigger-error.php
  * @param error_msg string <p>
- * The designated error message for this error. It's limited to 1024
- * bytes in length. Any additional characters beyond 1024 bytes will be
+ * The designated error message for this error. It's limited to 1024 
+ * bytes in length. Any additional characters beyond 1024 bytes will be 
  * truncated.
  * </p>
  * @param error_type int[optional] <p>
@@ -660,7 +660,7 @@ function user_error ($message, $error_type) {}
  * level of the error raised, as an integer.
  * @param error_types int[optional] <p>
  * Can be used to mask the triggering of the
- * error_handler function just like the error_reporting ini setting
+ * error_handler function just like the error_reporting ini setting 
  * controls which errors are shown. Without this mask set the
  * error_handler will be called for every error
  * regardless to the setting of the error_reporting setting.
@@ -779,11 +779,11 @@ function create_function ($args, $code) {}
  * </p>
  * @return string If the given handle is a resource, this function
  * will return a string representing its type. If the type is not identified
- * by this function, the return value will be the string
+ * by this function, the return value will be the string 
  * Unknown.
  * </p>
  * <p>
- * This function will return false and generate an error if
+ * This function will return false and generate an error if 
  * handle is not a resource.
  */
 function get_resource_type ($handle) {}
@@ -792,7 +792,7 @@ function get_resource_type ($handle) {}
  * Returns an array with the names of all modules compiled and loaded
  * @link http://www.php.net/manual/en/function.get-loaded-extensions.php
  * @param zend_extensions bool[optional] <p>
- * Only return Zend extensions, if not then regular extensions, like
+ * Only return Zend extensions, if not then regular extensions, like 
  * mysqli are listed. Defaults to false (return regular extensions).
  * </p>
  * @return array an indexed array of all the modules names.
@@ -826,7 +826,7 @@ function extension_loaded ($name) {}
  * <p>
  * This parameter must be in lowercase.
  * </p>
- * @return array an array with all the functions, or false if
+ * @return array an array with all the functions, or false if 
  * module_name is not a valid extension.
  */
 function get_extension_funcs ($module_name) {}
@@ -899,7 +899,7 @@ function get_defined_constants ($categorize = null) {}
  * </td>
  * </tr>
  * </table>
- * Before 5.3.6, the only values recognized are true or false, which are the same as
+ * Before 5.3.6, the only values recognized are true or false, which are the same as 
  * setting or not setting the DEBUG_BACKTRACE_PROVIDE_OBJECT option respectively.
  * </p>
  * @param limit int[optional] <p>
@@ -996,7 +996,7 @@ function debug_backtrace ($options = null, $limit = null) {}
  * As of 5.4.0, this parameter can be used to limit the number of stack frames printed.
  * By default (limit=0) it prints all stack frames.
  * </p>
- * @return void
+ * @return void 
  */
 function debug_print_backtrace ($options = null, $limit = null) {}
 
@@ -1017,14 +1017,14 @@ function gc_enabled () {}
 /**
  * Activates the circular reference collector
  * @link http://www.php.net/manual/en/function.gc-enable.php
- * @return void
+ * @return void 
  */
 function gc_enable () {}
 
 /**
  * Deactivates the circular reference collector
  * @link http://www.php.net/manual/en/function.gc-disable.php
- * @return void
+ * @return void 
  */
 function gc_disable () {}
 

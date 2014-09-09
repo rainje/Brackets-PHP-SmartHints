@@ -21,7 +21,7 @@ class SQLite3  {
 	 * An optional encryption key used when encrypting and decrypting an
 	 * SQLite database.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function open ($filename, $flags = null, $encryption_key = null) {}
 

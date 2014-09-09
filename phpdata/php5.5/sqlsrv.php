@@ -6,14 +6,14 @@
  * Opens a connection to a Microsoft SQL Server database
  * @link http://www.php.net/manual/en/function.sqlsrv-connect.php
  * @param serverName string <p>
- * The name of the server to which a connection is established. To connect
- * to a specific instance, follow the server name with a forward slash
+ * The name of the server to which a connection is established. To connect 
+ * to a specific instance, follow the server name with a forward slash 
  * and the instance name (e.g. serverName\sqlexpress).
  * </p>
  * @param connectionInfo array[optional] <p>
- * An associative array that specifies options for connecting to the server.
- * If values for the UID and PWD keys are not specified, the connection
- * will be attempted using Windows Authentication. For a complete list of supported
+ * An associative array that specifies options for connecting to the server. 
+ * If values for the UID and PWD keys are not specified, the connection 
+ * will be attempted using Windows Authentication. For a complete list of supported 
  * keys, see SQLSRV Connection Options.
  * </p>
  * @return resource A connection resource. If a connection cannot be successfully opened, false is returned.
@@ -51,7 +51,7 @@ function sqlsrv_commit ($conn) {}
 function sqlsrv_begin_transaction ($conn) {}
 
 /**
- * Rolls back a transaction that was begun with
+ * Rolls back a transaction that was begun with 
   <function>sqlsrv_begin_transaction</function>
  * @link http://www.php.net/manual/en/function.sqlsrv-rollback.php
  * @param conn resource <p>
@@ -65,14 +65,14 @@ function sqlsrv_rollback ($conn) {}
  * Returns error and warning information about the last SQLSRV operation performed
  * @link http://www.php.net/manual/en/function.sqlsrv-errors.php
  * @param errorsOrWarnings int[optional] <p>
- * Determines whether error information, warning information, or both are
- * returned. If this parameter is not supplied, both error information and
- * warning information are returned. The following are the supported values
+ * Determines whether error information, warning information, or both are 
+ * returned. If this parameter is not supplied, both error information and 
+ * warning information are returned. The following are the supported values 
  * for this parameter: SQLSRV_ERR_ALL, SQLSRV_ERR_ERRORS, SQLSRV_ERR_WARNINGS.
  * </p>
- * @return mixed If errors and/or warnings occurred on the last sqlsrv operation, an array of
- * arrays containing error information is returned. If no errors and/or warnings
- * occurred on the last sqlsrv operation, &null; is returned. The following table
+ * @return mixed If errors and/or warnings occurred on the last sqlsrv operation, an array of 
+ * arrays containing error information is returned. If no errors and/or warnings 
+ * occurred on the last sqlsrv operation, &null; is returned. The following table 
  * describes the structure of the returned arrays:
  * <table>
  * Array returned by sqlsrv_errors
@@ -82,17 +82,17 @@ function sqlsrv_rollback ($conn) {}
  * </tr>
  * <tr valign="top">
  * <td>SQLSTATE</td>
- * <td>For errors that originate from the ODBC driver, the SQLSTATE returned
- * by ODBC. For errors that originate from the Microsoft Drivers for PHP for
- * SQL Server, a SQLSTATE of IMSSP. For warnings that originate from the
+ * <td>For errors that originate from the ODBC driver, the SQLSTATE returned 
+ * by ODBC. For errors that originate from the Microsoft Drivers for PHP for 
+ * SQL Server, a SQLSTATE of IMSSP. For warnings that originate from the 
  * Microsoft Drivers for PHP for SQL Server, a SQLSTATE of 01SSP.
  * </td>
  * </tr>
  * <tr valign="top">
  * <td>code</td>
- * <td>For errors that originate from SQL Server, the native SQL Server
- * error code. For errors that originate from the ODBC driver, the error
- * code returned by ODBC. For errors that originate from the Microsoft Drivers
+ * <td>For errors that originate from SQL Server, the native SQL Server 
+ * error code. For errors that originate from the ODBC driver, the error 
+ * code returned by ODBC. For errors that originate from the Microsoft Drivers 
  * for PHP for SQL Server, the Microsoft Drivers for PHP for SQL Server error code.
  * </td>
  * </tr>
@@ -108,7 +108,7 @@ function &sqlsrv_errors ($errorsOrWarnings = null) {}
  * Changes the driver error handling and logging configurations
  * @link http://www.php.net/manual/en/function.sqlsrv-configure.php
  * @param setting string <p>
- * The name of the setting to set. The possible values are
+ * The name of the setting to set. The possible values are 
  * "WarningsReturnAsErrors", "LogSubsystems", and "LogSeverity".
  * </p>
  * @param value mixed <p>
@@ -125,18 +125,18 @@ function &sqlsrv_errors ($errorsOrWarnings = null) {}
  * </tr>
  * <tr valign="top">
  * <td>LogSubsystems</td>
- * <td>SQLSRV_LOG_SYSTEM_ALL (-1)
- * SQLSRV_LOG_SYSTEM_CONN (2)
- * SQLSRV_LOG_SYSTEM_INIT (1)
- * SQLSRV_LOG_SYSTEM_OFF (0)
- * SQLSRV_LOG_SYSTEM_STMT (4)
+ * <td>SQLSRV_LOG_SYSTEM_ALL (-1) 
+ * SQLSRV_LOG_SYSTEM_CONN (2) 
+ * SQLSRV_LOG_SYSTEM_INIT (1) 
+ * SQLSRV_LOG_SYSTEM_OFF (0) 
+ * SQLSRV_LOG_SYSTEM_STMT (4) 
  * SQLSRV_LOG_SYSTEM_UTIL (8)</td>
  * </tr>
  * <tr valign="top">
  * <td>LogSeverity</td>
- * <td>SQLSRV_LOG_SEVERITY_ALL (-1)
- * SQLSRV_LOG_SEVERITY_ERROR (1)
- * SQLSRV_LOG_SEVERITY_NOTICE (4)
+ * <td>SQLSRV_LOG_SEVERITY_ALL (-1) 
+ * SQLSRV_LOG_SEVERITY_ERROR (1) 
+ * SQLSRV_LOG_SEVERITY_NOTICE (4) 
  * SQLSRV_LOG_SEVERITY_WARNING (2)</td>
  * </tr>
  * </table>
@@ -149,10 +149,10 @@ function sqlsrv_configure ($setting, $value) {}
  * Returns the value of the specified configuration setting
  * @link http://www.php.net/manual/en/function.sqlsrv-get-config.php
  * @param setting string <p>
- * The name of the setting for which the value is returned. For a list of
+ * The name of the setting for which the value is returned. For a list of 
  * configurable settings, see sqlsrv_configure.
  * </p>
- * @return mixed the value of the specified setting. If an invalid setting is specified,
+ * @return mixed the value of the specified setting. If an invalid setting is specified, 
  * false is returned.
  */
 function sqlsrv_get_config ($setting) {}
@@ -167,11 +167,11 @@ function sqlsrv_get_config ($setting) {}
  * The string that defines the query to be prepared and executed.
  * </p>
  * @param params array[optional] <p>
- * An array specifying parameter information when executing a parameterized
+ * An array specifying parameter information when executing a parameterized 
  * query. Array elements can be any of the following:
  * A literal value
  * A PHP variable
- * An array with this structure:
+ * An array with this structure: 
  * array($value [, $direction [, $phpType [, $sqlType]]])
  * The following table describes the elements in the array structure above:
  * </p>
@@ -187,23 +187,23 @@ function sqlsrv_get_config ($setting) {}
  * </tr>
  * <tr valign="top">
  * <td>$direction (optional)</td>
- * <td>One of the following SQLSRV constants used to indicate the
- * parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT.
+ * <td>One of the following SQLSRV constants used to indicate the 
+ * parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT. 
  * The default value is SQLSRV_PARAM_IN. </td>
  * </tr>
  * <tr valign="top">
  * <td>$phpType (optional)</td>
- * <td>A SQLSRV_PHPTYPE_* constant that specifies PHP data type of the
+ * <td>A SQLSRV_PHPTYPE_* constant that specifies PHP data type of the 
  * returned value.</td>
  * </tr>
  * <tr valign="top">
  * <td>$sqlType (optional)</td>
- * <td>A SQLSRV_SQLTYPE_* constant that specifies the SQL Server data
+ * <td>A SQLSRV_SQLTYPE_* constant that specifies the SQL Server data 
  * type of the input value.</td>
  * </tr>
  * </table>
  * @param options array[optional] <p>
- * An array specifing query property options. The supported keys are described
+ * An array specifing query property options. The supported keys are described 
  * in the following table:
  * </p>
  * <table>
@@ -216,21 +216,21 @@ function sqlsrv_get_config ($setting) {}
  * <tr valign="top">
  * <td>QueryTimeout</td>
  * <td>A positive integer value.</td>
- * <td>Sets the query timeout in seconds. By default, the driver will
+ * <td>Sets the query timeout in seconds. By default, the driver will 
  * wait indefinitely for results.</td>
  * </tr>
  * <tr valign="top">
  * <td>SendStreamParamsAtExec</td>
  * <td>true or false (the default is true)</td>
- * <td>Configures the driver to send all stream data at execution (true),
- * or to send stream data in chunks (false). By default, the value is set to true.
+ * <td>Configures the driver to send all stream data at execution (true), 
+ * or to send stream data in chunks (false). By default, the value is set to true. 
  * For more information, see sqlsrv_send_stream_data.</td>
  * </tr>
  * <tr valign="top">
  * <td>Scrollable</td>
- * <td>SQLSRV_CURSOR_FORWARD, SQLSRV_CURSOR_STATIC, SQLSRV_CURSOR_DYNAMIC,
+ * <td>SQLSRV_CURSOR_FORWARD, SQLSRV_CURSOR_STATIC, SQLSRV_CURSOR_DYNAMIC, 
  * or SQLSRV_CURSOR_KEYSET</td>
- * <td>See Specifying a Cursor Type and Selecting Rows
+ * <td>See Specifying a Cursor Type and Selecting Rows 
  * in the Microsoft SQLSRV documentation.</td>
  * </tr>
  * </table>
@@ -258,11 +258,11 @@ function sqlsrv_execute ($stmt) {}
  * The string that defines the query to be prepared and executed.
  * </p>
  * @param params array[optional] <p>
- * An array specifying parameter information when executing a parameterized query.
+ * An array specifying parameter information when executing a parameterized query. 
  * Array elements can be any of the following:
  * A literal value
  * A PHP variable
- * An array with this structure:
+ * An array with this structure: 
  * array($value [, $direction [, $phpType [, $sqlType]]])
  * The following table describes the elements in the array structure above:
  * </p>
@@ -278,23 +278,23 @@ function sqlsrv_execute ($stmt) {}
  * </tr>
  * <tr valign="top">
  * <td>$direction (optional)</td>
- * <td>One of the following SQLSRV constants used to indicate the
- * parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT.
+ * <td>One of the following SQLSRV constants used to indicate the 
+ * parameter direction: SQLSRV_PARAM_IN, SQLSRV_PARAM_OUT, SQLSRV_PARAM_INOUT. 
  * The default value is SQLSRV_PARAM_IN.</td>
  * </tr>
  * <tr valign="top">
  * <td>$phpType (optional)</td>
- * <td>A SQLSRV_PHPTYPE_* constant that specifies PHP data type of the
+ * <td>A SQLSRV_PHPTYPE_* constant that specifies PHP data type of the 
  * returned value.</td>
  * </tr>
  * <tr valign="top">
  * <td>$sqlType (optional)</td>
- * <td>A SQLSRV_SQLTYPE_* constant that specifies the SQL Server data
+ * <td>A SQLSRV_SQLTYPE_* constant that specifies the SQL Server data 
  * type of the input value.</td>
  * </tr>
  * </table>
  * @param options array[optional] <p>
- * An array specifing query property options. The supported keys are described
+ * An array specifing query property options. The supported keys are described 
  * in the following table:
  * </p>
  * <table>
@@ -307,21 +307,21 @@ function sqlsrv_execute ($stmt) {}
  * <tr valign="top">
  * <td>QueryTimeout</td>
  * <td>A positive integer value.</td>
- * <td>Sets the query timeout in seconds. By default, the driver will
+ * <td>Sets the query timeout in seconds. By default, the driver will 
  * wait indefinitely for results.</td>
  * </tr>
  * <tr valign="top">
  * <td>SendStreamParamsAtExec</td>
  * <td>true or false (the default is true)</td>
- * <td>Configures the driver to send all stream data at execution (true),
- * or to send stream data in chunks (false). By default, the value is set
+ * <td>Configures the driver to send all stream data at execution (true), 
+ * or to send stream data in chunks (false). By default, the value is set 
  * to true. For more information, see sqlsrv_send_stream_data.</td>
  * </tr>
  * <tr valign="top">
  * <td>Scrollable</td>
- * <td>SQLSRV_CURSOR_FORWARD, SQLSRV_CURSOR_STATIC, SQLSRV_CURSOR_DYNAMIC,
+ * <td>SQLSRV_CURSOR_FORWARD, SQLSRV_CURSOR_STATIC, SQLSRV_CURSOR_DYNAMIC, 
  * or SQLSRV_CURSOR_KEYSET</td>
- * <td>See Specifying
+ * <td>See Specifying 
  * a Cursor Type and Selecting Rows in the Microsoft SQLSRV documentation.</td>
  * </tr>
  * </table>
@@ -333,12 +333,12 @@ function &sqlsrv_query ($conn, $sql, array $params = null, array $options = null
  * Makes the next row in a result set available for reading
  * @link http://www.php.net/manual/en/function.sqlsrv-fetch.php
  * @param stmt resource <p>
- * A statement resource created by executing sqlsrv_query
+ * A statement resource created by executing sqlsrv_query 
  * or sqlsrv_execute.
  * </p>
  * @param row int[optional] <p>
- * The row to be accessed. This parameter can only be used if the specified
- * statement was prepared with a scrollable cursor. In that case, this parameter
+ * The row to be accessed. This parameter can only be used if the specified 
+ * statement was prepared with a scrollable cursor. In that case, this parameter 
  * can take on one of the following values:
  * SQLSRV_SCROLL_NEXT
  * SQLSRV_SCROLL_PRIOR
@@ -353,7 +353,7 @@ function &sqlsrv_query ($conn, $sql, array $params = null, array $options = null
  * SQLSRV_SCROLL_RELATIVE. Note that the first row in
  * a result set has index 0.
  * </p>
- * @return mixed true if the next row of a result set was successfully retrieved,
+ * @return mixed true if the next row of a result set was successfully retrieved, 
  * false if an error occurs, and &null; if there are no more rows in the result set.
  */
 function sqlsrv_fetch ($stmt, $row = null, $offset = null) {}
@@ -362,19 +362,19 @@ function sqlsrv_fetch ($stmt, $row = null, $offset = null) {}
  * Gets field data from the currently selected row
  * @link http://www.php.net/manual/en/function.sqlsrv-get-field.php
  * @param stmt resource <p>
- * A statement resource returned by sqlsrv_query or
+ * A statement resource returned by sqlsrv_query or 
  * sqlsrv_execute.
  * </p>
  * @param fieldIndex int <p>
- * The index of the field to be retrieved. Field indices start at 0. Fields
- * must be accessed in order. i.e. If you access field index 1, then field
+ * The index of the field to be retrieved. Field indices start at 0. Fields 
+ * must be accessed in order. i.e. If you access field index 1, then field 
  * index 0 will not be available.
  * </p>
  * @param getAsType int[optional] <p>
- * The PHP data type for the returned field data. If this parameter is not
+ * The PHP data type for the returned field data. If this parameter is not 
  * set, the field data will be returned as its default PHP data type.
- * For information about default PHP data types, see
- * Default PHP Data Types
+ * For information about default PHP data types, see 
+ * Default PHP Data Types 
  * in the Microsoft SQLSRV documentation.
  * </p>
  * @return mixed data from the specified field on success. Returns false otherwise.
@@ -388,21 +388,21 @@ function &sqlsrv_get_field ($stmt, $fieldIndex, $getAsType = null) {}
  * A statement resource returned by sqlsrv_query or sqlsrv_prepare.
  * </p>
  * @param fetchType int[optional] <p>
- * A predefined constant specifying the type of array to return. Possible
- * values are SQLSRV_FETCH_ASSOC,
- * SQLSRV_FETCH_NUMERIC, and
+ * A predefined constant specifying the type of array to return. Possible 
+ * values are SQLSRV_FETCH_ASSOC, 
+ * SQLSRV_FETCH_NUMERIC, and 
  * SQLSRV_FETCH_BOTH (the default).
  * </p>
  * <p>
- * A fetch type of SQLSRV_FETCH_ASSOC should not be used when consuming a
+ * A fetch type of SQLSRV_FETCH_ASSOC should not be used when consuming a 
  * result set with multiple columns of the same name.
  * </p>
  * @param row int[optional] <p>
- * Specifies the row to access in a result set that uses a scrollable cursor.
- * Possible values are SQLSRV_SCROLL_NEXT,
- * SQLSRV_SCROLL_PRIOR, SQLSRV_SCROLL_FIRST,
- * SQLSRV_SCROLL_LAST, SQLSRV_SCROLL_ABSOLUTE and,
- * SQLSRV_SCROLL_RELATIVE (the default). When this parameter
+ * Specifies the row to access in a result set that uses a scrollable cursor. 
+ * Possible values are SQLSRV_SCROLL_NEXT, 
+ * SQLSRV_SCROLL_PRIOR, SQLSRV_SCROLL_FIRST, 
+ * SQLSRV_SCROLL_LAST, SQLSRV_SCROLL_ABSOLUTE and, 
+ * SQLSRV_SCROLL_RELATIVE (the default). When this parameter 
  * is specified, the fetchType must be explicitly defined.
  * </p>
  * @param offset int[optional] <p>
@@ -411,7 +411,7 @@ function &sqlsrv_get_field ($stmt, $fieldIndex, $getAsType = null) {}
  * SQLSRV_SCROLL_RELATIVE. Note that the first row in
  * a result set has index 0.
  * </p>
- * @return array an array on success, &null; if there are no more rows to return, and
+ * @return array an array on success, &null; if there are no more rows to return, and 
  * false if an error occurs.
  */
 function &sqlsrv_fetch_array ($stmt, $fetchType = null, $row = null, $offset = null) {}
@@ -420,21 +420,21 @@ function &sqlsrv_fetch_array ($stmt, $fetchType = null, $row = null, $offset = n
  * Retrieves the next row of data in a result set as an object
  * @link http://www.php.net/manual/en/function.sqlsrv-fetch-object.php
  * @param stmt resource <p>
- * A statement resource created by sqlsrv_query or
+ * A statement resource created by sqlsrv_query or 
  * sqlsrv_execute.
  * </p>
  * @param className string[optional] <p>
- * The name of the class to instantiate. If no class name is specified,
+ * The name of the class to instantiate. If no class name is specified, 
  * stdClass is instantiated.
  * </p>
  * @param ctorParams array[optional] <p>
- * Values passed to the constructor of the specified class. If the constructor
- * of the specified class takes parameters, the ctorParams array must be
+ * Values passed to the constructor of the specified class. If the constructor 
+ * of the specified class takes parameters, the ctorParams array must be 
  * supplied.
  * </p>
  * @param row int[optional] <p>
- * The row to be accessed. This parameter can only be used if the specified
- * statement was prepared with a scrollable cursor. In that case, this parameter
+ * The row to be accessed. This parameter can only be used if the specified 
+ * statement was prepared with a scrollable cursor. In that case, this parameter 
  * can take on one of the following values:
  * SQLSRV_SCROLL_NEXT
  * SQLSRV_SCROLL_PRIOR
@@ -449,7 +449,7 @@ function &sqlsrv_fetch_array ($stmt, $fetchType = null, $row = null, $offset = n
  * SQLSRV_SCROLL_RELATIVE. Note that the first row in
  * a result set has index 0.
  * </p>
- * @return mixed an object on success, &null; if there are no more rows to return,
+ * @return mixed an object on success, &null; if there are no more rows to return, 
  * and false if an error occurs or if the specified class does not exist.
  */
 function &sqlsrv_fetch_object ($stmt, $className = null, array $ctorParams = null, $row = null, $offset = null) {}
@@ -458,10 +458,10 @@ function &sqlsrv_fetch_object ($stmt, $className = null, array $ctorParams = nul
  * Indicates whether the specified statement has rows
  * @link http://www.php.net/manual/en/function.sqlsrv-has-rows.php
  * @param stmt resource <p>
- * A statement resource returned by sqlsrv_query or
+ * A statement resource returned by sqlsrv_query or 
  * sqlsrv_execute.
  * </p>
- * @return bool true if the specified statement has rows and false if the statement
+ * @return bool true if the specified statement has rows and false if the statement 
  * does not have rows or if an error occurred.
  */
 function sqlsrv_has_rows ($stmt) {}
@@ -470,8 +470,8 @@ function sqlsrv_has_rows ($stmt) {}
  * Retrieves the number of fields (columns) on a statement
  * @link http://www.php.net/manual/en/function.sqlsrv-num-fields.php
  * @param stmt resource <p>
- * The statment for which the number of fields is returned.
- * sqlsrv_num_fields can be called on a statement before
+ * The statment for which the number of fields is returned. 
+ * sqlsrv_num_fields can be called on a statement before 
  * or after statement execution.
  * </p>
  * @return mixed the number of fields on success. Returns false otherwise.
@@ -484,7 +484,7 @@ function sqlsrv_num_fields ($stmt) {}
  * @param stmt resource <p>
  * The statment on which the next result is being called.
  * </p>
- * @return mixed true if the next result was successfully retrieved, false if an error
+ * @return mixed true if the next result was successfully retrieved, false if an error 
  * occurred, and &null; if there are no more results to retrieve.
  */
 function sqlsrv_next_result ($stmt) {}
@@ -493,26 +493,26 @@ function sqlsrv_next_result ($stmt) {}
  * Retrieves the number of rows in a result set
  * @link http://www.php.net/manual/en/function.sqlsrv-num-rows.php
  * @param stmt resource <p>
- * The statement for which the row count is returned. The statment resource
- * must be created with a static or keyset cursor. For more information, see
- * sqlsrv_query, sqlsrv_prepare, or
- * Specifying a Cursor Type and Selecting Rows
+ * The statement for which the row count is returned. The statment resource 
+ * must be created with a static or keyset cursor. For more information, see 
+ * sqlsrv_query, sqlsrv_prepare, or 
+ * Specifying a Cursor Type and Selecting Rows 
  * in the Microsoft SQLSRV documentation.
  * </p>
- * @return mixed the number of rows retrieved on success and false if an error occurred.
+ * @return mixed the number of rows retrieved on success and false if an error occurred. 
  * If a forward cursor (the default) or dynamic cursor is used, false is returned.
  */
 function sqlsrv_num_rows ($stmt) {}
 
 /**
- * Returns the number of rows modified by the last INSERT, UPDATE, or
+ * Returns the number of rows modified by the last INSERT, UPDATE, or 
   DELETE query executed
  * @link http://www.php.net/manual/en/function.sqlsrv-rows-affected.php
  * @param stmt resource <p>
  * The executed statement resource for which the number of affected rows is returned.
  * </p>
- * @return int the number of rows affected by the last INSERT, UPDATE, or DELETE query.
- * If no rows were affected, 0 is returned. If the number of affected rows cannot
+ * @return int the number of rows affected by the last INSERT, UPDATE, or DELETE query. 
+ * If no rows were affected, 0 is returned. If the number of affected rows cannot 
  * be determined, -1 is returned. If an error occurred, false is returned.
  */
 function sqlsrv_rows_affected ($stmt) {}
@@ -533,8 +533,8 @@ function SQLSRV_PHPTYPE_STRING ($encoding) {}
  * @param conn resource <p>
  * The connection about which information is returned.
  * </p>
- * @return array an associative array with keys described in the table below.
- * Returns false otherwise.
+ * @return array an associative array with keys described in the table below. 
+ * Returns false otherwise. 
  * <table>
  * Array returned by sqlsrv_client_info
  * <tr valign="top">
@@ -600,22 +600,22 @@ function sqlsrv_cancel ($stmt) {}
  * Frees all resources for the specified statement
  * @link http://www.php.net/manual/en/function.sqlsrv-free-stmt.php
  * @param stmt resource <p>
- * The statment for which resources are freed.
- * Note that &null; is a valid parameter value. This allows the function to be
- * called multiple times in a script.
+ * The statment for which resources are freed. 
+ * Note that &null; is a valid parameter value. This allows the function to be 
+ * called multiple times in a script. 
  * </p>
  * @return bool Returns true on success or false on failure.
  */
 function sqlsrv_free_stmt ($stmt) {}
 
 /**
- * Retrieves metadata for the fields of a statement prepared by
+ * Retrieves metadata for the fields of a statement prepared by 
   <function>sqlsrv_prepare</function> or <function>sqlsrv_query</function>
  * @link http://www.php.net/manual/en/function.sqlsrv-field-metadata.php
  * @param stmt resource <p>
  * The statment resource for which metadata is returned.
  * </p>
- * @return mixed an array of arrays is returned on success. Otherwise, false is returned.
+ * @return mixed an array of arrays is returned on success. Otherwise, false is returned. 
  * Each returned array is described by the following table:
  * <table>
  * Array returned by sqlsrv_field_metadata
@@ -633,7 +633,7 @@ function sqlsrv_free_stmt ($stmt) {}
  * </tr>
  * <tr valign="top">
  * <td>Size</td>
- * <td>The number of characters for fields of character type, the number of
+ * <td>The number of characters for fields of character type, the number of 
  * bytes for fields of binary type, or &null; for other types.</td>
  * </tr>
  * <tr valign="top">
@@ -646,11 +646,11 @@ function sqlsrv_free_stmt ($stmt) {}
  * </tr>
  * <tr valign="top">
  * <td>Nullable</td>
- * <td>An enumeration indicating whether the column is nullable, not nullable,
+ * <td>An enumeration indicating whether the column is nullable, not nullable, 
  * or if it is not known.</td>
  * </tr>
  * </table>
- * For more information, see sqlsrv_field_metadata
+ * For more information, see sqlsrv_field_metadata 
  * in the Microsoft SQLSRV documentation.
  */
 function &sqlsrv_field_metadata ($stmt) {}
@@ -659,7 +659,7 @@ function &sqlsrv_field_metadata ($stmt) {}
  * Sends data from parameter streams to the server
  * @link http://www.php.net/manual/en/function.sqlsrv-send-stream-data.php
  * @param stmt resource <p>
- * A statement resource returned by sqlsrv_query or
+ * A statement resource returned by sqlsrv_query or 
  * sqlsrv_execute.
  * </p>
  * @return bool true if there is more data to send and false if there is not.

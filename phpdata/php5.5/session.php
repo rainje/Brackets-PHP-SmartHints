@@ -150,7 +150,7 @@ class SessionHandler implements SessionHandlerInterface, SessionIdInterface {
  * Get and/or set the current session name
  * @link http://www.php.net/manual/en/function.session-name.php
  * @param name string[optional] <p>
- * The session name references the name of the session, which is
+ * The session name references the name of the session, which is 
  * used in cookies and URLs (e.g. PHPSESSID). It
  * should contain only alphanumeric characters; it should be short and
  * descriptive (i.e. for users with enabled cookie warnings).
@@ -263,19 +263,19 @@ function session_destroy () {}
 /**
  * Free all session variables
  * @link http://www.php.net/manual/en/function.session-unset.php
- * @return void
+ * @return void 
  */
 function session_unset () {}
 
 /**
  * Sets user-level session storage functions
  * @link http://www.php.net/manual/en/function.session-set-save-handler.php
- * @param open callable
- * @param close callable
- * @param read callable
- * @param write callable
- * @param destroy callable
- * @param gc callable
+ * @param open callable 
+ * @param close callable 
+ * @param read callable 
+ * @param write callable 
+ * @param destroy callable 
+ * @param gc callable 
  * @return bool Returns true on success or false on failure.
  */
 function session_set_save_handler ($open, $close, $read, $write, $destroy, $gc) {}
@@ -361,7 +361,7 @@ function session_cache_expire ($new_cache_expire = null) {}
  * httponly
  * flag when setting the session cookie.
  * </p>
- * @return void
+ * @return void 
  */
 function session_set_cookie_params ($lifetime, $path = null, $domain = null, $secure = null, $httponly = null) {}
 
@@ -386,7 +386,7 @@ function session_get_cookie_params () {}
 /**
  * Write session data and end session
  * @link http://www.php.net/manual/en/function.session-write-close.php
- * @return void
+ * @return void 
  */
 function session_write_close () {}
 
@@ -399,7 +399,7 @@ function session_status () {}
 /**
  * Session shutdown function
  * @link http://www.php.net/manual/en/function.session-register-shutdown.php
- * @return void
+ * @return void 
  */
 function session_register_shutdown () {}
 

@@ -121,7 +121,7 @@ class AMQPConnection  {
 	/**
 	 * Set the amqp virtual host
 	 * @link http://www.php.net/manual/en/amqpconnection.setvhost.php
-	 * @param vhost string
+	 * @param vhost string 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function setVhost ($vhost) {}
@@ -171,7 +171,7 @@ class AMQPChannel  {
 	/**
 	 * Check the channel connection
 	 * @link http://www.php.net/manual/en/amqpchannel.isconnected.php
-	 * @return void
+	 * @return void 
 	 */
 	public function isConnected () {}
 
@@ -358,7 +358,7 @@ class AMQPQueue  {
 	 * @param flags int[optional] <p>
 	 * A bitmask of any of the flags: AMQP_NOACK.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function consume ($callback, $flags = null) {}
 
@@ -436,7 +436,7 @@ class AMQPQueue  {
 	 * Declare a new queue
 	 * @link http://www.php.net/manual/en/amqpqueue.declare.php
 	 * @return int the message count.
-	 * @deprecated
+	 * @deprecated 
 	 */
 	public function declare () {}
 
@@ -653,7 +653,7 @@ class AMQPExchange  {
 	 * <td>headers</td>
 	 * <td>custom attributes to pass along with message</td>
 	 * <td>array</td>
-	 * </tr>
+	 * </tr> 
 	 * </table>
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -664,7 +664,7 @@ class AMQPExchange  {
 	 * Declare a new exchange on the broker.
 	 * @link http://www.php.net/manual/en/amqpexchange.declare.php
 	 * @return int Returns true on success or false on failure.
-	 * @deprecated
+	 * @deprecated 
 	 */
 	public function declare () {}
 
@@ -793,7 +793,7 @@ class AMQPEnvelope  {
 	/**
 	 * Get a specific message header
 	 * @link http://www.php.net/manual/en/amqpenvelope.getheader.php
-	 * @param header_key string
+	 * @param header_key string 
 	 * @return string The contents of the specified header or false if not set.
 	 */
 	public function getHeader ($header_key) {}

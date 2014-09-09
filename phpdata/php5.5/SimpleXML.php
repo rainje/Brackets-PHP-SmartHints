@@ -51,12 +51,12 @@ class SimpleXMLElement implements Traversable {
 	 * Creates a prefix/ns context for the next XPath query
 	 * @link http://www.php.net/manual/en/simplexmlelement.registerxpathnamespace.php
 	 * @param prefix string <p>
-	 * The namespace prefix to use in the XPath query for the namespace given in
+	 * The namespace prefix to use in the XPath query for the namespace given in 
 	 * ns.
 	 * </p>
 	 * @param ns string <p>
 	 * The namespace to use for the XPath query. This must match a namespace in
-	 * use by the XML document or the XPath query using
+	 * use by the XML document or the XPath query using 
 	 * prefix will not return any results.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -93,7 +93,7 @@ class SimpleXMLElement implements Traversable {
 	 * ns will be regarded as a namespace
 	 * URL.
 	 * </p>
-	 * @return SimpleXMLElement a SimpleXMLElement element, whether the node
+	 * @return SimpleXMLElement a SimpleXMLElement element, whether the node 
 	 * has children or not.
 	 */
 	public function children ($ns = null, $is_prefix = null) {}
@@ -102,10 +102,10 @@ class SimpleXMLElement implements Traversable {
 	 * Returns namespaces used in document
 	 * @link http://www.php.net/manual/en/simplexmlelement.getnamespaces.php
 	 * @param recursive bool[optional] <p>
-	 * If specified, returns all namespaces used in parent and child nodes.
+	 * If specified, returns all namespaces used in parent and child nodes. 
 	 * Otherwise, returns only namespaces used in root node.
 	 * </p>
-	 * @return array The getNamespaces method returns an array of
+	 * @return array The getNamespaces method returns an array of 
 	 * namespace names with their associated URIs.
 	 */
 	public function getNamespaces ($recursive = null) {}
@@ -114,14 +114,14 @@ class SimpleXMLElement implements Traversable {
 	 * Returns namespaces declared in document
 	 * @link http://www.php.net/manual/en/simplexmlelement.getdocnamespaces.php
 	 * @param recursive bool[optional] <p>
-	 * If specified, returns all namespaces declared in parent and child nodes.
+	 * If specified, returns all namespaces declared in parent and child nodes. 
 	 * Otherwise, returns only namespaces declared in root node.
 	 * </p>
 	 * @param from_root bool[optional] <p>
 	 * Allows you to recursively check namespaces under a child node instead of
 	 * from the root of the XML doc.
 	 * </p>
-	 * @return array The getDocNamespaces method returns an array
+	 * @return array The getDocNamespaces method returns an array 
 	 * of namespace names with their associated URIs.
 	 */
 	public function getDocNamespaces ($recursive = null, $from_root = null) {}
@@ -129,7 +129,7 @@ class SimpleXMLElement implements Traversable {
 	/**
 	 * Gets the name of the XML element
 	 * @link http://www.php.net/manual/en/simplexmlelement.getname.php
-	 * @return string The getName method returns as a string the
+	 * @return string The getName method returns as a string the 
 	 * name of the XML tag referenced by the SimpleXMLElement object.
 	 */
 	public function getName () {}
@@ -163,7 +163,7 @@ class SimpleXMLElement implements Traversable {
 	 * @param namespace string[optional] <p>
 	 * If specified, the namespace to which the attribute belongs.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function addAttribute ($name, $value = null, $namespace = null) {}
 
@@ -188,7 +188,7 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	/**
 	 * Rewind to the first element
 	 * @link http://www.php.net/manual/en/simplexmliterator.rewind.php
-	 * @return void
+	 * @return void 
 	 */
 	public function rewind () {}
 
@@ -216,7 +216,7 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	/**
 	 * Move to next element
 	 * @link http://www.php.net/manual/en/simplexmliterator.next.php
-	 * @return void
+	 * @return void 
 	 */
 	public function next () {}
 
@@ -282,12 +282,12 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	 * Creates a prefix/ns context for the next XPath query
 	 * @link http://www.php.net/manual/en/simplexmlelement.registerxpathnamespace.php
 	 * @param prefix string <p>
-	 * The namespace prefix to use in the XPath query for the namespace given in
+	 * The namespace prefix to use in the XPath query for the namespace given in 
 	 * ns.
 	 * </p>
 	 * @param ns string <p>
 	 * The namespace to use for the XPath query. This must match a namespace in
-	 * use by the XML document or the XPath query using
+	 * use by the XML document or the XPath query using 
 	 * prefix will not return any results.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -324,7 +324,7 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	 * ns will be regarded as a namespace
 	 * URL.
 	 * </p>
-	 * @return SimpleXMLElement a SimpleXMLElement element, whether the node
+	 * @return SimpleXMLElement a SimpleXMLElement element, whether the node 
 	 * has children or not.
 	 */
 	public function children ($ns = null, $is_prefix = null) {}
@@ -333,10 +333,10 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	 * Returns namespaces used in document
 	 * @link http://www.php.net/manual/en/simplexmlelement.getnamespaces.php
 	 * @param recursive bool[optional] <p>
-	 * If specified, returns all namespaces used in parent and child nodes.
+	 * If specified, returns all namespaces used in parent and child nodes. 
 	 * Otherwise, returns only namespaces used in root node.
 	 * </p>
-	 * @return array The getNamespaces method returns an array of
+	 * @return array The getNamespaces method returns an array of 
 	 * namespace names with their associated URIs.
 	 */
 	public function getNamespaces ($recursive = null) {}
@@ -345,14 +345,14 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	 * Returns namespaces declared in document
 	 * @link http://www.php.net/manual/en/simplexmlelement.getdocnamespaces.php
 	 * @param recursive bool[optional] <p>
-	 * If specified, returns all namespaces declared in parent and child nodes.
+	 * If specified, returns all namespaces declared in parent and child nodes. 
 	 * Otherwise, returns only namespaces declared in root node.
 	 * </p>
 	 * @param from_root bool[optional] <p>
 	 * Allows you to recursively check namespaces under a child node instead of
 	 * from the root of the XML doc.
 	 * </p>
-	 * @return array The getDocNamespaces method returns an array
+	 * @return array The getDocNamespaces method returns an array 
 	 * of namespace names with their associated URIs.
 	 */
 	public function getDocNamespaces ($recursive = null, $from_root = null) {}
@@ -360,7 +360,7 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	/**
 	 * Gets the name of the XML element
 	 * @link http://www.php.net/manual/en/simplexmlelement.getname.php
-	 * @return string The getName method returns as a string the
+	 * @return string The getName method returns as a string the 
 	 * name of the XML tag referenced by the SimpleXMLElement object.
 	 */
 	public function getName () {}
@@ -394,7 +394,7 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
 	 * @param namespace string[optional] <p>
 	 * If specified, the namespace to which the attribute belongs.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function addAttribute ($name, $value = null, $namespace = null) {}
 
@@ -430,8 +430,8 @@ class SimpleXMLIterator extends SimpleXMLElement implements Traversable, Recursi
  * </p>
  * @param class_name string[optional] <p>
  * You may use this optional parameter so that
- * simplexml_load_file will return an object of
- * the specified class. That class should extend the
+ * simplexml_load_file will return an object of 
+ * the specified class. That class should extend the 
  * SimpleXMLElement class.
  * </p>
  * @param options int[optional] <p>
@@ -458,8 +458,8 @@ function simplexml_load_file ($filename, $class_name = null, $options = null, $n
  * </p>
  * @param class_name string[optional] <p>
  * You may use this optional parameter so that
- * simplexml_load_string will return an object of
- * the specified class. That class should extend the
+ * simplexml_load_string will return an object of 
+ * the specified class. That class should extend the 
  * SimpleXMLElement class.
  * </p>
  * @param options int[optional] <p>
@@ -486,8 +486,8 @@ function simplexml_load_string ($data, $class_name = null, $options = null, $ns 
  * </p>
  * @param class_name string[optional] <p>
  * You may use this optional parameter so that
- * simplexml_import_dom will return an object of
- * the specified class. That class should extend the
+ * simplexml_import_dom will return an object of 
+ * the specified class. That class should extend the 
  * SimpleXMLElement class.
  * </p>
  * @return SimpleXMLElement a SimpleXMLElement or false on failure.

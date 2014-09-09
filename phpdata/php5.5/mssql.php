@@ -7,14 +7,14 @@
  * @link http://www.php.net/manual/en/function.mssql-connect.php
  * @param servername string[optional] <p>
  * The MS SQL server. It can also include a port number, e.g.
- * hostname:port (Linux), or
+ * hostname:port (Linux), or 
  * hostname,port (Windows).
  * </p>
  * @param username string[optional] <p>
- * The username.
+ * The username. 
  * </p>
  * @param password string[optional] <p>
- * The password.
+ * The password. 
  * </p>
  * @param new_link bool[optional] <p>
  * If a second call is made to mssql_connect with the
@@ -32,14 +32,14 @@ function mssql_connect ($servername = null, $username = null, $password = null, 
  * Open persistent MS SQL connection
  * @link http://www.php.net/manual/en/function.mssql-pconnect.php
  * @param servername string[optional] <p>
- * The MS SQL server. It can also include a port number. e.g.
+ * The MS SQL server. It can also include a port number. e.g. 
  * hostname:port.
  * </p>
  * @param username string[optional] <p>
- * The username.
+ * The username. 
  * </p>
  * @param password string[optional] <p>
- * The password.
+ * The password. 
  * </p>
  * @param new_link bool[optional] <p>
  * If a second call is made to mssql_pconnect with
@@ -104,8 +104,8 @@ function mssql_select_db ($database_name, $link_identifier = null) {}
  * An SQL query.
  * </p>
  * @param link_identifier resource[optional] <p>
- * A MS SQL link identifier, returned by
- * mssql_connect or
+ * A MS SQL link identifier, returned by 
+ * mssql_connect or 
  * mssql_pconnect.
  * </p>
  * <p>
@@ -158,7 +158,7 @@ function mssql_free_result ($result) {}
 /**
  * Returns the last message from the server
  * @link http://www.php.net/manual/en/function.mssql-get-last-message.php
- * @return string last error message from server, or an empty string if
+ * @return string last error message from server, or an empty string if 
  * no error messages are returned from MSSQL.
  */
 function mssql_get_last_message () {}
@@ -225,7 +225,7 @@ function mssql_fetch_row ($result) {}
  * </p>
  * @param result_type int[optional] <p>
  * The type of array that is to be fetched. It's a constant and can take
- * the following values: MSSQL_ASSOC,
+ * the following values: MSSQL_ASSOC, 
  * MSSQL_NUM, and
  * MSSQL_BOTH.
  * </p>
@@ -345,8 +345,8 @@ function mssql_field_seek ($result, $field_offset) {}
  * </p>
  * <p>
  * Specifying a numeric offset for the field
- * argument is much quicker than specifying a
- * fieldname or
+ * argument is much quicker than specifying a 
+ * fieldname or 
  * tablename.fieldname argument.
  * </p>
  * @return string the contents of the specified cell.
@@ -371,7 +371,7 @@ function mssql_next_result ($result_id) {}
  * @param severity int <p>
  * The new error severity.
  * </p>
- * @return void
+ * @return void 
  */
 function mssql_min_error_severity ($severity) {}
 
@@ -381,7 +381,7 @@ function mssql_min_error_severity ($severity) {}
  * @param severity int <p>
  * The new message severity.
  * </p>
- * @return void
+ * @return void 
  */
 function mssql_min_message_severity ($severity) {}
 
@@ -390,10 +390,10 @@ function mssql_min_message_severity ($severity) {}
  * @link http://www.php.net/manual/en/function.mssql-init.php
  * @param sp_name string <p>
  * Stored procedure name, like ownew.sp_name or
- * otherdb.owner.sp_name.
+ * otherdb.owner.sp_name. 
  * </p>
  * @param link_identifier resource[optional] <p>
- * A MS SQL link identifier, returned by
+ * A MS SQL link identifier, returned by 
  * mssql_connect.
  * </p>
  * @return resource a resource identifier "statement", used in subsequent calls to
@@ -451,12 +451,12 @@ function mssql_bind ($stmt, $param_name, &$var, $type, $is_output = null, $is_nu
  * Executes a stored procedure on a MS SQL server database
  * @link http://www.php.net/manual/en/function.mssql-execute.php
  * @param stmt resource <p>
- * Statement handle obtained with mssql_init.
+ * Statement handle obtained with mssql_init. 
  * </p>
  * @param skip_results bool[optional] <p>
  * Whenever to skip the results or not.
  * </p>
- * @return mixed
+ * @return mixed 
  */
 function mssql_execute ($stmt, $skip_results = null) {}
 

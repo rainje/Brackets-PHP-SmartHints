@@ -72,7 +72,7 @@ class mysqli  {
 	/**
 	 * Turns on or off auto-committing database modifications
 	 * @link http://www.php.net/manual/en/mysqli.autocommit.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param mode bool <p>
 	 * Whether to turn on auto-commit or not.
 	 * </p>
@@ -94,7 +94,7 @@ class mysqli  {
 	/**
 	 * Changes the user of the specified database connection
 	 * @link http://www.php.net/manual/en/mysqli.change-user.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param user string <p>
 	 * The MySQL user name.
 	 * </p>
@@ -116,7 +116,7 @@ class mysqli  {
 	/**
 	 * Returns the default character set for the database connection
 	 * @link http://www.php.net/manual/en/mysqli.character-set-name.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return string The default character set for the current connection
 	 */
 	public function character_set_name (mysqli $link) {}
@@ -124,7 +124,7 @@ class mysqli  {
 	/**
 	 * Closes a previously opened database connection
 	 * @link http://www.php.net/manual/en/mysqli.close.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function close (mysqli $link) {}
@@ -132,7 +132,7 @@ class mysqli  {
 	/**
 	 * Commits the current transaction
 	 * @link http://www.php.net/manual/en/mysqli.commit.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param flags int[optional] <p>
 	 * A bitmask of MYSQLI_TRANS_COR_* constants.
 	 * </p>
@@ -156,7 +156,7 @@ class mysqli  {
 	/**
 	 * Dump debugging information into the log
 	 * @link http://www.php.net/manual/en/mysqli.dump-debug-info.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function dump_debug_info (mysqli $link) {}
@@ -174,7 +174,7 @@ class mysqli  {
 	/**
 	 * Returns a character set object
 	 * @link http://www.php.net/manual/en/mysqli.get-charset.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return object The function returns a character set object with the following properties:
 	 * charset
 	 * <p>Character set name</p>
@@ -196,7 +196,7 @@ class mysqli  {
 	/**
 	 * Get MySQL client info
 	 * @link http://www.php.net/manual/en/mysqli.get-client-info.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return string A string that represents the MySQL client library version
 	 */
 	public function get_client_info (mysqli $link) {}
@@ -204,7 +204,7 @@ class mysqli  {
 	/**
 	 * Returns statistics about the client connection
 	 * @link http://www.php.net/manual/en/mysqli.get-connection-stats.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return array an array with connection stats if success, false otherwise.
 	 */
 	public function get_connection_stats (mysqli $link) {}
@@ -214,8 +214,8 @@ class mysqli  {
 	/**
 	 * Get result of SHOW WARNINGS
 	 * @link http://www.php.net/manual/en/mysqli.get-warnings.php
-	 * @param link mysqli
-	 * @return mysqli_warning
+	 * @param link mysqli 
+	 * @return mysqli_warning 
 	 */
 	public function get_warnings (mysqli $link) {}
 
@@ -229,8 +229,8 @@ class mysqli  {
 	/**
 	 * Asks the server to kill a MySQL thread
 	 * @link http://www.php.net/manual/en/mysqli.kill.php
-	 * @param link mysqli
-	 * @param processid int
+	 * @param link mysqli 
+	 * @param processid int 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function kill (mysqli $link, $processid) {}
@@ -238,7 +238,7 @@ class mysqli  {
 	/**
 	 * Performs a query on the database
 	 * @link http://www.php.net/manual/en/mysqli.multi-query.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param query string <p>
 	 * The query, as a string.
 	 * </p>
@@ -264,7 +264,7 @@ class mysqli  {
 	/**
 	 * Check if there are any more query results from a multi query
 	 * @link http://www.php.net/manual/en/mysqli.more-results.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return bool true if one or more result sets are available from a previous call to
 	 * mysqli_multi_query, otherwise false.
 	 */
@@ -273,7 +273,7 @@ class mysqli  {
 	/**
 	 * Prepare next result from multi_query
 	 * @link http://www.php.net/manual/en/mysqli.next-result.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function next_result (mysqli $link) {}
@@ -281,7 +281,7 @@ class mysqli  {
 	/**
 	 * Set options
 	 * @link http://www.php.net/manual/en/mysqli.options.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param option int <p>
 	 * The option that you want to set. It can be one of the following values:
 	 * <table>
@@ -333,7 +333,7 @@ class mysqli  {
 	/**
 	 * Pings a server connection, or tries to reconnect if the connection has gone down
 	 * @link http://www.php.net/manual/en/mysqli.ping.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function ping (mysqli $link) {}
@@ -365,7 +365,7 @@ class mysqli  {
 	/**
 	 * Prepare an SQL statement for execution
 	 * @link http://www.php.net/manual/en/mysqli.prepare.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param query string <p>
 	 * The query, as a string.
 	 * </p>
@@ -392,7 +392,7 @@ class mysqli  {
 	 * operands of a binary operator such as the = equal
 	 * sign. The latter restriction is necessary because it would be
 	 * impossible to determine the parameter type. It's not allowed to
-	 * compare marker with NULL by
+	 * compare marker with NULL by 
 	 * ? IS NULL too. In general, parameters are legal
 	 * only in Data Manipulation Language (DML) statements, and not in Data
 	 * Definition Language (DDL) statements.
@@ -404,7 +404,7 @@ class mysqli  {
 	/**
 	 * Performs a query on the database
 	 * @link http://www.php.net/manual/en/mysqli.query.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param query string <p>
 	 * The query string.
 	 * </p>
@@ -437,7 +437,7 @@ class mysqli  {
 	/**
 	 * Opens a connection to a mysql server
 	 * @link http://www.php.net/manual/en/mysqli.real-connect.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param host string[optional] <p>
 	 * Can be either a host name or an IP address. Passing the &null; value
 	 * or the string "localhost" to this parameter, the local host is
@@ -530,7 +530,7 @@ class mysqli  {
 	/**
 	 * Get result from async query
 	 * @link http://www.php.net/manual/en/mysqli.reap-async-query.php
-	 * @param link mysql
+	 * @param link mysql 
 	 * @return mysqli_result mysqli_result in success, false otherwise.
 	 */
 	public function reap_async_query ($link) {}
@@ -543,7 +543,7 @@ class mysqli  {
 	/**
 	 * Execute an SQL query
 	 * @link http://www.php.net/manual/en/mysqli.real-query.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param query string <p>
 	 * The query, as a string.
 	 * </p>
@@ -566,7 +566,7 @@ class mysqli  {
 	/**
 	 * Rolls back current transaction
 	 * @link http://www.php.net/manual/en/mysqli.rollback.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param flags int[optional] <p>
 	 * A bitmask of MYSQLI_TRANS_COR_* constants.
 	 * </p>
@@ -589,7 +589,7 @@ class mysqli  {
 	/**
 	 * Selects the default database for database queries
 	 * @link http://www.php.net/manual/en/mysqli.select-db.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param dbname string <p>
 	 * The database name.
 	 * </p>
@@ -600,7 +600,7 @@ class mysqli  {
 	/**
 	 * Sets the default client character set
 	 * @link http://www.php.net/manual/en/mysqli.set-charset.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param charset string <p>
 	 * The charset to be set as default.
 	 * </p>
@@ -619,7 +619,7 @@ class mysqli  {
 	/**
 	 * Used for establishing secure connections using SSL
 	 * @link http://www.php.net/manual/en/mysqli.ssl-set.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @param key string <p>
 	 * The path name to the key file.
 	 * </p>
@@ -645,7 +645,7 @@ class mysqli  {
 	/**
 	 * Gets the current system status
 	 * @link http://www.php.net/manual/en/mysqli.stat.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return string A string describing the server status. false if an error occurred.
 	 */
 	public function stat (mysqli $link) {}
@@ -653,7 +653,7 @@ class mysqli  {
 	/**
 	 * Initializes a statement and returns an object for use with mysqli_stmt_prepare
 	 * @link http://www.php.net/manual/en/mysqli.stmt-init.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return mysqli_stmt an object.
 	 */
 	public function stmt_init (mysqli $link) {}
@@ -661,7 +661,7 @@ class mysqli  {
 	/**
 	 * Transfers a result set from the last query
 	 * @link http://www.php.net/manual/en/mysqli.store-result.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return mysqli_result a buffered result object or false if an error occurred.
 	 * </p>
 	 * <p>
@@ -690,7 +690,7 @@ class mysqli  {
 	/**
 	 * Initiate a result set retrieval
 	 * @link http://www.php.net/manual/en/mysqli.use-result.php
-	 * @param link mysqli
+	 * @param link mysqli 
 	 * @return mysqli_result an unbuffered result object or false if an error occurred.
 	 */
 	public function use_result (mysqli $link) {}
@@ -698,7 +698,7 @@ class mysqli  {
 	/**
 	 * Refreshes
 	 * @link http://www.php.net/manual/en/mysqli.refresh.php
-	 * @param link resource
+	 * @param link resource 
 	 * @param options int <p>
 	 * The options to refresh, using the MYSQLI_REFRESH_* constants as documented
 	 * within the MySQLi constants documentation.
@@ -748,14 +748,14 @@ class mysqli_result implements Traversable {
 	/**
 	 * Frees the memory associated with a result
 	 * @link http://www.php.net/manual/en/mysqli-result.free.php
-	 * @return void
+	 * @return void 
 	 */
 	public function free () {}
 
 	/**
 	 * Adjusts the result pointer to an arbitrary row in the result
 	 * @link http://www.php.net/manual/en/mysqli-result.data-seek.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param offset int <p>
 	 * The field offset. Must be between zero and the total number of rows
 	 * minus one (0..mysqli_num_rows - 1).
@@ -767,7 +767,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Returns the next field in the result set
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-field.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @return object an object which contains field definition information or false
 	 * if no field information is available.
 	 * </p>
@@ -837,7 +837,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Returns an array of objects representing the fields in a result set
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-fields.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @return array an array of objects which contains field definition information or
 	 * false if no field information is available.
 	 * </p>
@@ -895,13 +895,13 @@ class mysqli_result implements Traversable {
 	/**
 	 * Fetch meta-data for a single field
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-field-direct.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param fieldnr int <p>
-	 * The field number. This value must be in the range from
+	 * The field number. This value must be in the range from 
 	 * 0 to number of fields - 1.
 	 * </p>
 	 * @return object an object which contains field definition information or false
-	 * if no field information for specified fieldnr is
+	 * if no field information for specified fieldnr is 
 	 * available.
 	 * </p>
 	 * <p>
@@ -962,7 +962,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Fetches all result rows as an associative array, a numeric array, or both
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-all.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param resulttype int[optional] <p>
 	 * This optional parameter is a constant indicating what type of array
 	 * should be produced from the current row data. The possible values for
@@ -976,7 +976,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Fetch a result row as an associative, a numeric array, or both
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-array.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param resulttype int[optional] <p>
 	 * This optional parameter is a constant indicating what type of array
 	 * should be produced from the current row data. The possible values for
@@ -987,7 +987,7 @@ class mysqli_result implements Traversable {
 	 * By using the MYSQLI_ASSOC constant this function
 	 * will behave identically to the mysqli_fetch_assoc,
 	 * while MYSQLI_NUM will behave identically to the
-	 * mysqli_fetch_row function. The final option
+	 * mysqli_fetch_row function. The final option 
 	 * MYSQLI_BOTH will create a single array with the
 	 * attributes of both.
 	 * </p>
@@ -999,7 +999,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Fetch a result row as an associative array
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-assoc.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @return array an associative array of strings representing the fetched row in the result
 	 * set, where each key in the array represents the name of one of the result
 	 * set's columns or &null; if there are no more rows in resultset.
@@ -1015,7 +1015,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Returns the current row of a result set as an object
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-object.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param class_name string[optional] <p>
 	 * The name of the class to instantiate, set the properties of and return.
 	 * If not specified, a stdClass object is returned.
@@ -1032,7 +1032,7 @@ class mysqli_result implements Traversable {
 	/**
 	 * Get a result row as an enumerated array
 	 * @link http://www.php.net/manual/en/mysqli-result.fetch-row.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @return mixed mysqli_fetch_row returns an array of strings that corresponds to the fetched row
 	 * or &null; if there are no more rows in result set.
 	 */
@@ -1041,9 +1041,9 @@ class mysqli_result implements Traversable {
 	/**
 	 * Set result pointer to a specified field offset
 	 * @link http://www.php.net/manual/en/mysqli-result.field-seek.php
-	 * @param result mysqli_result
+	 * @param result mysqli_result 
 	 * @param fieldnr int <p>
-	 * The field number. This value must be in the range from
+	 * The field number. This value must be in the range from 
 	 * 0 to number of fields - 1.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -1072,7 +1072,7 @@ class mysqli_stmt  {
 	/**
 	 * Used to get the current value of a statement attribute
 	 * @link http://www.php.net/manual/en/mysqli-stmt.attr-get.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param attr int <p>
 	 * The attribute that you want to get.
 	 * </p>
@@ -1083,7 +1083,7 @@ class mysqli_stmt  {
 	/**
 	 * Used to modify the behavior of a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.attr-set.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param attr int <p>
 	 * The attribute that you want to set. It can have one of the following values:
 	 * <table>
@@ -1131,14 +1131,14 @@ class mysqli_stmt  {
 	 * is unnecessary.
 	 * </p>
 	 * @param mode int <p>The value to assign to the attribute.</p>
-	 * @return bool
+	 * @return bool 
 	 */
 	public function attr_set (mysqli_stmt $stmt, $attr, $mode) {}
 
 	/**
 	 * Binds variables to a prepared statement as parameters
 	 * @link http://www.php.net/manual/en/mysqli-stmt.bind-param.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param types string <p>
 	 * A string that contains one or more characters which specify the types
 	 * for the corresponding bind variables:
@@ -1167,10 +1167,10 @@ class mysqli_stmt  {
 	 * </table>
 	 * </p>
 	 * @param var1 mixed <p>
-	 * The number of variables and length of string
+	 * The number of variables and length of string 
 	 * types must match the parameters in the statement.
 	 * </p>
-	 * @param _ mixed[optional]
+	 * @param _ mixed[optional] 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function bind_param (mysqli_stmt $stmt, $types, &$var1, &$_ = null) {}
@@ -1178,11 +1178,11 @@ class mysqli_stmt  {
 	/**
 	 * Binds variables to a prepared statement for result storage
 	 * @link http://www.php.net/manual/en/mysqli-stmt.bind-result.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param var1 mixed <p>
 	 * The variable to be bound.
 	 * </p>
-	 * @param _ mixed[optional]
+	 * @param _ mixed[optional] 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function bind_result (mysqli_stmt $stmt, &$var1, &$_ = null) {}
@@ -1190,7 +1190,7 @@ class mysqli_stmt  {
 	/**
 	 * Closes a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.close.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function close (mysqli_stmt $stmt) {}
@@ -1198,19 +1198,19 @@ class mysqli_stmt  {
 	/**
 	 * Seeks to an arbitrary row in statement result set
 	 * @link http://www.php.net/manual/en/mysqli-stmt.data-seek.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param offset int <p>
 	 * Must be between zero and the total number of rows minus one (0..
 	 * mysqli_stmt_num_rows - 1).
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function data_seek (mysqli_stmt $stmt, $offset) {}
 
 	/**
 	 * Executes a prepared Query
 	 * @link http://www.php.net/manual/en/mysqli-stmt.execute.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function execute (mysqli_stmt $stmt) {}
@@ -1218,23 +1218,23 @@ class mysqli_stmt  {
 	/**
 	 * Fetch results from a prepared statement into the bound variables
 	 * @link http://www.php.net/manual/en/mysqli-stmt.fetch.php
-	 * @param stmt mysqli_stmt
-	 * @return bool
+	 * @param stmt mysqli_stmt 
+	 * @return bool 
 	 */
 	public function fetch (mysqli_stmt $stmt) {}
 
 	/**
 	 * Get result of SHOW WARNINGS
 	 * @link http://www.php.net/manual/en/mysqli-stmt.get-warnings.php
-	 * @param stmt mysqli_stmt
-	 * @return object
+	 * @param stmt mysqli_stmt 
+	 * @return object 
 	 */
 	public function get_warnings (mysqli_stmt $stmt) {}
 
 	/**
 	 * Returns result set metadata from a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.result-metadata.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return mysqli_result a result object or false if an error occurred.
 	 */
 	public function result_metadata (mysqli_stmt $stmt) {}
@@ -1258,7 +1258,7 @@ class mysqli_stmt  {
 	/**
 	 * Send data in blocks
 	 * @link http://www.php.net/manual/en/mysqli-stmt.send-long-data.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param param_nr int <p>
 	 * Indicates which parameter to associate the data with. Parameters are
 	 * numbered beginning with 0.
@@ -1273,15 +1273,15 @@ class mysqli_stmt  {
 	/**
 	 * Frees stored result memory for the given statement handle
 	 * @link http://www.php.net/manual/en/mysqli-stmt.free-result.php
-	 * @param stmt mysqli_stmt
-	 * @return void
+	 * @param stmt mysqli_stmt 
+	 * @return void 
 	 */
 	public function free_result (mysqli_stmt $stmt) {}
 
 	/**
 	 * Resets a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.reset.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function reset (mysqli_stmt $stmt) {}
@@ -1289,7 +1289,7 @@ class mysqli_stmt  {
 	/**
 	 * Prepare an SQL statement for execution
 	 * @link http://www.php.net/manual/en/mysqli-stmt.prepare.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @param query string <p>
 	 * The query, as a string. It must consist of a single SQL statement.
 	 * </p>
@@ -1324,7 +1324,7 @@ class mysqli_stmt  {
 	/**
 	 * Transfers a result set from a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.store-result.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function store_result (mysqli_stmt $stmt) {}
@@ -1332,7 +1332,7 @@ class mysqli_stmt  {
 	/**
 	 * Gets a result set from a prepared statement
 	 * @link http://www.php.net/manual/en/mysqli-stmt.get-result.php
-	 * @param stmt mysqli_stmt
+	 * @param stmt mysqli_stmt 
 	 * @return mysqli_result a resultset  or false on failure.
 	 */
 	public function get_result (mysqli_stmt $stmt) {}
@@ -1536,7 +1536,7 @@ function mysqli_get_client_info ($link) {}
 /**
  * Returns the MySQL client version as an integer
  * @link http://www.php.net/manual/en/mysqli.get-client-version.php
- * @param link mysqli
+ * @param link mysqli 
  * @return int A number that represents the MySQL client library version in format:
  * main_version*10000 + minor_version *100 + sub_version.
  * For example, 4.1.0 is returned as 40100.
@@ -1966,7 +1966,7 @@ define ('MYSQLI_SERVER_PUBLIC_KEY', 27);
 
 /**
  * <p>
- * Use SSL (encrypted protocol). This option should not be set by application programs;
+ * Use SSL (encrypted protocol). This option should not be set by application programs; 
  * it is set internally in the MySQL client library
  * </p>
  * @link http://www.php.net/manual/en/mysqli.constants.php
@@ -1987,7 +1987,7 @@ define ('MYSQLI_CLIENT_COMPRESS', 32);
  * (instead of wait_timeout seconds) of inactivity before
  * closing the connection. The client's session
  * wait_timeout variable will be set to
- * the value of the session interactive_timeout variable.
+ * the value of the session interactive_timeout variable. 
  * </p>
  * @link http://www.php.net/manual/en/mysqli.constants.php
  */
@@ -1995,7 +1995,7 @@ define ('MYSQLI_CLIENT_INTERACTIVE', 1024);
 
 /**
  * <p>
- * Allow spaces after function names. Makes all functions names reserved words.
+ * Allow spaces after function names. Makes all functions names reserved words. 
  * </p>
  * @link http://www.php.net/manual/en/mysqli.constants.php
  */
@@ -2045,7 +2045,7 @@ define ('MYSQLI_NUM', 2);
 
 /**
  * <p>
- * Columns are returned into the array having both a numerical index and the fieldname as the associative index.
+ * Columns are returned into the array having both a numerical index and the fieldname as the associative index. 
  * </p>
  * @link http://www.php.net/manual/en/mysqli.constants.php
  */
@@ -2589,7 +2589,7 @@ define ('MYSQLI_REFRESH_THREADS', 32);
 
 /**
  * <p>
- * On a slave replication server: resets the master server information, and
+ * On a slave replication server: resets the master server information, and 
  * restarts the slave. Like executing the RESET SLAVE
  * SQL statement.
  * </p>

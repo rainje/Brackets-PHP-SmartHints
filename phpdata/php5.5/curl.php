@@ -43,7 +43,7 @@ class CURLFile  {
 	 * @link http://www.php.net/manual/en/curlfile.setmimetype.php
 	 * @param mime string <p>
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setMimeType ($mime) {}
 
@@ -59,14 +59,14 @@ class CURLFile  {
 	 * @link http://www.php.net/manual/en/curlfile.setpostfilename.php
 	 * @param postname string <p>
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setPostFilename ($postname) {}
 
 	/**
 	 * Unserialization handler
 	 * @link http://www.php.net/manual/en/curlfile.wakeup.php
-	 * @return void
+	 * @return void 
 	 */
 	public function __wakeup () {}
 
@@ -77,7 +77,7 @@ class CURLFile  {
  * @link http://www.php.net/manual/en/function.curl-init.php
  * @param url string[optional] <p>
  * If provided, the CURLOPT_URL option will be set
- * to its value. You can manually set this using the
+ * to its value. You can manually set this using the 
  * curl_setopt function.
  * </p>
  * <p>
@@ -91,7 +91,7 @@ function curl_init ($url = null) {}
 /**
  * Copy a cURL handle along with all of its preferences
  * @link http://www.php.net/manual/en/function.curl-copy-handle.php
- * @param ch resource
+ * @param ch resource 
  * @return resource a new cURL handle.
  */
 function curl_copy_handle ($ch) {}
@@ -101,7 +101,7 @@ function curl_copy_handle ($ch) {}
  * @link http://www.php.net/manual/en/function.curl-version.php
  * @param age int[optional] <p>
  * </p>
- * @return array an associative array with the following elements:
+ * @return array an associative array with the following elements: 
  * <tr valign="top">
  * <td>Indice</td>
  * <td>Value description</td>
@@ -148,7 +148,7 @@ function curl_version ($age = null) {}
 /**
  * Set an option for a cURL transfer
  * @link http://www.php.net/manual/en/function.curl-setopt.php
- * @param ch resource
+ * @param ch resource 
  * @param option int <p>
  * The CURLOPT_XXX option to set.
  * </p>
@@ -196,15 +196,15 @@ function curl_version ($age = null) {}
  * true to output SSL certification information to STDERR
  * on secure transfers.
  * </td>
- * Added in cURL 7.19.1.
- * Available since PHP 5.3.2.
+ * Added in cURL 7.19.1. 
+ * Available since PHP 5.3.2. 
  * Requires CURLOPT_VERBOSE to be on to have an effect.
  * </td>
  * </tr>
  * <tr valign="top">
  * CURLOPT_CONNECT_ONLY</td>
- * true tells the library to perform all the required proxy authentication
- * and connection setup, but no data transfer. This option is implemented for
+ * true tells the library to perform all the required proxy authentication 
+ * and connection setup, but no data transfer. This option is implemented for 
  * HTTP, SMTP and POP3.
  * </td>
  * Added in 7.15.2.
@@ -598,15 +598,15 @@ function curl_version ($age = null) {}
  * <tr valign="top">
  * CURLOPT_PROTOCOLS</td>
  * <p>
- * Bitmask of CURLPROTO_* values. If used, this bitmask
+ * Bitmask of CURLPROTO_* values. If used, this bitmask 
  * limits what protocols libcurl may use in the transfer. This allows you to have
  * a libcurl built to support a wide range of protocols but still limit specific
  * transfers to only be allowed to use a subset of them. By default libcurl will
- * accept all protocols it supports.
+ * accept all protocols it supports. 
  * See also CURLOPT_REDIR_PROTOCOLS.
  * </p>
  * <p>
- * Valid protocol options are:
+ * Valid protocol options are: 
  * CURLPROTO_HTTP,
  * CURLPROTO_HTTPS,
  * CURLPROTO_FTP,
@@ -659,7 +659,7 @@ function curl_version ($age = null) {}
  * This allows you to limit specific transfers to only be allowed to use a subset
  * of protocols in redirections. By default libcurl will allow all protocols
  * except for FILE and SCP. This is a difference compared to pre-7.19.4 versions
- * which unconditionally would follow to all protocols supported.
+ * which unconditionally would follow to all protocols supported. 
  * See also CURLOPT_PROTOCOLS for protocol constant values.
  * </td>
  * Added in cURL 7.19.4.
@@ -750,14 +750,14 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_SSH_AUTH_TYPES</td>
- * A bitmask consisting of one or more of
- * CURLSSH_AUTH_PUBLICKEY,
- * CURLSSH_AUTH_PASSWORD,
- * CURLSSH_AUTH_HOST,
- * CURLSSH_AUTH_KEYBOARD. Set to
+ * A bitmask consisting of one or more of 
+ * CURLSSH_AUTH_PUBLICKEY, 
+ * CURLSSH_AUTH_PASSWORD, 
+ * CURLSSH_AUTH_HOST, 
+ * CURLSSH_AUTH_KEYBOARD. Set to 
  * CURLSSH_AUTH_ANY to let libcurl pick one.
  * </td>
- * Added in cURL 7.16.1.
+ * Added in cURL 7.16.1. 
  * </td>
  * </tr>
  * <tr valign="top">
@@ -765,8 +765,8 @@ function curl_version ($age = null) {}
  * Allows an application to select what kind of IP addresses to use when
  * resolving host names. This is only interesting when using host names that
  * resolve addresses using more than one version of IP, possible values are
- * CURL_IPRESOLVE_WHATEVER,
- * CURL_IPRESOLVE_V4,
+ * CURL_IPRESOLVE_WHATEVER, 
+ * CURL_IPRESOLVE_V4, 
  * CURL_IPRESOLVE_V6, by default
  * CURL_IPRESOLVE_WHATEVER.
  * </td>
@@ -819,7 +819,7 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_COOKIEJAR</td>
- * The name of a file to save all internal cookies to when the handle is closed,
+ * The name of a file to save all internal cookies to when the handle is closed, 
  * e.g. after a call to curl_close.
  * </td>
  * </td>
@@ -881,10 +881,10 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_KEYPASSWD</td>
- * The password required to use the CURLOPT_SSLKEY
- * or CURLOPT_SSH_PRIVATE_KEYFILE private key.
+ * The password required to use the CURLOPT_SSLKEY 
+ * or CURLOPT_SSH_PRIVATE_KEYFILE private key. 
  * </td>
- * Added in cURL 7.16.1.
+ * Added in cURL 7.16.1. 
  * </td>
  * </tr>
  * <tr valign="top">
@@ -909,7 +909,7 @@ function curl_version ($age = null) {}
  * use the full path. The filetype can be explicitly specified by
  * following the filename with the type in the format
  * ';type=mimetype'. This parameter can either be
- * passed as a urlencoded string like 'para1=val1&amp;para2=val2&amp;...'
+ * passed as a urlencoded string like 'para1=val1&amp;para2=val2&amp;...' 
  * or as an array with the field name as key and field data as value.
  * If value is an array, the
  * Content-Type header will be set to
@@ -959,32 +959,32 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_SSH_HOST_PUBLIC_KEY_MD5</td>
- * A string containing 32 hexadecimal digits. The string should be the
- * MD5 checksum of the remote host's public key, and libcurl will reject
- * the connection to the host unless the md5sums match.
+ * A string containing 32 hexadecimal digits. The string should be the 
+ * MD5 checksum of the remote host's public key, and libcurl will reject 
+ * the connection to the host unless the md5sums match. 
  * This option is only for SCP and SFTP transfers.
  * </td>
- * Added in cURL 7.17.1.
+ * Added in cURL 7.17.1. 
  * </td>
  * </tr>
  * <tr valign="top">
  * CURLOPT_SSH_PUBLIC_KEYFILE</td>
- * The file name for your public key. If not used, libcurl defaults to
- * $HOME/.ssh/id_dsa.pub if the HOME environment variable is set,
+ * The file name for your public key. If not used, libcurl defaults to 
+ * $HOME/.ssh/id_dsa.pub if the HOME environment variable is set, 
  * and just "id_dsa.pub" in the current directory if HOME is not set.
  * </td>
- * Added in cURL 7.16.1.
+ * Added in cURL 7.16.1. 
  * </td>
  * </tr>
  * <tr valign="top">
  * CURLOPT_SSH_PRIVATE_KEYFILE</td>
- * The file name for your private key. If not used, libcurl defaults to
- * $HOME/.ssh/id_dsa if the HOME environment variable is set,
- * and just "id_dsa" in the current directory if HOME is not set.
- * If the file is password-protected, set the password with
+ * The file name for your private key. If not used, libcurl defaults to 
+ * $HOME/.ssh/id_dsa if the HOME environment variable is set, 
+ * and just "id_dsa" in the current directory if HOME is not set. 
+ * If the file is password-protected, set the password with 
  * CURLOPT_KEYPASSWD.
  * </td>
- * Added in cURL 7.16.1.
+ * Added in cURL 7.16.1. 
  * </td>
  * </tr>
  * <tr valign="top">
@@ -1151,7 +1151,7 @@ function curl_version ($age = null) {}
  * </tr>
  * </p>
  * <p>
- * value should be the name of a valid function or a Closure
+ * value should be the name of a valid function or a Closure 
  * for the following values of the option parameter:
  * <tr valign="top">
  * <td>Option</td>
@@ -1162,13 +1162,13 @@ function curl_version ($age = null) {}
  * A callback accepting two parameters.
  * The first is the cURL resource, the second is a
  * string with the header data to be written. The header data must
- * be written when by this callback. Return the number of
+ * be written when by this callback. Return the number of 
  * bytes written.
  * </td>
  * </tr>
  * <tr valign="top">
  * CURLOPT_PASSWDFUNCTION</td>
- * A callback accepting three parameters.
+ * A callback accepting three parameters. 
  * The first is the cURL resource, the second is a
  * string containing a password prompt, and the third is the maximum
  * password length. Return the string containing the password.
@@ -1197,7 +1197,7 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_READFUNCTION</td>
- * A callback accepting three parameters.
+ * A callback accepting three parameters. 
  * The first is the cURL resource, the second is a
  * stream resource provided to cURL through the option
  * CURLOPT_INFILE, and the third is the maximum
@@ -1209,10 +1209,10 @@ function curl_version ($age = null) {}
  * </tr>
  * <tr valign="top">
  * CURLOPT_WRITEFUNCTION</td>
- * A callback accepting two parameters.
+ * A callback accepting two parameters. 
  * The first is the cURL resource, and the second is a
  * string with the data to be written. The data must be saved by
- * this callback. It must return the exact number of bytes written
+ * this callback. It must return the exact number of bytes written 
  * or the transfer will be aborted with an error.
  * </td>
  * </tr>
@@ -1237,7 +1237,7 @@ function curl_setopt ($ch, $option, $value) {}
 /**
  * Set multiple options for a cURL transfer
  * @link http://www.php.net/manual/en/function.curl-setopt-array.php
- * @param ch resource
+ * @param ch resource 
  * @param options array <p>
  * An array specifying which options to set and their values.
  * The keys should be valid curl_setopt constants or
@@ -1252,7 +1252,7 @@ function curl_setopt_array ($ch, array $options) {}
 /**
  * Perform a cURL session
  * @link http://www.php.net/manual/en/function.curl-exec.php
- * @param ch resource
+ * @param ch resource 
  * @return mixed Returns true on success or false on failure. However, if the CURLOPT_RETURNTRANSFER
  * option is set, it will return
  * the result on success, false on failure.
@@ -1262,12 +1262,12 @@ function curl_exec ($ch) {}
 /**
  * Get information regarding a specific transfer
  * @link http://www.php.net/manual/en/function.curl-getinfo.php
- * @param ch resource
+ * @param ch resource 
  * @param opt int[optional] <p>
  * This may be one of the following constants:
  * CURLINFO_EFFECTIVE_URL - Last effective URL
  * @return mixed If opt is given, returns its value.
- * Otherwise, returns an associative array with the following elements
+ * Otherwise, returns an associative array with the following elements 
  * (which correspond to opt), or false on failure:
  * "url"
  * "content_type"
@@ -1290,7 +1290,7 @@ function curl_exec ($ch) {}
  * "starttransfer_time"
  * "redirect_time"
  * "certinfo"
- * "request_header" (This is only set if the CURLINFO_HEADER_OUT
+ * "request_header" (This is only set if the CURLINFO_HEADER_OUT 
  * is set by a previous call to curl_setopt)
  */
 function curl_getinfo ($ch, $opt = null) {}
@@ -1298,7 +1298,7 @@ function curl_getinfo ($ch, $opt = null) {}
 /**
  * Return a string containing the last error for the current session
  * @link http://www.php.net/manual/en/function.curl-error.php
- * @param ch resource
+ * @param ch resource 
  * @return string the error message or '' (the empty string) if no
  * error occurred.
  */
@@ -1307,7 +1307,7 @@ function curl_error ($ch) {}
 /**
  * Return the last error number
  * @link http://www.php.net/manual/en/function.curl-errno.php
- * @param ch resource
+ * @param ch resource 
  * @return int the error number or 0 (zero) if no error
  * occurred.
  */
@@ -1316,8 +1316,8 @@ function curl_errno ($ch) {}
 /**
  * Close a cURL session
  * @link http://www.php.net/manual/en/function.curl-close.php
- * @param ch resource
- * @return void
+ * @param ch resource 
+ * @return void 
  */
 function curl_close ($ch) {}
 
@@ -1344,15 +1344,15 @@ function curl_multi_strerror ($errornum) {}
 /**
  * Reset all options of a libcurl session handle
  * @link http://www.php.net/manual/en/function.curl-reset.php
- * @param ch resource
- * @return void
+ * @param ch resource 
+ * @return void 
  */
 function curl_reset ($ch) {}
 
 /**
  * URL encodes the given string
  * @link http://www.php.net/manual/en/function.curl-escape.php
- * @param ch resource
+ * @param ch resource 
  * @param str string <p>
  * The string to be encoded.
  * </p>
@@ -1363,7 +1363,7 @@ function curl_escape ($ch, $str) {}
 /**
  * Decodes the given URL encoded string
  * @link http://www.php.net/manual/en/function.curl-unescape.php
- * @param ch resource
+ * @param ch resource 
  * @param str string <p>
  * The URL encoded string to be decoded.
  * </p>
@@ -1374,7 +1374,7 @@ function curl_unescape ($ch, $str) {}
 /**
  * Pause and unpause a connection
  * @link http://www.php.net/manual/en/function.curl-pause.php
- * @param ch resource
+ * @param ch resource 
  * @param bitmask int <p>
  * One of CURLPAUSE_* constants.
  * </p>
@@ -1392,8 +1392,8 @@ function curl_multi_init () {}
 /**
  * Add a normal cURL handle to a cURL multi handle
  * @link http://www.php.net/manual/en/function.curl-multi-add-handle.php
- * @param mh resource
- * @param ch resource
+ * @param mh resource 
+ * @param ch resource 
  * @return int 0 on success, or one of the CURLM_XXX errors
  * code.
  */
@@ -1402,8 +1402,8 @@ function curl_multi_add_handle ($mh, $ch) {}
 /**
  * Remove a multi handle from a set of cURL handles
  * @link http://www.php.net/manual/en/function.curl-multi-remove-handle.php
- * @param mh resource
- * @param ch resource
+ * @param mh resource 
+ * @param ch resource 
  * @return int 0 on success, or one of the CURLM_XXX error
  * codes.
  */
@@ -1412,11 +1412,11 @@ function curl_multi_remove_handle ($mh, $ch) {}
 /**
  * Wait for activity on any curl_multi connection
  * @link http://www.php.net/manual/en/function.curl-multi-select.php
- * @param mh resource
+ * @param mh resource 
  * @param timeout float[optional] <p>
  * Time, in seconds, to wait for a response.
  * </p>
- * @return int On success, returns the number of descriptors contained in
+ * @return int On success, returns the number of descriptors contained in 
  * the descriptor sets. On failure, this function will return -1 on a select failure or timeout (from the underlying select system call).
  */
 function curl_multi_select ($mh, $timeout = null) {}
@@ -1424,15 +1424,15 @@ function curl_multi_select ($mh, $timeout = null) {}
 /**
  * Run the sub-connections of the current cURL handle
  * @link http://www.php.net/manual/en/function.curl-multi-exec.php
- * @param mh resource
+ * @param mh resource 
  * @param still_running int <p>
  * A reference to a flag to tell whether the operations are still running.
  * </p>
  * @return int A cURL code defined in the cURL Predefined Constants.
  * </p>
  * <p>
- * This only returns errors regarding the whole multi stack. There might still have
- * occurred problems on individual transfers even when this function returns
+ * This only returns errors regarding the whole multi stack. There might still have 
+ * occurred problems on individual transfers even when this function returns 
  * CURLM_OK.
  */
 function curl_multi_exec ($mh, &$still_running) {}
@@ -1440,7 +1440,7 @@ function curl_multi_exec ($mh, &$still_running) {}
 /**
  * Return the content of a cURL handle if <constant>CURLOPT_RETURNTRANSFER</constant> is set
  * @link http://www.php.net/manual/en/function.curl-multi-getcontent.php
- * @param ch resource
+ * @param ch resource 
  * @return string Return the content of a cURL handle if CURLOPT_RETURNTRANSFER is set.
  */
 function curl_multi_getcontent ($ch) {}
@@ -1448,7 +1448,7 @@ function curl_multi_getcontent ($ch) {}
 /**
  * Get information about the current transfers
  * @link http://www.php.net/manual/en/function.curl-multi-info-read.php
- * @param mh resource
+ * @param mh resource 
  * @param msgs_in_queue int[optional] <p>
  * Number of messages that are still in the queue
  * </p>
@@ -1482,8 +1482,8 @@ function curl_multi_info_read ($mh, &$msgs_in_queue = null) {}
 /**
  * Close a set of cURL handles
  * @link http://www.php.net/manual/en/function.curl-multi-close.php
- * @param mh resource
- * @return void
+ * @param mh resource 
+ * @return void 
  */
 function curl_multi_close ($mh) {}
 
@@ -1541,7 +1541,7 @@ function curl_share_init () {}
  * @param sh resource <p>
  * A cURL share handle returned by curl_share_init
  * </p>
- * @return void
+ * @return void 
  */
 function curl_share_close ($sh) {}
 
@@ -1637,7 +1637,7 @@ define ('CURLOPT_FILE', 10001);
 define ('CURLOPT_FILETIME', 69);
 
 /**
- * This constant is not available when open_basedir
+ * This constant is not available when open_basedir 
  * or safe_mode are enabled.
  * @link http://www.php.net/manual/en/curl.constants.php
  */

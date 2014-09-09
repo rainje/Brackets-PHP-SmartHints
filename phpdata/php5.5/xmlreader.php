@@ -51,7 +51,7 @@ class XMLReader  {
 	 * @param index int <p>
 	 * The position of the attribute.
 	 * </p>
-	 * @return string The value of the attribute, or an empty string if no attribute exists
+	 * @return string The value of the attribute, or an empty string if no attribute exists 
 	 * at index or not positioned of element.
 	 */
 	public function getAttributeNo ($index) {}
@@ -66,7 +66,7 @@ class XMLReader  {
 	 * The namespace URI.
 	 * </p>
 	 * @return string The value of the attribute, or an empty string if no attribute with the
-	 * given localName and
+	 * given localName and 
 	 * namespaceURI is found or not positioned of element.
 	 */
 	public function getAttributeNs ($localName, $namespaceURI) {}
@@ -75,7 +75,7 @@ class XMLReader  {
 	 * Indicates if specified property has been set
 	 * @link http://www.php.net/manual/en/xmlreader.getparserproperty.php
 	 * @param property int <p>
-	 * One of the parser option
+	 * One of the parser option 
 	 * constants.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -135,7 +135,7 @@ class XMLReader  {
 	/**
 	 * Position cursor on the parent Element of current Attribute
 	 * @link http://www.php.net/manual/en/xmlreader.movetoelement.php
-	 * @return bool true if successful and false if it fails or not positioned on
+	 * @return bool true if successful and false if it fails or not positioned on 
 	 * Attribute when this method is called.
 	 */
 	public function moveToElement () {}
@@ -164,7 +164,7 @@ class XMLReader  {
 	 * The document encoding or &null;.
 	 * </p>
 	 * @param options int[optional] <p>
-	 * A bitmask of the LIBXML_*
+	 * A bitmask of the LIBXML_* 
 	 * constants.
 	 * </p>
 	 * @return bool Returns true on success or false on failure. If called statically, returns an
@@ -225,11 +225,11 @@ class XMLReader  {
 	 * Set parser options
 	 * @link http://www.php.net/manual/en/xmlreader.setparserproperty.php
 	 * @param property int <p>
-	 * One of the parser option
+	 * One of the parser option 
 	 * constants.
 	 * </p>
 	 * @param value bool <p>
-	 * If set to true the option will be enabled otherwise will
+	 * If set to true the option will be enabled otherwise will 
 	 * be disabled.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -266,7 +266,7 @@ class XMLReader  {
 	 * The document encoding or &null;.
 	 * </p>
 	 * @param options int[optional] <p>
-	 * A bitmask of the LIBXML_*
+	 * A bitmask of the LIBXML_* 
 	 * constants.
 	 * </p>
 	 * @return bool Returns true on success or false on failure. If called statically, returns an
@@ -277,7 +277,7 @@ class XMLReader  {
 	/**
 	 * Returns a copy of the current node as a DOM object
 	 * @link http://www.php.net/manual/en/xmlreader.expand.php
-	 * @param basenode DOMNode[optional]
+	 * @param basenode DOMNode[optional] 
 	 * @return DOMNode The resulting DOMNode or false on error.
 	 */
 	public function expand (DOMNode $basenode = null) {}

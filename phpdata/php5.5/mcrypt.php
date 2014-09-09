@@ -5,11 +5,11 @@
 /**
  * Deprecated: Encrypts/decrypts data in ECB mode
  * @link http://www.php.net/manual/en/function.mcrypt-ecb.php
- * @param cipher int
- * @param key string
- * @param data string
- * @param mode int
- * @return string
+ * @param cipher int 
+ * @param key string 
+ * @param data string 
+ * @param mode int 
+ * @return string 
  * @deprecated Since 5.5.0
  */
 function mcrypt_ecb ($cipher, $key, $data, $mode) {}
@@ -17,12 +17,12 @@ function mcrypt_ecb ($cipher, $key, $data, $mode) {}
 /**
  * Encrypts/decrypts data in CBC mode
  * @link http://www.php.net/manual/en/function.mcrypt-cbc.php
- * @param cipher int
- * @param key string
- * @param data string
- * @param mode int
- * @param iv string[optional]
- * @return string
+ * @param cipher int 
+ * @param key string 
+ * @param data string 
+ * @param mode int 
+ * @param iv string[optional] 
+ * @return string 
  * @deprecated Since 5.5.0
  */
 function mcrypt_cbc ($cipher, $key, $data, $mode, $iv = null) {}
@@ -30,12 +30,12 @@ function mcrypt_cbc ($cipher, $key, $data, $mode, $iv = null) {}
 /**
  * Encrypts/decrypts data in CFB mode
  * @link http://www.php.net/manual/en/function.mcrypt-cfb.php
- * @param cipher int
- * @param key string
- * @param data string
- * @param mode int
- * @param iv string
- * @return string
+ * @param cipher int 
+ * @param key string 
+ * @param data string 
+ * @param mode int 
+ * @param iv string 
+ * @return string 
  * @deprecated Since 5.5.0
  */
 function mcrypt_cfb ($cipher, $key, $data, $mode, $iv) {}
@@ -43,12 +43,12 @@ function mcrypt_cfb ($cipher, $key, $data, $mode, $iv) {}
 /**
  * Encrypts/decrypts data in OFB mode
  * @link http://www.php.net/manual/en/function.mcrypt-ofb.php
- * @param cipher int
- * @param key string
- * @param data string
- * @param mode int
- * @param iv string
- * @return string
+ * @param cipher int 
+ * @param key string 
+ * @param data string 
+ * @param mode int 
+ * @param iv string 
+ * @return string 
  * @deprecated Since 5.5.0
  */
 function mcrypt_ofb ($cipher, $key, $data, $mode, $iv) {}
@@ -269,16 +269,16 @@ function mcrypt_generic ($td, $data) {}
  * @param data string <p>
  * Encrypted data.
  * </p>
- * @return string
+ * @return string 
  */
 function mdecrypt_generic ($td, $data) {}
 
 /**
  * This function terminates encryption
  * @link http://www.php.net/manual/en/function.mcrypt-generic-end.php
- * @param td resource
- * @return bool
- * @deprecated
+ * @param td resource 
+ * @return bool 
+ * @deprecated 
  */
 function mcrypt_generic_end ($td) {}
 

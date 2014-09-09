@@ -8,7 +8,7 @@
  * @param hostname string[optional] <p>
  * If you are using OpenLDAP 2.x.x you can specify a URL instead of the
  * hostname. To use LDAP with SSL, compile OpenLDAP 2.x.x with SSL
- * support, configure PHP with SSL, and set this parameter as
+ * support, configure PHP with SSL, and set this parameter as 
  * ldaps://hostname/.
  * </p>
  * @param port int[optional] <p>
@@ -51,14 +51,14 @@ function ldap_bind ($link_identifier, $bind_rdn = null, $bind_password = null) {
 /**
  * Bind to LDAP directory using SASL
  * @link http://www.php.net/manual/en/function.ldap-sasl-bind.php
- * @param link resource
- * @param binddn string[optional]
- * @param password string[optional]
- * @param sasl_mech string[optional]
- * @param sasl_realm string[optional]
- * @param sasl_authc_id string[optional]
- * @param sasl_authz_id string[optional]
- * @param props string[optional]
+ * @param link resource 
+ * @param binddn string[optional] 
+ * @param password string[optional] 
+ * @param sasl_mech string[optional] 
+ * @param sasl_realm string[optional] 
+ * @param sasl_authc_id string[optional] 
+ * @param sasl_authz_id string[optional] 
+ * @param props string[optional] 
  * @return bool Returns true on success or false on failure.
  */
 function ldap_sasl_bind ($link, $binddn = null, $password = null, $sasl_mech = null, $sasl_realm = null, $sasl_authc_id = null, $sasl_authz_id = null, $props = null) {}
@@ -84,7 +84,7 @@ function ldap_unbind ($link_identifier) {}
  * </p>
  * @param filter string <p>
  * An empty filter is not allowed. If you want to retrieve absolutely all
- * information for this entry, use a filter of
+ * information for this entry, use a filter of 
  * objectClass=*. If you know which entry types are
  * used on the directory server, you might use an appropriate filter such
  * as objectClass=inetOrgPerson.
@@ -96,7 +96,7 @@ function ldap_unbind ($link_identifier) {}
  * </p>
  * <p>
  * Using this parameter is much more efficient than the default action
- * (which is to return all attributes and their associated values).
+ * (which is to return all attributes and their associated values). 
  * The use of this parameter should therefore be considered good
  * practice.
  * </p>
@@ -154,7 +154,7 @@ function ldap_read ($link_identifier, $base_dn, $filter, array $attributes = nul
  * </p>
  * <p>
  * Using this parameter is much more efficient than the default action
- * (which is to return all attributes and their associated values).
+ * (which is to return all attributes and their associated values). 
  * The use of this parameter should therefore be considered good
  * practice.
  * </p>
@@ -215,7 +215,7 @@ function ldap_list ($link_identifier, $base_dn, $filter, array $attributes = nul
  * </p>
  * <p>
  * Using this parameter is much more efficient than the default action
- * (which is to return all attributes and their associated values).
+ * (which is to return all attributes and their associated values). 
  * The use of this parameter should therefore be considered good
  * practice.
  * </p>
@@ -602,7 +602,7 @@ function ldap_compare ($link_identifier, $dn, $attribute, $value) {}
  * @param sortfilter string <p>
  * The attribute to use as a key in the sort.
  * </p>
- * @return bool
+ * @return bool 
  */
 function ldap_sort ($link, $result, $sortfilter) {}
 
@@ -781,7 +781,7 @@ function ldap_get_option ($link_identifier, $option, &$retval) {}
  * </tr>
  * </p>
  * <p>
- * LDAP_OPT_SERVER_CONTROLS and
+ * LDAP_OPT_SERVER_CONTROLS and 
  * LDAP_OPT_CLIENT_CONTROLS require a list of
  * controls, this means that the value must be an array of controls. A
  * control consists of an oid identifying the control,
@@ -805,58 +805,58 @@ function ldap_set_option ($link_identifier, $option, $newval) {}
 /**
  * Return first reference
  * @link http://www.php.net/manual/en/function.ldap-first-reference.php
- * @param link resource
- * @param result resource
- * @return resource
+ * @param link resource 
+ * @param result resource 
+ * @return resource 
  */
 function ldap_first_reference ($link, $result) {}
 
 /**
  * Get next reference
  * @link http://www.php.net/manual/en/function.ldap-next-reference.php
- * @param link resource
- * @param entry resource
- * @return resource
+ * @param link resource 
+ * @param entry resource 
+ * @return resource 
  */
 function ldap_next_reference ($link, $entry) {}
 
 /**
  * Extract information from reference entry
  * @link http://www.php.net/manual/en/function.ldap-parse-reference.php
- * @param link resource
- * @param entry resource
- * @param referrals array
- * @return bool
+ * @param link resource 
+ * @param entry resource 
+ * @param referrals array 
+ * @return bool 
  */
 function ldap_parse_reference ($link, $entry, array &$referrals) {}
 
 /**
  * Extract information from result
  * @link http://www.php.net/manual/en/function.ldap-parse-result.php
- * @param link resource
- * @param result resource
- * @param errcode int
- * @param matcheddn string[optional]
- * @param errmsg string[optional]
- * @param referrals array[optional]
- * @return bool
+ * @param link resource 
+ * @param result resource 
+ * @param errcode int 
+ * @param matcheddn string[optional] 
+ * @param errmsg string[optional] 
+ * @param referrals array[optional] 
+ * @return bool 
  */
 function ldap_parse_result ($link, $result, &$errcode, &$matcheddn = null, &$errmsg = null, array &$referrals = null) {}
 
 /**
  * Start TLS
  * @link http://www.php.net/manual/en/function.ldap-start-tls.php
- * @param link resource
- * @return bool
+ * @param link resource 
+ * @return bool 
  */
 function ldap_start_tls ($link) {}
 
 /**
  * Set a callback function to do re-binds on referral chasing
  * @link http://www.php.net/manual/en/function.ldap-set-rebind-proc.php
- * @param link resource
- * @param callback callable
- * @return bool
+ * @param link resource 
+ * @param callback callable 
+ * @return bool 
  */
 function ldap_set_rebind_proc ($link, $callback) {}
 
@@ -870,12 +870,12 @@ function ldap_set_rebind_proc ($link, $callback) {}
  * The number of entries by page.
  * </p>
  * @param iscritical bool[optional] <p>
- * Indicates whether the pagination is critical of not.
+ * Indicates whether the pagination is critical of not. 
  * If true and if the server doesn't support pagination, the search
  * will return no result.
  * </p>
  * @param cookie string[optional] <p>
- * An opaque structure sent by the server
+ * An opaque structure sent by the server 
  * (ldap_control_paged_result_response).
  * </p>
  * @return bool Returns true on success or false on failure.

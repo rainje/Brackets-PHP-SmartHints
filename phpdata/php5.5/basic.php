@@ -7,7 +7,7 @@
  * This parameter is only the filename of the
  * extension to load which also depends on your platform. For example,
  * the sockets extension (if compiled
- * as a shared module, not the default!) would be called
+ * as a shared module, not the default!) would be called 
  * sockets.so on Unix platforms whereas it is called
  * php_sockets.dll on the Windows platform.
  * </p>
@@ -17,7 +17,7 @@
  * </p>
  * <p>
  * Windows - If not explicitly set in the &php.ini;, the extension is
- * loaded from C:\php4\extensions\ (PHP 4) or
+ * loaded from C:\php4\extensions\ (PHP 4) or 
  * C:\php5\ (PHP 5) by default.
  * </p>
  * <p>
@@ -70,7 +70,7 @@ define ('__FILE__', null);
 define ('__LINE__', null);
 
 /**
- * The class name. (Added in PHP 4.3.0) As of PHP 5 this constant
+ * The class name. (Added in PHP 4.3.0) As of PHP 5 this constant 
  * returns the class name as it was declared (case-sensitive). In PHP
  * 4 its value is always lowercased. The class name includes the namespace
  * it was declared in (e.g. Foo\Bar).
@@ -82,7 +82,7 @@ define ('__LINE__', null);
 define ('__CLASS__', "");
 
 /**
- * The function name. (Added in PHP 4.3.0) As of PHP 5 this constant
+ * The function name. (Added in PHP 4.3.0) As of PHP 5 this constant 
  * returns the function name as it was declared (case-sensitive). In
  * PHP 4 its value is always lowercased.
  * @link http://www.php.net/manual/en/language.constants.php
@@ -107,7 +107,7 @@ define ('__METHOD__', null);
 define ('__DIR__', null);
 
 /**
- * The name of the current namespace (case-sensitive). This constant
+ * The name of the current namespace (case-sensitive). This constant 
  * is defined in compile-time (Added in PHP 5.3.0).
  * @link http://www.php.net/manual/en/language.constants.php
  */

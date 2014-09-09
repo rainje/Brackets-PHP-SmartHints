@@ -423,7 +423,7 @@ class CairoContext  {
 	/**
 	 * Establishes a new clip region
 	 * @link http://www.php.net/manual/en/cairocontext.clip.php
-	 * @return void
+	 * @return void 
 	 */
 	public function clip () {}
 
@@ -432,7 +432,7 @@ class CairoContext  {
 	/**
 	 * Establishes a new clip region from the current clip
 	 * @link http://www.php.net/manual/en/cairocontext.clippreserve.php
-	 * @return void
+	 * @return void 
 	 */
 	public function clipPreserve () {}
 
@@ -465,14 +465,14 @@ class CairoContext  {
 	/**
 	 * Fills the current path
 	 * @link http://www.php.net/manual/en/cairocontext.fill.php
-	 * @return void
+	 * @return void 
 	 */
 	public function fill () {}
 
 	/**
 	 * Fills and preserve the current path
 	 * @link http://www.php.net/manual/en/cairocontext.fillpreserve.php
-	 * @return void
+	 * @return void 
 	 */
 	public function fillPreserve () {}
 
@@ -576,7 +576,7 @@ class CairoContext  {
 	/**
 	 * Emits the current page
 	 * @link http://www.php.net/manual/en/cairocontext.copypage.php
-	 * @return void
+	 * @return void 
 	 */
 	public function copyPage () {}
 
@@ -729,7 +729,7 @@ class CairoContext  {
 	 * @param path CairoPath <p>
 	 * CairoPath object
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function appendPath (CairoPath $path) {}
 
@@ -749,7 +749,7 @@ class CairoContext  {
 	/**
 	 * The newPath purpose
 	 * @link http://www.php.net/manual/en/cairocontext.newpath.php
-	 * @return void
+	 * @return void 
 	 */
 	public function newPath () {}
 
@@ -763,7 +763,7 @@ class CairoContext  {
 	/**
 	 * Closes the current path
 	 * @link http://www.php.net/manual/en/cairocontext.closepath.php
-	 * @return void
+	 * @return void 
 	 */
 	public function closePath () {}
 
@@ -785,7 +785,7 @@ class CairoContext  {
 	 * @param angle2 float <p>
 	 * end angle
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function arc ($x, $y, $radius, $angle1, $angle2) {}
 
@@ -807,7 +807,7 @@ class CairoContext  {
 	 * @param angle2 float <p>
 	 * End angle of the arc
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function arcNegative ($x, $y, $radius, $angle1, $angle2) {}
 
@@ -832,7 +832,7 @@ class CairoContext  {
 	 * @param y3 float <p>
 	 * Final point in the y axis for the curve
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function curveTo ($x1, $y1, $x2, $y2, $x3, $y3) {}
 
@@ -858,7 +858,7 @@ class CairoContext  {
 	 * @param y string <p>
 	 * The y coordinate of the new position
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function moveTo ($x, $y) {}
 
@@ -1152,10 +1152,10 @@ class CairoMatrix  {
 	 * Creates a new CairoMatrix object
 	 * @link http://www.php.net/manual/en/cairomatrix.construct.php
 	 * @param xx float[optional] <p>
-	 * xx component of the affine transformation
+	 * xx component of the affine transformation 
 	 * </p>
 	 * @param yx float[optional] <p>
-	 * yx component of the affine transformation
+	 * yx component of the affine transformation 
 	 * </p>
 	 * @param xy float[optional] <p>
 	 * xy component of the affine transformation
@@ -1164,10 +1164,10 @@ class CairoMatrix  {
 	 * yy component of the affine transformation
 	 * </p>
 	 * @param x0 float[optional] <p>
-	 * X translation component of the affine transformation
+	 * X translation component of the affine transformation 
 	 * </p>
 	 * @param y0 float[optional] <p>
-	 * Y translation component of the affine transformation
+	 * Y translation component of the affine transformation 
 	 * </p>
 	 * @return float a new CairoMatrix object that can be used with surfaces, contexts, and patterns.
 	 */
@@ -1184,10 +1184,10 @@ class CairoMatrix  {
 	 * Creates a new translation matrix
 	 * @link http://www.php.net/manual/en/cairomatrix.inittranslate.php
 	 * @param tx float <p>
-	 * amount to translate in the X direction
+	 * amount to translate in the X direction 
 	 * </p>
 	 * @param ty float <p>
-	 * amount to translate in the Y direction
+	 * amount to translate in the Y direction 
 	 * </p>
 	 * @return void a new CairoMatrix object that can be used with surfaces, contexts, and patterns.
 	 */
@@ -1197,10 +1197,10 @@ class CairoMatrix  {
 	 * Creates a new scaling matrix
 	 * @link http://www.php.net/manual/en/cairomatrix.initscale.php
 	 * @param sx float <p>
-	 * scale factor in the X direction
+	 * scale factor in the X direction 
 	 * </p>
 	 * @param sy float <p>
-	 * scale factor in the Y direction
+	 * scale factor in the Y direction 
 	 * </p>
 	 * @return void a new CairoMatrix object that can be used with surfaces, contexts, and patterns.
 	 */
@@ -1213,7 +1213,7 @@ class CairoMatrix  {
 	 * angle of rotation, in radians. The direction of rotation is defined such
 	 * that positive angles rotate in the direction from the positive X axis
 	 * toward the positive Y axis. With the default axis orientation of cairo,
-	 * positive angles rotate in a clockwise direction.
+	 * positive angles rotate in a clockwise direction. 
 	 * </p>
 	 * @return void a new CairoMatrix object that can be used with surfaces, contexts, and patterns.
 	 */
@@ -1236,12 +1236,12 @@ class CairoMatrix  {
 	 * Applies scaling to a matrix
 	 * @link http://www.php.net/manual/en/cairomatrix.scale.php
 	 * @param sx float <p>
-	 * scale factor in the X direction
+	 * scale factor in the X direction 
 	 * </p>
 	 * @param sy float <p>
-	 * scale factor in the Y direction
+	 * scale factor in the Y direction 
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function scale ($sx, $sy) {}
 
@@ -5462,7 +5462,7 @@ function cairo_recording_surface_create ($content, $extents) {}
  * @link http://www.php.net/manual/en/function.cairo-matrix-create-scale.php
  * @param sx
  * @param sy
- * @deprecated
+ * @deprecated 
  */
 function cairo_matrix_create_scale ($sx, $sy) {}
 
@@ -5471,7 +5471,7 @@ function cairo_matrix_create_scale ($sx, $sy) {}
  * @link http://www.php.net/manual/en/function.cairo-matrix-create-translate.php
  * @param tx
  * @param ty
- * @deprecated
+ * @deprecated 
  */
 function cairo_matrix_create_translate ($tx, $ty) {}
 

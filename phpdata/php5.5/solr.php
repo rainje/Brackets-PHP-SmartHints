@@ -89,7 +89,7 @@ class SolrDocument implements ArrayAccess, Iterator, Traversable, Serializable {
 	/**
 	 * Destructor
 	 * @link http://www.php.net/manual/en/solrdocument.destruct.php
-	 * @return void
+	 * @return void 
 	 */
 	public function __destruct () {}
 
@@ -473,7 +473,7 @@ class SolrInputDocument  {
 	 * @param fieldBoostValue float <p>
 	 * The index time boost value.
 	 * </p>
-	 * @return bool
+	 * @return bool 
 	 */
 	public function setFieldBoost ($fieldName, $fieldBoostValue) {}
 
@@ -676,7 +676,7 @@ class SolrClient  {
 	 * @param responseWriter string <p>One of the following :</p>
 	 * <p>
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function &setResponseWriter ($responseWriter) {}
 
@@ -730,7 +730,7 @@ class SolrClient  {
 	 * Block until index changes are flushed to disk.
 	 * </p>
 	 * @param waitSearcher bool[optional] <p>
-	 * Block until a new searcher is opened and registered as the main query searcher, making the changes visible.
+	 * Block until a new searcher is opened and registered as the main query searcher, making the changes visible. 
 	 * </p>
 	 * @return SolrUpdateResponse a SolrUpdateResponse object on success or throws a SolrClientException on failure.
 	 */
@@ -746,7 +746,7 @@ class SolrClient  {
 	 * Block until index changes are flushed to disk.
 	 * </p>
 	 * @param waitSearcher bool[optional] <p>
-	 * Block until a new searcher is opened and registered as the main query searcher, making the changes visible.
+	 * Block until a new searcher is opened and registered as the main query searcher, making the changes visible. 
 	 * </p>
 	 * @return SolrUpdateResponse a SolrUpdateResponse on success or throws a SolrClientException on failure.
 	 */
@@ -867,7 +867,7 @@ class SolrParams implements Serializable {
 	 * The name of the parameter
 	 * </p>
 	 * @param value string <p>
-	 * The value of the parameter
+	 * The value of the parameter 
 	 * </p>
 	 * @return SolrParams a SolrParams instance on success
 	 */
@@ -1003,7 +1003,7 @@ class SolrModifiableParams extends SolrParams implements Serializable {
 	 * The name of the parameter
 	 * </p>
 	 * @param value string <p>
-	 * The value of the parameter
+	 * The value of the parameter 
 	 * </p>
 	 * @return SolrParams a SolrParams instance on success
 	 */
@@ -1264,7 +1264,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Maps to the facet parameter. Enables or disables facetting
 	 * @link http://www.php.net/manual/en/solrquery.setfacet.php
-	 * @param flag bool
+	 * @param flag bool 
 	 * @return SolrQuery the current SolrQuery object, if the return value is used.
 	 */
 	public function &setFacet ($flag) {}
@@ -1494,7 +1494,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Sets the minimum document frequency used for determining term count
 	 * @link http://www.php.net/manual/en/solrquery.setfacetenumcachemindefaultfrequency.php
-	 * @param frequency int
+	 * @param frequency int 
 	 * @param field_override string[optional] <p>
 	 * The name of the field.
 	 * </p>
@@ -1750,7 +1750,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Whether or not to collapse contiguous fragments into a single fragment
 	 * @link http://www.php.net/manual/en/solrquery.sethighlightmergecontiguous.php
-	 * @param flag bool
+	 * @param flag bool 
 	 * @param field_override string[optional] <p>
 	 * The name of the field.
 	 * </p>
@@ -1857,7 +1857,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	 * @param field_override string[optional] <p>
 	 * The name of the field.
 	 * </p>
-	 * @return SolrQuery
+	 * @return SolrQuery 
 	 */
 	public function &setHighlightFormatter ($formatter, $field_override = null) {}
 
@@ -1904,7 +1904,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	 * @param field_override string[optional] <p>
 	 * The name of the field.
 	 * </p>
-	 * @return SolrQuery
+	 * @return SolrQuery 
 	 */
 	public function &setHighlightSimplePost ($simplePost, $field_override = null) {}
 
@@ -1944,7 +1944,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Whether to highlight phrase terms only when they appear within the query phrase
 	 * @link http://www.php.net/manual/en/solrquery.sethighlightusephrasehighlighter.php
-	 * @param flag bool
+	 * @param flag bool 
 	 * @return SolrQuery the current SolrQuery object, if the return value is used.
 	 */
 	public function &setHighlightUsePhraseHighlighter ($flag) {}
@@ -2291,7 +2291,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Set if the query will be boosted by the interesting term relevance
 	 * @link http://www.php.net/manual/en/solrquery.setmltboost.php
-	 * @param flag bool
+	 * @param flag bool 
 	 * @return SolrQuery the current SolrQuery object, if the return value is used.
 	 */
 	public function &setMltBoost ($flag) {}
@@ -2476,7 +2476,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	/**
 	 * Return the raw characters of the indexed term
 	 * @link http://www.php.net/manual/en/solrquery.settermsreturnraw.php
-	 * @param flag bool
+	 * @param flag bool 
 	 * @return SolrQuery the current SolrQuery object, if the return value is used.
 	 */
 	public function &setTermsReturnRaw ($flag) {}
@@ -2593,7 +2593,7 @@ class SolrQuery extends SolrModifiableParams implements Serializable {
 	 * The name of the parameter
 	 * </p>
 	 * @param value string <p>
-	 * The value of the parameter
+	 * The value of the parameter 
 	 * </p>
 	 * @return SolrParams a SolrParams instance on success
 	 */

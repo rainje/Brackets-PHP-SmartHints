@@ -106,7 +106,7 @@ function preg_match ($pattern, $subject, array &$matches = null, $flags = null, 
  * and $out[1] contains array of strings enclosed by tags.
  * </p>
  * </p>
- * @param offset int[optional]
+ * @param offset int[optional] 
  * @return int the number of full pattern matches (which might be zero),
  * or false if an error occurred.
  */
@@ -149,16 +149,16 @@ function preg_match_all ($pattern, $subject, array &$matches = null, $flags = nu
  * ("\\\\" PHP string).
  * </p>
  * <p>
- * When working with a replacement pattern where a backreference is
+ * When working with a replacement pattern where a backreference is 
  * immediately followed by another number (i.e.: placing a literal number
- * immediately after a matched pattern), you cannot use the familiar
- * \\1 notation for your backreference.
+ * immediately after a matched pattern), you cannot use the familiar 
+ * \\1 notation for your backreference. 
  * \\11, for example, would confuse
  * preg_replace since it does not know whether you
- * want the \\1 backreference followed by a literal
+ * want the \\1 backreference followed by a literal 
  * 1, or the \\11 backreference
- * followed by nothing. In this case the solution is to use
- * \${1}1. This creates an isolated
+ * followed by nothing. In this case the solution is to use 
+ * \${1}1. This creates an isolated 
  * $1 backreference, leaving the 1
  * as a literal.
  * </p>
@@ -228,7 +228,7 @@ function preg_replace ($pattern, $replacement, $subject, $limit = null, &$count 
  * not used anywhere else.
  * </p>
  * <p>
- * preg_replace_callback and
+ * preg_replace_callback and 
  * anonymous function
  * ]]>
  * </p>
@@ -257,16 +257,16 @@ function preg_replace_callback ($pattern, $callback, $subject, $limit = null, &$
 /**
  * Perform a regular expression search and replace
  * @link http://www.php.net/manual/en/function.preg-filter.php
- * @param pattern mixed
- * @param replacement mixed
- * @param subject mixed
- * @param limit int[optional]
- * @param count int[optional]
+ * @param pattern mixed 
+ * @param replacement mixed 
+ * @param subject mixed 
+ * @param limit int[optional] 
+ * @param count int[optional] 
  * @return mixed an array if the subject
  * parameter is an array, or a string otherwise.
  * </p>
  * <p>
- * If no matches are found or an error occurred, an empty array
+ * If no matches are found or an error occurred, an empty array 
  * is returned when subject is an array
  * or &null; otherwise.
  */
@@ -285,7 +285,7 @@ function preg_filter ($pattern, $replacement, $subject, $limit = null, &$count =
  * If specified, then only substrings up to limit
  * are returned with the rest of the string being placed in the last
  * substring. A limit of -1, 0 or &null; means "no limit"
- * and, as is standard across PHP, you can use &null; to skip to the
+ * and, as is standard across PHP, you can use &null; to skip to the 
  * flags parameter.
  * </p>
  * @param flags int[optional] <p>

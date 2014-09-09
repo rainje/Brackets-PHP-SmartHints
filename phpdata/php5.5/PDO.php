@@ -203,8 +203,8 @@ class PDO  {
 	/**
 	 * Set an attribute
 	 * @link http://www.php.net/manual/en/pdo.setattribute.php
-	 * @param attribute int
-	 * @param value mixed
+	 * @param attribute int 
+	 * @param value mixed 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function setAttribute ($attribute, $value) {}
@@ -219,8 +219,8 @@ class PDO  {
 	 * Data inside the query should be properly escaped.
 	 * </p>
 	 * @return int PDO::exec returns the number of rows that were modified
-	 * or deleted by the SQL statement you issued. If no rows were affected,
-	 * PDO::exec returns 0.
+	 * or deleted by the SQL statement you issued. If no rows were affected, 
+	 * PDO::exec returns 0. 
 	 * </p>
 	 * &return.falseproblem;
 	 * <p>
@@ -409,9 +409,9 @@ class PDOStatement implements Traversable {
 	 * clause.
 	 * </p>
 	 * <p>
-	 * You cannot bind more values than specified; if more keys exist in
-	 * input_parameters than in the SQL specified
-	 * in the PDO::prepare, then the statement will
+	 * You cannot bind more values than specified; if more keys exist in 
+	 * input_parameters than in the SQL specified 
+	 * in the PDO::prepare, then the statement will 
 	 * fail and an error is emitted.
 	 * </p>
 	 * @return bool Returns true on success or false on failure.
@@ -440,7 +440,7 @@ class PDOStatement implements Traversable {
 	 * PDO::CURSOR_SCROLL when you prepare the SQL
 	 * statement with PDO::prepare.
 	 * </p>
-	 * @param cursor_offset int[optional]
+	 * @param cursor_offset int[optional] 
 	 * @return mixed The return value of this function on success depends on the fetch type. In
 	 * all cases, false is returned on failure.
 	 */
@@ -454,7 +454,7 @@ class PDOStatement implements Traversable {
 	 * placeholders, this will be a parameter name of the form
 	 * :name. For a prepared statement using
 	 * question mark placeholders, this will be the 1-indexed position of
-	 * the parameter.
+	 * the parameter. 
 	 * </p>
 	 * @param variable mixed <p>
 	 * Name of the PHP variable to bind to the SQL statement parameter.
@@ -462,7 +462,7 @@ class PDOStatement implements Traversable {
 	 * @param data_type int[optional] <p>
 	 * Explicit data type for the parameter using the PDO::PARAM_*
 	 * constants.
-	 * To return an INOUT parameter from a stored procedure,
+	 * To return an INOUT parameter from a stored procedure, 
 	 * use the bitwise OR operator to set the PDO::PARAM_INPUT_OUTPUT bits
 	 * for the data_type parameter.
 	 * </p>
@@ -510,7 +510,7 @@ class PDOStatement implements Traversable {
 	 * placeholders, this will be a parameter name of the form
 	 * :name. For a prepared statement using
 	 * question mark placeholders, this will be the 1-indexed position of
-	 * the parameter.
+	 * the parameter. 
 	 * </p>
 	 * @param value mixed <p>
 	 * The value to bind to the parameter.
@@ -573,14 +573,14 @@ class PDOStatement implements Traversable {
 	 * PDO::FETCH_GROUP.
 	 * </p>
 	 * @param fetch_argument mixed[optional] <p>
-	 * This argument have a different meaning depending on the value of
+	 * This argument have a different meaning depending on the value of 
 	 * the fetch_style parameter:
 	 * <p>
-	 * PDO::FETCH_COLUMN: Returns the indicated 0-indexed
+	 * PDO::FETCH_COLUMN: Returns the indicated 0-indexed 
 	 * column.
 	 * </p>
 	 * @param ctor_args array[optional] <p>
-	 * Arguments of custom class constructor when the fetch_style
+	 * Arguments of custom class constructor when the fetch_style 
 	 * parameter is PDO::FETCH_CLASS.
 	 * </p>
 	 * @return array PDOStatement::fetchAll returns an array containing
@@ -616,7 +616,7 @@ class PDOStatement implements Traversable {
 	/**
 	 * Fetch the SQLSTATE associated with the last operation on the statement handle
 	 * @link http://www.php.net/manual/en/pdostatement.errorcode.php
-	 * @return string Identical to PDO::errorCode, except that
+	 * @return string Identical to PDO::errorCode, except that 
 	 * PDOStatement::errorCode only retrieves error codes
 	 * for operations performed with PDOStatement objects.
 	 */
@@ -651,8 +651,8 @@ class PDOStatement implements Traversable {
 	/**
 	 * Set a statement attribute
 	 * @link http://www.php.net/manual/en/pdostatement.setattribute.php
-	 * @param attribute int
-	 * @param value mixed
+	 * @param attribute int 
+	 * @param value mixed 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function setAttribute ($attribute, $value) {}
@@ -660,7 +660,7 @@ class PDOStatement implements Traversable {
 	/**
 	 * Retrieve a statement attribute
 	 * @link http://www.php.net/manual/en/pdostatement.getattribute.php
-	 * @param attribute int
+	 * @param attribute int 
 	 * @return mixed the attribute value.
 	 */
 	public function getAttribute ($attribute) {}
@@ -763,7 +763,7 @@ class PDOStatement implements Traversable {
 	/**
 	 * Dump an SQL prepared command
 	 * @link http://www.php.net/manual/en/pdostatement.debugdumpparams.php
-	 * @return void
+	 * @return void 
 	 */
 	public function debugDumpParams () {}
 

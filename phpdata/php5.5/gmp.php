@@ -6,7 +6,7 @@
  * Create GMP number
  * @link http://www.php.net/manual/en/function.gmp-init.php
  * @param number mixed <p>
- * An integer or a string. The string representation can be decimal,
+ * An integer or a string. The string representation can be decimal, 
  * hexadecimal or octal.
  * </p>
  * @param base int[optional] <p>
@@ -41,7 +41,7 @@ function gmp_intval ($gmpnumber) {}
  * </p>
  * &gmp.parameter;
  * @param base int[optional] <p>
- * The base of the returned number. The default base is 10.
+ * The base of the returned number. The default base is 10. 
  * Allowed values for the base are from 2 to 62 and -2 to -36.
  * </p>
  * @return string The number, as a string.
@@ -250,7 +250,7 @@ function gmp_sqrtrem ($a) {}
  * @param exp int <p>
  * The positive power to raise the base.
  * </p>
- * @return resource The new (raised) number, as a GMP number. The case of
+ * @return resource The new (raised) number, as a GMP number. The case of 
  * 0^0 yields 1.
  */
 function gmp_pow ($base, $exp) {}
@@ -339,7 +339,7 @@ function gmp_invert ($a, $b) {}
  * Jacobi symbol
  * @link http://www.php.net/manual/en/function.gmp-jacobi.php
  * @param a resource &gmp.parameter;
- * @param p resource &gmp.parameter;
+ * @param p resource &gmp.parameter; 
  * <p>
  * Should be odd and must be positive.
  * </p>
@@ -351,7 +351,7 @@ function gmp_jacobi ($a, $p) {}
  * Legendre symbol
  * @link http://www.php.net/manual/en/function.gmp-legendre.php
  * @param a resource &gmp.parameter;
- * @param p resource &gmp.parameter;
+ * @param p resource &gmp.parameter; 
  * <p>
  * Should be odd and must be positive.
  * </p>
@@ -491,7 +491,7 @@ function gmp_scan1 ($a, $start) {}
  * @param index int <p>
  * The bit to test
  * </p>
- * @return bool true if the bit is set in resource $a,
+ * @return bool true if the bit is set in resource $a, 
  * otherwise false.
  */
 function gmp_testbit ($a, $index) {}
@@ -507,11 +507,11 @@ function gmp_popcount ($a) {}
 /**
  * Hamming distance
  * @link http://www.php.net/manual/en/function.gmp-hamdist.php
- * @param a resource &gmp.parameter;
+ * @param a resource &gmp.parameter; 
  * <p>
  * It should be positive.
  * </p>
- * @param b resource &gmp.parameter;
+ * @param b resource &gmp.parameter; 
  * <p>
  * It should be positive.
  * </p>

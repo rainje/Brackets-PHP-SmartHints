@@ -68,14 +68,14 @@ interface Reflector  {
 	/**
 	 * Exports
 	 * @link http://www.php.net/manual/en/reflector.export.php
-	 * @return string
+	 * @return string 
 	 */
 	abstract public static function export () {}
 
 	/**
 	 * To string
 	 * @link http://www.php.net/manual/en/reflector.tostring.php
-	 * @return string
+	 * @return string 
 	 */
 	abstract public function __toString () {}
 
@@ -88,7 +88,7 @@ class ReflectionFunctionAbstract implements Reflector {
 	/**
 	 * Clones function
 	 * @link http://www.php.net/manual/en/reflectionfunctionabstract.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
@@ -273,7 +273,7 @@ class ReflectionFunction extends ReflectionFunctionAbstract implements Reflector
 	/**
 	 * To string
 	 * @link http://www.php.net/manual/en/reflectionfunction.tostring.php
-	 * @return string ReflectionFunction::export-like output for
+	 * @return string ReflectionFunction::export-like output for 
 	 * the function.
 	 */
 	public function __toString () {}
@@ -301,8 +301,8 @@ class ReflectionFunction extends ReflectionFunctionAbstract implements Reflector
 	/**
 	 * Invokes function
 	 * @link http://www.php.net/manual/en/reflectionfunction.invoke.php
-	 * @param parameter mixed[optional]
-	 * @param _ mixed[optional]
+	 * @param parameter mixed[optional] 
+	 * @param _ mixed[optional] 
 	 * @return mixed the result of the invoked function call.
 	 */
 	public function invoke ($parameter = null, $_ = null) {}
@@ -311,7 +311,7 @@ class ReflectionFunction extends ReflectionFunctionAbstract implements Reflector
 	 * Invokes function args
 	 * @link http://www.php.net/manual/en/reflectionfunction.invokeargs.php
 	 * @param args array <p>
-	 * The passed arguments to the function as an array, much like
+	 * The passed arguments to the function as an array, much like 
 	 * call_user_func_array works.
 	 * </p>
 	 * @return mixed the result of the invoked function
@@ -329,7 +329,7 @@ class ReflectionFunction extends ReflectionFunctionAbstract implements Reflector
 	/**
 	 * Clones function
 	 * @link http://www.php.net/manual/en/reflectionfunctionabstract.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
@@ -498,7 +498,7 @@ class ReflectionParameter implements Reflector {
 	/**
 	 * Clone
 	 * @link http://www.php.net/manual/en/reflectionparameter.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
@@ -512,7 +512,7 @@ class ReflectionParameter implements Reflector {
 	 * The parameter name.
 	 * </p>
 	 * @param return bool[optional] <p>
-	 * &reflection.export.param.return;
+	 * &reflection.export.param.return; 
 	 * </p>
 	 * @return string The exported reflection.
 	 */
@@ -529,7 +529,7 @@ class ReflectionParameter implements Reflector {
 	/**
 	 * To string
 	 * @link http://www.php.net/manual/en/reflectionparameter.tostring.php
-	 * @return string
+	 * @return string 
 	 */
 	public function __toString () {}
 
@@ -677,7 +677,7 @@ class ReflectionMethod extends ReflectionFunctionAbstract implements Reflector {
 	 * @param class_method string <p>
 	 * Class name and method name delimited by ::.
 	 * </p>
-	 * @return mixed
+	 * @return mixed 
 	 */
 	public function __construct ($class_method) {}
 
@@ -775,7 +775,7 @@ class ReflectionMethod extends ReflectionFunctionAbstract implements Reflector {
 	 * Zero or more parameters to be passed to the method.
 	 * It accepts a variable number of parameters which are passed to the method.
 	 * </p>
-	 * @param _ mixed[optional]
+	 * @param _ mixed[optional] 
 	 * @return mixed the method result.
 	 */
 	public function invoke ($object, $parameter = null, $_ = null) {}
@@ -815,14 +815,14 @@ class ReflectionMethod extends ReflectionFunctionAbstract implements Reflector {
 	 * @param accessible bool <p>
 	 * true to allow accessibility, or false.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setAccessible ($accessible) {}
 
 	/**
 	 * Clones function
 	 * @link http://www.php.net/manual/en/reflectionfunctionabstract.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
@@ -1267,7 +1267,7 @@ class ReflectionClass implements Reflector {
 	/**
 	 * Gets modifiers
 	 * @link http://www.php.net/manual/en/reflectionclass.getmodifiers.php
-	 * @return int bitmask of
+	 * @return int bitmask of 
 	 * modifier constants.
 	 */
 	public function getModifiers () {}
@@ -1289,15 +1289,15 @@ class ReflectionClass implements Reflector {
 	 * Accepts a variable number of arguments which are passed to the class
 	 * constructor, much like call_user_func.
 	 * </p>
-	 * @param _ mixed[optional]
-	 * @return object
+	 * @param _ mixed[optional] 
+	 * @return object 
 	 */
 	public function newInstance ($args, $_ = null) {}
 
 	/**
 	 * Creates a new class instance without invoking the constructor.
 	 * @link http://www.php.net/manual/en/reflectionclass.newinstancewithoutconstructor.php
-	 * @return object
+	 * @return object 
 	 */
 	public function newInstanceWithoutConstructor () {}
 
@@ -1356,7 +1356,7 @@ class ReflectionClass implements Reflector {
 	 * @param value string <p>
 	 * New property value.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setStaticPropertyValue ($name, $value) {}
 
@@ -1438,10 +1438,10 @@ class ReflectionObject extends ReflectionClass implements Reflector {
 	 * Export
 	 * @link http://www.php.net/manual/en/reflectionobject.export.php
 	 * @param argument string <p>
-	 * The reflection to export.
+	 * The reflection to export. 
 	 * </p>
 	 * @param return bool[optional] <p>
-	 * &reflection.export.param.return;
+	 * &reflection.export.param.return; 
 	 * </p>
 	 * @return string &reflection.export.return;
 	 */
@@ -1709,7 +1709,7 @@ class ReflectionObject extends ReflectionClass implements Reflector {
 	/**
 	 * Gets modifiers
 	 * @link http://www.php.net/manual/en/reflectionclass.getmodifiers.php
-	 * @return int bitmask of
+	 * @return int bitmask of 
 	 * modifier constants.
 	 */
 	public function getModifiers () {}
@@ -1731,15 +1731,15 @@ class ReflectionObject extends ReflectionClass implements Reflector {
 	 * Accepts a variable number of arguments which are passed to the class
 	 * constructor, much like call_user_func.
 	 * </p>
-	 * @param _ mixed[optional]
-	 * @return object
+	 * @param _ mixed[optional] 
+	 * @return object 
 	 */
 	public function newInstance ($args, $_ = null) {}
 
 	/**
 	 * Creates a new class instance without invoking the constructor.
 	 * @link http://www.php.net/manual/en/reflectionclass.newinstancewithoutconstructor.php
-	 * @return object
+	 * @return object 
 	 */
 	public function newInstanceWithoutConstructor () {}
 
@@ -1798,7 +1798,7 @@ class ReflectionObject extends ReflectionClass implements Reflector {
 	 * @param value string <p>
 	 * New property value.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setStaticPropertyValue ($name, $value) {}
 
@@ -1881,21 +1881,21 @@ class ReflectionProperty implements Reflector {
 	/**
 	 * Clone
 	 * @link http://www.php.net/manual/en/reflectionproperty.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
 	/**
 	 * Export
 	 * @link http://www.php.net/manual/en/reflectionproperty.export.php
-	 * @param class mixed
+	 * @param class mixed 
 	 * @param name string <p>
 	 * The property name.
 	 * </p>
 	 * @param return bool[optional] <p>
-	 * &reflection.export.param.return;
+	 * &reflection.export.param.return; 
 	 * </p>
-	 * @return string
+	 * @return string 
 	 */
 	public static function export ($class, $name, $return = null) {}
 
@@ -1910,7 +1910,7 @@ class ReflectionProperty implements Reflector {
 	/**
 	 * To string
 	 * @link http://www.php.net/manual/en/reflectionproperty.tostring.php
-	 * @return string
+	 * @return string 
 	 */
 	public function __toString () {}
 
@@ -1945,7 +1945,7 @@ class ReflectionProperty implements Reflector {
 	 * @param value mixed <p>
 	 * The new value.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setValue ($object, $value) {}
 
@@ -2012,7 +2012,7 @@ class ReflectionProperty implements Reflector {
 	 * @param accessible bool <p>
 	 * true to allow accessibility, or false.
 	 * </p>
-	 * @return void
+	 * @return void 
 	 */
 	public function setAccessible ($accessible) {}
 
@@ -2052,7 +2052,7 @@ class ReflectionExtension implements Reflector {
 	/**
 	 * To string
 	 * @link http://www.php.net/manual/en/reflectionextension.tostring.php
-	 * @return string the exported extension as a string, in the same way as the
+	 * @return string the exported extension as a string, in the same way as the 
 	 * ReflectionExtension::export.
 	 */
 	public function __toString () {}
@@ -2074,7 +2074,7 @@ class ReflectionExtension implements Reflector {
 	/**
 	 * Gets extension functions
 	 * @link http://www.php.net/manual/en/reflectionextension.getfunctions.php
-	 * @return array An associative array of ReflectionFunction objects,
+	 * @return array An associative array of ReflectionFunction objects, 
 	 * for each function defined in the extension with the keys being the function
 	 * names. If no function are defined, an empty array is returned.
 	 */
@@ -2116,7 +2116,7 @@ class ReflectionExtension implements Reflector {
 	 * Gets dependencies
 	 * @link http://www.php.net/manual/en/reflectionextension.getdependencies.php
 	 * @return array An associative array with dependencies as keys and
-	 * either Required, Optional
+	 * either Required, Optional 
 	 * or Conflicts as the values.
 	 */
 	public function getDependencies () {}
@@ -2153,7 +2153,7 @@ class ReflectionZendExtension implements Reflector {
 	/**
 	 * Clone handler
 	 * @link http://www.php.net/manual/en/reflectionzendextension.clone.php
-	 * @return void
+	 * @return void 
 	 */
 	final private function __clone () {}
 
@@ -2164,7 +2164,7 @@ class ReflectionZendExtension implements Reflector {
 	 * </p>
 	 * @param return string[optional] <p>
 	 * </p>
-	 * @return string
+	 * @return string 
 	 */
 	public static function export ($name, $return = null) {}
 
@@ -2178,42 +2178,42 @@ class ReflectionZendExtension implements Reflector {
 	/**
 	 * To string handler
 	 * @link http://www.php.net/manual/en/reflectionzendextension.tostring.php
-	 * @return string
+	 * @return string 
 	 */
 	public function __toString () {}
 
 	/**
 	 * Gets name
 	 * @link http://www.php.net/manual/en/reflectionzendextension.getname.php
-	 * @return string
+	 * @return string 
 	 */
 	public function getName () {}
 
 	/**
 	 * Gets version
 	 * @link http://www.php.net/manual/en/reflectionzendextension.getversion.php
-	 * @return string
+	 * @return string 
 	 */
 	public function getVersion () {}
 
 	/**
 	 * Gets author
 	 * @link http://www.php.net/manual/en/reflectionzendextension.getauthor.php
-	 * @return string
+	 * @return string 
 	 */
 	public function getAuthor () {}
 
 	/**
 	 * Gets URL
 	 * @link http://www.php.net/manual/en/reflectionzendextension.geturl.php
-	 * @return string
+	 * @return string 
 	 */
 	public function getURL () {}
 
 	/**
 	 * Gets copyright
 	 * @link http://www.php.net/manual/en/reflectionzendextension.getcopyright.php
-	 * @return string
+	 * @return string 
 	 */
 	public function getCopyright () {}
 

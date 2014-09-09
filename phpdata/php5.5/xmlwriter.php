@@ -278,7 +278,7 @@ class XMLWriter  {
 	 * Create document tag
 	 * @link http://www.php.net/manual/en/function.xmlwriter-start-document.php
 	 * @param version string[optional] <p>
-	 * The version number of the document as part of the XML declaration.
+	 * The version number of the document as part of the XML declaration. 
 	 * </p>
 	 * @param encoding string[optional] <p>
 	 * The encoding of the document as part of the XML declaration.
@@ -437,10 +437,10 @@ class XMLWriter  {
 	 * @param content string <p>
 	 * The content of the entity.
 	 * </p>
-	 * @param pe bool
-	 * @param pubid string
-	 * @param sysid string
-	 * @param ndataid string
+	 * @param pe bool 
+	 * @param pubid string 
+	 * @param sysid string 
+	 * @param ndataid string 
 	 * @return bool Returns true on success or false on failure.
 	 */
 	public function writeDtdEntity ($name, $content, $pe, $pubid, $sysid, $ndataid) {}
@@ -462,7 +462,7 @@ class XMLWriter  {
 	 * Whether to empty the buffer or not. Default is true.
 	 * </p>
 	 * @return mixed If you opened the writer in memory, this function returns the generated XML buffer,
-	 * Else, if using URI, this function will write the buffer and return the number of
+	 * Else, if using URI, this function will write the buffer and return the number of 
 	 * written bytes.
 	 */
 	public function flush ($empty = null) {}

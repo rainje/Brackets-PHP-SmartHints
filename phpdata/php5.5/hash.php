@@ -263,7 +263,7 @@ function mhash_count () {}
  * @param key string[optional] <p>
  * If specified, the function will return the resulting HMAC instead.
  * HMAC is keyed hashing for message authentication, or simply a message
- * digest that depends on the specified key. Not all algorithms
+ * digest that depends on the specified key. Not all algorithms 
  * supported in mhash can be used in HMAC mode.
  * </p>
  * @return string the resulting hash (also called digest) or HMAC as a string, or

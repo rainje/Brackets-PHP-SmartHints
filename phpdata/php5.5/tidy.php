@@ -43,7 +43,7 @@ class tidy  {
 	 * </p>
 	 * @param encoding string[optional] <p>
 	 * The encoding parameter sets the encoding for
-	 * input/output documents. The possible values for encoding are:
+	 * input/output documents. The possible values for encoding are: 
 	 * ascii, latin0, latin1,
 	 * raw, utf8, iso2022,
 	 * mac, win1252, ibm858,
@@ -74,7 +74,7 @@ class tidy  {
 	 * </p>
 	 * @param encoding string[optional] <p>
 	 * The encoding parameter sets the encoding for
-	 * input/output documents. The possible values for encoding are:
+	 * input/output documents. The possible values for encoding are: 
 	 * ascii, latin0, latin1,
 	 * raw, utf8, iso2022,
 	 * mac, win1252, ibm858,
@@ -103,7 +103,7 @@ class tidy  {
 	 * </p>
 	 * @param encoding string[optional] <p>
 	 * The encoding parameter sets the encoding for
-	 * input/output documents. The possible values for encoding are:
+	 * input/output documents. The possible values for encoding are: 
 	 * ascii, latin0, latin1,
 	 * raw, utf8, iso2022,
 	 * mac, win1252, ibm858,
@@ -132,7 +132,7 @@ class tidy  {
 	 * </p>
 	 * @param encoding string[optional] <p>
 	 * The encoding parameter sets the encoding for
-	 * input/output documents. The possible values for encoding are:
+	 * input/output documents. The possible values for encoding are: 
 	 * ascii, latin0, latin1,
 	 * raw, utf8, iso2022,
 	 * mac, win1252, ibm858,
@@ -249,7 +249,7 @@ class tidy  {
 	/**
 	 * Returns a <classname>tidyNode</classname> object starting from the &lt;body&gt; tag of the tidy parse tree
 	 * @link http://www.php.net/manual/en/tidy.body.php
-	 * @return tidyNode a tidyNode object starting from the
+	 * @return tidyNode a tidyNode object starting from the 
 	 * &lt;body&gt; tag of the tidy parse tree.
 	 */
 	public function body () {}

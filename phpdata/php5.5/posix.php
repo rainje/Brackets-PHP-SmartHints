@@ -199,7 +199,7 @@ function posix_times () {}
 /**
  * Get path name of controlling terminal
  * @link http://www.php.net/manual/en/function.posix-ctermid.php
- * @return string Upon successful completion, returns string of the pathname to
+ * @return string Upon successful completion, returns string of the pathname to 
  * the current controlling terminal. Otherwise false is returned and errno
  * is set, which can be checked with posix_get_last_error.
  */
@@ -230,7 +230,7 @@ function posix_isatty ($fd) {}
 /**
  * Pathname of current directory
  * @link http://www.php.net/manual/en/function.posix-getcwd.php
- * @return string a string of the absolute pathname on success.
+ * @return string a string of the absolute pathname on success. 
  * On error, returns false and sets errno which can be checked with
  * posix_get_last_error.
  */
@@ -399,7 +399,7 @@ function posix_getgrgid ($gid) {}
  * @param username string <p>
  * An alphanumeric username.
  * </p>
- * @return array On success an array with the following elements is returned, else
+ * @return array On success an array with the following elements is returned, else 
  * false is returned:
  * <table>
  * The user information array
@@ -574,7 +574,7 @@ function posix_getpwuid ($uid) {}
  * <td>
  * The maximum size of the virtual memory for the process, in bytes.
  * </td>
- * </tr>
+ * </tr> 
  * <tr valign="top">
  * <td>data</td>
  * <td>
@@ -646,7 +646,7 @@ function posix_errno () {}
  * Retrieve the system error message associated with the given errno
  * @link http://www.php.net/manual/en/function.posix-strerror.php
  * @param errno int <p>
- * A POSIX error number, returned by
+ * A POSIX error number, returned by 
  * posix_get_last_error. If set to 0, then the
  * string "Success" is returned.
  * </p>

@@ -678,16 +678,16 @@ function strtotime ($time, $now = null) {}
  * Unrecognized characters in the format string will be printed
  * as-is. The Z format will always return
  * 0 when using gmdate.
- * </p>
+ * </p> 
  * <p>
  * Since this function only accepts integer timestamps the
  * u format character is only useful when using the
  * date_format function with user based timestamps
  * created with date_create.
  * </p>
- * @param timestamp int[optional]
- * @return string a formatted date string. If a non-numeric value is used for
- * timestamp, false is returned and an
+ * @param timestamp int[optional] 
+ * @return string a formatted date string. If a non-numeric value is used for 
+ * timestamp, false is returned and an 
  * E_WARNING level error is emitted.
  */
 function date ($format, $timestamp = null) {}
@@ -777,7 +777,7 @@ function date ($format, $timestamp = null) {}
  * </tr>
  * </table>
  * </p>
- * @param timestamp int[optional]
+ * @param timestamp int[optional] 
  * @return int an integer.
  * </p>
  * <p>
@@ -794,9 +794,9 @@ function idate ($format, $timestamp = null) {}
  * The format of the outputted date string. See the formatting
  * options for the date function.
  * </p>
- * @param timestamp int[optional]
- * @return string a formatted date string. If a non-numeric value is used for
- * timestamp, false is returned and an
+ * @param timestamp int[optional] 
+ * @return string a formatted date string. If a non-numeric value is used for 
+ * timestamp, false is returned and an 
  * E_WARNING level error is emitted.
  */
 function gmdate ($format, $timestamp = null) {}
@@ -836,20 +836,20 @@ function gmdate ($format, $timestamp = null) {}
  * The number of the year, may be a two or four digit value,
  * with values between 0-69 mapping to 2000-2069 and 70-100 to
  * 1970-2000. On systems where time_t is a 32bit signed integer, as
- * most common today, the valid range for year
+ * most common today, the valid range for year 
  * is somewhere between 1901 and 2038. However, before PHP 5.1.0 this
  * range was limited from 1970 to 2038 on some systems (e.g. Windows).
  * </p>
  * @param is_dst int[optional] <p>
- * This parameter can be set to 1 if the time is during daylight savings time (DST),
- * 0 if it is not, or -1 (the default) if it is unknown whether the time is within
+ * This parameter can be set to 1 if the time is during daylight savings time (DST), 
+ * 0 if it is not, or -1 (the default) if it is unknown whether the time is within 
  * daylight savings time or not. If it's unknown, PHP tries to figure it out itself.
  * This can cause unexpected (but not incorrect) results.
- * Some times are invalid if DST is enabled on the system PHP is running on or
- * is_dst is set to 1. If DST is enabled in e.g. 2:00, all times
- * between 2:00 and 3:00 are invalid and mktime returns an undefined
- * (usually negative) value.
- * Some systems (e.g. Solaris 8) enable DST at midnight so time 0:30 of the day when DST
+ * Some times are invalid if DST is enabled on the system PHP is running on or 
+ * is_dst is set to 1. If DST is enabled in e.g. 2:00, all times 
+ * between 2:00 and 3:00 are invalid and mktime returns an undefined 
+ * (usually negative) value. 
+ * Some systems (e.g. Solaris 8) enable DST at midnight so time 0:30 of the day when DST 
  * is enabled is evaluated as 23:30 of the previous day.
  * </p>
  * <p>
@@ -912,8 +912,8 @@ function gmmktime ($hour = null, $minute = null, $second = null, $month = null, 
  * The month is between 1 and 12 inclusive.
  * </p>
  * @param day int <p>
- * The day is within the allowed number of days for the given
- * month. Leap years
+ * The day is within the allowed number of days for the given 
+ * month. Leap years 
  * are taken into consideration.
  * </p>
  * @param year int <p>
@@ -958,7 +958,7 @@ function checkdate ($month, $day, $year) {}
  * <tr valign="top">
  * <td>%e</td>
  * <td>
- * Day of the month, with a space preceding single digits. Not
+ * Day of the month, with a space preceding single digits. Not 
  * implemented as described on Windows. See below for more information.
  * </td>
  * <td> 1 to 31</td>
@@ -1210,9 +1210,9 @@ function checkdate ($month, $day, $year) {}
  * The %z and %Z modifiers both
  * return the time zone name instead of the offset or abbreviation.
  * </p>
- * Mac OS X only: The %P modifier
+ * Mac OS X only: The %P modifier 
  * is not supported in the Mac OS X implementation of this function.
- * @param timestamp int[optional]
+ * @param timestamp int[optional] 
  * @return string a string formatted according format
  * using the given timestamp or the current
  * local time if no timestamp is given. Month and weekday names and
@@ -1227,7 +1227,7 @@ function strftime ($format, $timestamp = null) {}
  * @param format string <p>
  * See description in strftime.
  * </p>
- * @param timestamp int[optional]
+ * @param timestamp int[optional] 
  * @return string a string formatted according to the given format string
  * using the given timestamp or the current
  * local time if no timestamp is given. Month and weekday names and
@@ -1239,16 +1239,16 @@ function gmstrftime ($format, $timestamp = null) {}
 /**
  * Return current Unix timestamp
  * @link http://www.php.net/manual/en/function.time.php
- * @return int
+ * @return int 
  */
 function time () {}
 
 /**
  * Get the local time
  * @link http://www.php.net/manual/en/function.localtime.php
- * @param timestamp int[optional]
+ * @param timestamp int[optional] 
  * @param is_associative bool[optional] <p>
- * If set to false or not supplied then the array is returned as a regular,
+ * If set to false or not supplied then the array is returned as a regular, 
  * numerically indexed array. If the argument is set to true then
  * localtime returns an associative array containing
  * all the different elements of the structure returned by the C
@@ -1257,16 +1257,16 @@ function time () {}
  * </p>
  * <p>
  * "tm_sec" - seconds, 0 to 59
- * @return array
+ * @return array 
  */
 function localtime ($timestamp = null, $is_associative = null) {}
 
 /**
  * Get date/time information
  * @link http://www.php.net/manual/en/function.getdate.php
- * @param timestamp int[optional]
+ * @param timestamp int[optional] 
  * @return array an associative array of information related to
- * the timestamp. Elements from the returned
+ * the timestamp. Elements from the returned 
  * associative array are as follows:
  * </p>
  * <p>
@@ -1679,7 +1679,7 @@ function date_default_timezone_get () {}
  * @param zenith float[optional] <p>
  * Default: date.sunrise_zenith
  * </p>
- * @param gmt_offset float[optional]
+ * @param gmt_offset float[optional] 
  * @return mixed the sunrise time in a specified format on
  * success or false on failure.
  */
@@ -1728,7 +1728,7 @@ function date_sunrise ($timestamp, $format = null, $latitude = null, $longitude 
  * @param zenith float[optional] <p>
  * Default: date.sunset_zenith
  * </p>
- * @param gmt_offset float[optional]
+ * @param gmt_offset float[optional] 
  * @return mixed the sunset time in a specified format on
  * success or false on failure.
  */

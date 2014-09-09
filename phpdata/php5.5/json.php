@@ -79,7 +79,7 @@ function json_decode ($json, $assoc = null, $depth = null, $options = null) {}
 /**
  * Returns the last error occurred
  * @link http://www.php.net/manual/en/function.json-last-error.php
- * @return int an integer, the value can be one of the following
+ * @return int an integer, the value can be one of the following 
  * constants:
  */
 function json_last_error () {}
@@ -194,7 +194,7 @@ define ('JSON_ERROR_CTRL_CHAR', 3);
 define ('JSON_ERROR_SYNTAX', 4);
 
 /**
- * Malformed UTF-8 characters, possibly incorrectly encoded. This
+ * Malformed UTF-8 characters, possibly incorrectly encoded. This 
  * constant is available as of PHP 5.3.3.
  * @link http://www.php.net/manual/en/json.constants.php
  */
